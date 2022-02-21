@@ -1,7 +1,7 @@
 ---
 title: "Introducción"
 author: ''
-date: '2022-02-21'
+date: '2022-02-20'
 slug: intro
 categories: []
 tags: []

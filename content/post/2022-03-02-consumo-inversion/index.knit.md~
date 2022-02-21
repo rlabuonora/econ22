@@ -1,0 +1,49 @@
+---
+title: Consumo y inversión
+author: ''
+date: '2022-03-05'
+slug: consumo-inversion
+categories: []
+tags: []
+---
+
+
+## Consumo
+
+- Es el componente más importante de la demanda agregada.
+- Está compuesto por:
+  - Bienes durables (automóviles, electrodomésticos)
+  - Bienes no durables (alimentos)
+  - Servicios (Educación, Salud, Transporte)
+  
+  
+- Las familias con menores ingresos gastan todos sus ingresos en bienes básicos (alimentación y vivienda).
+- A medida que aumentan los ingresos de los hogares, estos destinan ingresos a otro tipo de bienes (servicios como la salud, la alimentación, etc.)
+- Esto se puede dar ver si comparamos el consumo de un hogar a lo largo del tiempo o en un conjunto de hogares con distintos ingresos en un mismo momento.
+- Cuanto más ricos son los hogares, más pueden ahorrar.
+
+## Consumo, inversión e ingresos
+
+- El consumo depende de los ingresos.
+- La función de consumo relaciona el ingreso de los hogares con su consumo:
+
+$$ C(Y) = C_0 + cY $$
+
+|  Ingreso |Ahorro   |Consumo   |
+|----------|---------|----------|
+| 24000    | -200    |  24200   |   
+| 25000    | 0       |  25000   |   
+| 26000    | 200     |  25800   |   
+| 27000    | 400     |  26600   |   
+| 28000    | 600     |  27400   |  
+| 29000    | 800     |  28200   |   
+| 30000    | 1000    |  29000   |   
+
+
+
+
+
+
+
+
+
