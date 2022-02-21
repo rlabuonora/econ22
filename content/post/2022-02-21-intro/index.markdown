@@ -44,5 +44,7 @@ Analice las siguientes notas de prensa:
 
 
 ## Bibilografía
+- [Notas de Clase](https://intro--diapos-econ.netlify.app/)
 - Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulos 1 y 2.
+
 
