@@ -14,12 +14,13 @@ permalinks:
   post: /:year/:month/:day/:slug/
 menu:
   main:
-    - name: About
-      url: /about/
+    - name: Sobre
+      url: /sobre/
+      weight: 1
     - name: GitHub
-      url: https://github.com/rstudio/blogdown
+      url: https://github.com/rlabuonora
     - name: Twitter
-      url: https://twitter.com/rstudio
+      url: https://twitter.com/rlabuonora
 params:
   MathJaxCDN: //cdnjs.cloudflare.com/ajax/libs
   MathJaxVersion: 2.7.5
@@ -34,7 +35,7 @@ params:
   logo:
     alt: Logo
     height: 50
-    url: logo.png
+    url: logo_econ.png
     width: 50
 markup:
   defaultMarkdownHandler: goldmark

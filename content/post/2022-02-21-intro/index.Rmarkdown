@@ -23,9 +23,9 @@ Determinar si las siguientes afirmaciones son positivas o normativas. Identifica
 
 > Un tope en los alquileres reduce la cantidad y la calidad de las viviendas disponibles.
 
-> El ministro de Economía, Danilo Astori, dijo este jueves que el nivel de desempleo en Uruguay,  se ubicó en 7,6% en el segundo trimestre del año. Según el ministro, el desempleo  "no llegó a niveles dramáticos". </br>
-Astori también habló de la inflación, que llegó a 9,48% en los 12 meses cerrados a agosto, debido a la suba de precios del mes de casi 1,2%. En ese sentido, dijo que la misma "está asumida como un problema que hay que solucionar".
+> El ministro de Economía, Danilo Astori, dijo este jueves que el nivel de desempleo en Uruguay,  se ubicó en 7,6% en el segundo trimestre del año. Según el ministro, el desempleo  "no llegó a niveles dramáticos". 
 
+> Astori también habló de la inflación, que llegó a 9,48% en los 12 meses cerrados a agosto, debido a la suba de precios del mes de casi 1,2%. En ese sentido, dijo que la misma "está asumida como un problema que hay que solucionar".
 
 
 ## Ejercicio 2: Flujo circular de la Economía
