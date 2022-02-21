@@ -7,6 +7,21 @@ categories: []
 tags: []
 ---
 
+```{r setup, include = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning=FALSE, message = FALSE)
+
+library(tidyverse)
+library(here)
+library(patchwork)
+library(tibble)
+library(kableExtra)
+
+
+theme_set(theme_minimal() + 
+            theme(plot.title = element_text(hjust=.5)))
+
+```
+
 
 ## Consumo
 
@@ -40,6 +55,8 @@ $$ C(Y) = C_0 + cY $$
 | 30000    | 1000    |  29000   |   
 
 ```{r}
+
+
 
 df <- tibble(
   ingreso = seq(24000, 30000, by=1000),
