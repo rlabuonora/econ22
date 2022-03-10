@@ -11,8 +11,11 @@ tags: []
 
 Determinar si las siguientes afirmaciones son positivas o normativas. Identificar variables económicas mencionadas.
 
+<div class="blockquote">
+
 > Un salario mínimo incrementa el desempleo entre obreros jóvenes no calificados.
 
+</div>
 > La distribución del ingreso en Uruguay debería ser más equitativa.
 
 > Las leyes antimonopolio deberían utilizarse con más vigor para reducir en nivel actual del poder monopólico.

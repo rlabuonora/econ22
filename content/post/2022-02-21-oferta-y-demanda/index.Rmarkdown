@@ -11,9 +11,9 @@ tags: []
 ```{r setup, include = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = FALSE, fig.height=4, fig.width=6, warning=FALSE, message = FALSE)
 library(tidyverse)
-library(ggrepel)
-library(cowplot)
-library(knitr)
+library(kableExtra)
+
+options(kableExtra.html.bsTable = TRUE)
 
 theme_set(theme_minimal() + 
             theme(plot.title = element_text(hjust = 0.5)))
@@ -53,14 +53,16 @@ En el mercado de un bien, la demanda es $Q_d = 100 - 6P$ y la oferta $Q_s = 28 +
 
 Tenemos la siguiente información sobre el mercado de pizzas
 
-Precio | Cantidad demandada  | Cantidad Ofrecida
--------| ------------------- |-------------
-10     | 0                   | 40
-8      | 10                  | 30
-6      | 20                  | 20
-4      | 30                  | 10
-2      | 40                  | 0 
-0      | 125                 | 0
+```{r}
+tibble(
+  Precios=c(10, 8, 6, 4, 2, 0),
+  `Cantidad Demandada`=c(0, 10, 20, 30, 40, 125),
+  `Cantidad Ofrecida`=c(40, 30, 20, 10, 0, 0)
+) %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
 
 Graficar la oferta y la demanda. Encontrar el punto de equilibrio del mercado. 
 
@@ -68,7 +70,7 @@ Graficar la oferta y la demanda. Encontrar el punto de equilibrio del mercado.
 
 ## Ejercicio 6
 
-![](/imgs/casos.png)
+![](images/casos.png)
 
 - Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria. Explicar que pasa con los ingresos de los productores ante un aumento en la oferta en cada caso.
 

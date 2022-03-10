@@ -7,6 +7,10 @@ categories: []
 tags: []
 ---
 
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+
+<link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
+
 La oferta y la demanda son las herramientas básicas que los economistas usan para analizar los mercados. En esta unidad presentamos estos conceptos y cómo se usan para explicar los resultados que observamos en la vida económica.
 
 ## Ejercicio 1
@@ -37,20 +41,95 @@ En el mercado de un bien, la demanda es `\(Q_d = 100 - 6P\)` y la oferta `\(Q_s 
 
 Tenemos la siguiente información sobre el mercado de pizzas
 
-| Precio | Cantidad demandada | Cantidad Ofrecida |
-|--------|--------------------|-------------------|
-| 10     | 0                  | 40                |
-| 8      | 10                 | 30                |
-| 6      | 20                 | 20                |
-| 4      | 30                 | 10                |
-| 2      | 40                 | 0                 |
-| 0      | 125                | 0                 |
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Precios
+</th>
+<th style="text-align:right;">
+Cantidad Demandada
+</th>
+<th style="text-align:right;">
+Cantidad Ofrecida
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+40
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+30
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:right;">
+20
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+10
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+125
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
 
 Graficar la oferta y la demanda. Encontrar el punto de equilibrio del mercado.
 
 ## Ejercicio 6
 
-![](/imgs/casos.png)
+![](images/casos.png)
 
 -   Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria. Explicar que pasa con los ingresos de los productores ante un aumento en la oferta en cada caso.
 
