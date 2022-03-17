@@ -175,7 +175,9 @@ Hacer tres gráficos: unos con los cambios en la oferta, otro con los cambios en
 
 ![](images/casos.png)
 
--   Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria. Explicar que pasa con los ingresos de los productores ante un aumento en la oferta en cada caso.
+-   Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria.
+
+-   Explicar que pasa con los ingresos de los productores ante un aumento en la oferta en cada caso.
 
     <!-- - [La verdadera dimensión de la escasez en Venezuela](https://www.bbc.com/mundo/noticias/2015/05/150512_venezuela_escasez_reportaje_dp) -->
     <!-- - [¿Por qué hay que hacer tanta fila en Venezuela?](https://www.bbc.com/mundo/noticias/2014/02/140203_venezuela_colas_escasez_dp) -->
