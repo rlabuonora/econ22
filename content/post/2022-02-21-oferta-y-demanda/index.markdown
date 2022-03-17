@@ -34,7 +34,7 @@ blockquote p::after {
   }
 </style>
 
-La oferta y la demanda son las herramientas básicas que los economistas usan para analizar los mercados. En esta unidad presentamos estos conceptos y cómo se usan para explicar los resultados que observamos en la vida económica.
+La oferta y la demanda son las herramientas básicas que los economistas usan para analizar los mercados. En esta unidad los usamos para explicar cómo reaccionan los precios y las cantidades compradas y vendidas a cambios que afectan las decisiones de los participantes en el mercado.
 
 ## Ejercicio 1
 
@@ -50,9 +50,9 @@ Explicar porqué estas afirmaciones son falsas y reescribirlas para que sean ver
 
 ## Ejercicio 2
 
-Usar el diagrama de oferta y demanda para explicar el siguiente tweet:
+Usar el diagrama de oferta y demanda para los gráficos en el siguiente tweet sobre el impacto de la invasión de Rusia a Ucrania:
 
-{{% tweet "1385718459598884864" %}}
+{{% tweet "1504213589346832385" %}}
 
 ## Ejercicio 3
 
