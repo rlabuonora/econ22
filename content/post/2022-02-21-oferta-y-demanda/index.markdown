@@ -38,7 +38,7 @@ La oferta y la demanda son las herramientas básicas que los economistas usan pa
 
 ## Ejercicio 1
 
-Explicar porqué estas afirmaciones son falsas y reescribirlas para que sean verdaderas. Identificar las variables mencionadas y la relaciones causales entre ellas.
+Explicar porqué estas afirmaciones son falsas y reescribirlas para que sean verdaderas. Identificar las variables mencionadas y las relaciones causales entre ellas.
 
 > Una helada en uno de los estados productores de café de Brasil va a producir una caída en el precio del café.
 
@@ -184,5 +184,5 @@ Hacer tres gráficos: unos con los cambios en la oferta, otro con los cambios en
 
 ## Materiales
 
--   [Notas de Clase](https://demanda--diapos-econ.netlify.app)
+-   [Notas de Clase](https://slides-oferta-demanda.netlify.app/)
 -   Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulo 3.
