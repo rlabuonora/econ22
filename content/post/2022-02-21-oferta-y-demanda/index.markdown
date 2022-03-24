@@ -173,14 +173,29 @@ Hacer tres gráficos: unos con los cambios en la oferta, otro con los cambios en
 
 ## Ejercicio 7
 
-![](images/casos.png)
+Graficar la curva de demanda `$$P=-3Q+75$$`
 
--   Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria.
+-   ¿Cuánto es el precio si la cantidad demandada es 23?
+-   ¿Cuánto es la cantidad demandada a un precio de \$18?
+-   ¿Cuánto es la pendiente de la curva de demanda?
+-   Si quiero vender una unidad más, cuánto debo bajar el precio?
 
--   Explicar que pasa con los ingresos de los productores ante un aumento en la oferta en cada caso.
+## Ejercicio 8
 
-    <!-- - [La verdadera dimensión de la escasez en Venezuela](https://www.bbc.com/mundo/noticias/2015/05/150512_venezuela_escasez_reportaje_dp) -->
-    <!-- - [¿Por qué hay que hacer tanta fila en Venezuela?](https://www.bbc.com/mundo/noticias/2014/02/140203_venezuela_colas_escasez_dp) -->
+Las curvas de oferta y demanda en un mercado son:
+
+`$$P=-2Q_d+50$$`
+`$$P=\frac{1}{2}Q_s+25$$`
+
+-   Encontrar el precio y la cantidad de equilibrio.
+-   Graficar el equilibrio.
+
+<!-- ![](images/casos.png) -->
+<!-- - Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria.  -->
+<!-- - Explicar que pasa con los ingresos de los productores ante un aumento en la oferta en cada caso. -->
+
+<!-- - [La verdadera dimensión de la escasez en Venezuela](https://www.bbc.com/mundo/noticias/2015/05/150512_venezuela_escasez_reportaje_dp) -->
+<!-- - [¿Por qué hay que hacer tanta fila en Venezuela?](https://www.bbc.com/mundo/noticias/2014/02/140203_venezuela_colas_escasez_dp) -->
 
 ## Materiales
 
