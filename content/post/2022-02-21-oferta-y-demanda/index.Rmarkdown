@@ -186,12 +186,6 @@ Si hay un techo en los alquileres de $200, ¿cuánto es la cantidad demandada, o
 
 La siguiente gráfica muestra el equilibrio en el mercado de trabajadores de la construcción.
 
-- ¿Cuál es el equilibrio si el gobierno no interviene?
-- Si el gobierno impone un salario mínimo de $3, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
-
-- Si el gobierno impone un salario mínimo de $6, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
-
-- 
 
 ```{r}
 library(ggplot2)
@@ -236,6 +230,11 @@ ggplot() +
   labs(x="Q", y="P")
 ```
 
+- ¿Cuál es el equilibrio si el gobierno no interviene?
+
+- Si el gobierno impone un salario mínimo de $3, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
+
+- Si el gobierno impone un salario mínimo de $6, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
 
 <!-- ![](images/casos.png) -->
 

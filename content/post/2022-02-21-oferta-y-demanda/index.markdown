@@ -291,15 +291,13 @@ Si hay un techo en los alquileres de \$200, ¿cuánto es la cantidad demandada, 
 
 La siguiente gráfica muestra el equilibrio en el mercado de trabajadores de la construcción.
 
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="576" />
+
 -   ¿Cuál es el equilibrio si el gobierno no interviene?
 
 -   Si el gobierno impone un salario mínimo de \$3, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
 
 -   Si el gobierno impone un salario mínimo de \$6, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
-
--   
-
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="576" />
 
 <!-- ![](images/casos.png) -->
 <!-- - Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria.  -->
