@@ -30,6 +30,23 @@ celeste <- "#5e81ac"
 
 ```
 
+```{css}
+blockquote {
+  margin-top: 3em;
+  background: hsl(0deg 0% 90%);
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+blockquote p::before {
+    content: '“';
+  }
+
+blockquote p::after {
+    content: '”';
+  }
+```
 
 
 ```{r}
@@ -142,23 +159,32 @@ p2
 dev.off()
 ```
 
+# Ejercicio 1
 
-1. La investigación científica tiene externalidades para toda la sociedad. Contamos con la siguiente información sobre la cantidad de investigadores en un país:
+La investigación científica tiene externalidades para toda la sociedad. Contamos con la siguiente información sobre la cantidad de investigadores en un país:
 
-| Costo Marginal (USD)  | Investigadores   | Beneficio Marginal Privado (USD)  |Beneficio Marginal Social (USD)  |  
-|-----|---|---|---|
-| 100 |4500   | 20   |60   |
-| 80  |4000   | 40   |80   |
-| 60  |3500   | 60   |100   |
-| 40  | 3000  | 80   |120   |
-| 20  | 2500  | 100  |140   |
+```{r}
+tibble(
+  cmg=seq(100, 20, by=-20),
+  inv=seq(4500, 2500, by=-500),
+  ben_priv=seq(20, 100, by=20),
+  ben_soc=seq(60, 140, by=20)
+) %>% 
+  knitr::kable(col.names = c("CMg",
+                             "Investigadores",
+                             "BMg Privado", 
+                             "BMg Social"))
+```
+
 
 - ¿Cuál es el beneficio externo cuando hay 4500 investigadores por año?
 - Si el gobierno no interviene en el mercado, ¿cuántos investigadores habrá?
 - ¿Cuál es la cantidad socialmente óptima de investigadores?
 - ¿Cuál es el precio que hace que el mercado provea la cantidad eficiente de investigadores?
 
-2. Considere la siguiente información para el mercado de estudiantes de virología.
+# Ejercicio 2
+
+Considere la siguiente información para el mercado de estudiantes de virología.
 ```{r}
 mpb_df <- tibble(x=c(40,  60), 
                  y=c(60, 40))
@@ -203,7 +229,9 @@ ggplot(data.frame(x=0, y=0)) +
 - ¿Cuál es la cantidad eficiente?
 - ¿A cuánto asciende la pérdida de eficiencia si el mercado no se regula?
 
-3. Considere un mercado con la siguiente esctructura de costos:
+# Ejercicio 3
+
+Considere un mercado con la siguiente esctructura de costos:
 ```{r}
 curvas <- list(
   cmg_soc=tribble(
@@ -241,19 +269,30 @@ p1
 ```
 
 - ¿Cuál es el equilibrio de mercado sin intervención pública?
+
 - ¿Es eficiente ese equilibrio?¿Cuál sería el equilibrio eficiente?
+
 - ¿Cuánto debería ser el impuesto que lleve al mercado a producir la cantidad eficiente?¿Cuál sería el precio que pagan los consumidores y la recaudación resultante?
 
 4. Escuchar [esta entrevista](https://delsol.uy/notoquennada/sebastianfleitas/vacunas-contra-el-covid-oferta-limitada-y-demanda-desesperada) sobre el mercado de vacunas contra el Covid-19.
+
   - ¿Quiénes los oferentes? ¿Cómo es la estructura de costos de las empresas que fabrican las vacunas? ¿Qué barreras hay a la libre competencia en el lado de la oferta en este mercado?
-  - ¿Quiénes son los demandantes de vacunas? ¿Cómo es la elasticidad de esta demanda? 
-  - ¿Qué resultados se pueden esperar en este mercado?¿Quiénes tendrán mayor acceso a las vacunas en este contexto?¿Por qué este resultado no es eficiente desde el punto de vista global?
-  - Explique los dos canales por los que los que los países ricos se benefician de que los países pobres accedan a vacunas. 
-  - Comente la siguiente afirmación: "si bien puede ser moralmente correcto que los países desarrollados compartan las vacunas con los países más pobres, los gobernantes de estos países tienen la obligación de actuar en beneficio de sus ciudadanos".
   
-4. Leer [esta entrevista](entrevista-hoxby.pdf).
+  - ¿Quiénes son los demandantes de vacunas? ¿Cómo es la elasticidad de esta demanda? 
+  
+  - ¿Qué resultados se pueden esperar en este mercado?¿Quiénes tendrán mayor acceso a las vacunas en este contexto?¿Por qué este resultado no es eficiente desde el punto de vista global?
+  
+  - Explique los dos canales por los que los que los países ricos se benefician de que los países pobres accedan a vacunas. 
+  - Comente la siguiente afirmación: 
+  
+> Si bien puede ser moralmente correcto que los países desarrollados compartan las vacunas con los países más pobres, los gobernantes de estos países tienen la obligación de actuar en beneficio de sus ciudadanos.
+  
+# Ejercicio 4
+
+Leer [esta entrevista](entrevista-hoxby.pdf).
 
 - ¿Cuál es la principal diferencia entre la educación y otros bienes que se transan en mercados competitivos?
+
 - ¿Por qué se justifica una intervención pública en este tipo de mercados?
 
 

@@ -100,9 +100,13 @@ Escuchar esta entrevista y contenstar las siguientes preguntas.
 </div>
 
 -   ¿Cuál fue el impacto de la llegada del COVID-19 en la pobreza en Marzo de 2020?¿Cuál fue la principal causa de ese impacto?
+
 -   ¿Cuál fue el efecto de las transferencias del gobierno a los hogares más vulnerables?
+
 -   ¿Cuál sería el costo de revertir totalmente el aumento de la pobreza?
+
 -   ¿Cómo se calcula el nivel de pobreza?
+
 -   ¿Qué limitaciones tiene esta forma de medir la pobreza?¿Qué significa que un hogar es *vulnerable*?
 
 # Ejercicio 3
@@ -117,11 +121,15 @@ Escuchar esta entrevista y contestar las siguientes preguntas:
 </div>
 
 -   ¿Cómo es la relación entre el crecimiento de la economía y la desigualdad en Uruguay?
+
 -   ¿Qué indicadores de desigualdad manejan los entrevistados?
-    <!-- El 1% de arriba tiene el mismo ingreso. que el 40% de abajo. -->
+
 -   ¿Cómo es la distribución de la riqueza en Uruguay comparada con el resto de América Latina y los países de mayor desarrollo?
+
 -   ¿Cuáles son los principales factores que afectan la distribución del ingreso mencionados en la entrevista?
+
 -   ¿Qué impacto tiene la distribución del ingreso entre trabajo y capital en la distribución del ingreso?
+
 -   ¿Cuáles son las principales políticas públicas que afectan la distribución del ingreso en Uruguay? ¿Qué impacto tienen?
     <!-- Impacto de AFAM, TUS e IRPF. -->
 
@@ -203,18 +211,21 @@ Cuarto 20%
 </table>
 
 -   Graficar las curvas de Lorenz para ambos países.
+
 -   Graficar la línea de igualdad perfecta.
+
 -   ¿Qué país es más desigual?
+
 -   Explique el índice de Gini. ¿En qué país es más alto?
 
 # Ejercicio 5
 
-Considere un mercado de trabajo con las siguientes curvas de oferta y demanda.
+Considere un mercado de trabajo con las siguientes curvas de demanda y oferta de trabajadores no calificados.
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="672" />
 
 -   Calcular el salario y la cantidad de horas contratadas en equilibrio.
 
--   Los trabajadores altamente calificados tienen una productividad marginal mayor, que hace que el salario que estan dispuestos a pagar las empresas es el doble que para el resto de los trabajadores. Además, el costo de adquirir esta calificación hace que para cada nivel de oferta, los trabajadores altamente calificados requieran un salario \$5 mayor. Calcular el equilibrio en el mercado de trabajadores altamente capacitados.
+-   Si para el mismo salario, un trabajador altamente calificados requiere un salario \$5 mayor que uno no calificado, ¿cuánto es el salario de equilibrio para estos trabajadores?
 
 -   Explique el impacto que tiene esto en la distribución del ingreso.
 
