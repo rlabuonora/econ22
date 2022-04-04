@@ -1,7 +1,7 @@
 ---
 title: Monopolio
 author: ''
-date: '2022-04-05'
+date: '2022-04-04'
 slug: monopolio
 categories: []
 tags: []
