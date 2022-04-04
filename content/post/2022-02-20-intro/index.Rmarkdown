@@ -7,6 +7,29 @@ categories: []
 tags: []
 ---
 
+
+```{r setup, include = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  fig.height=4, 
+  fig.width=6, 
+  warning=FALSE, 
+  message = FALSE,
+  dev = "png", 
+  dev.args = list(type = "cairo-png"))
+
+library(tidyverse)
+library(kableExtra)
+
+options(kableExtra.html.bsTable = TRUE)
+
+theme_set(theme_minimal() + 
+            theme(plot.title = element_text(hjust = 0.5)))
+
+celeste <- "#5e81ac"
+
+```
+
 ```{css, echo=FALSE}
 .twitter-tweet {
   margin-left: auto;
@@ -30,6 +53,13 @@ blockquote p::after {
   }
 ```
 
+
+```{r}
+xaringanExtra::embed_xaringan(
+  url = "https://intro--diapos-econ.netlify.app/",
+  ratio = "16:9"
+)
+```
 
 
 ## Ejercicio 1: Economía Normativa y Economía Positiva.
@@ -113,7 +143,6 @@ Usar una planilla electrónica para graficar las siguientes funciones: $y=3x+2$,
 
 
 ## Bibilografía
-- [Notas de Clase](https://intro--diapos-econ.netlify.app/)
 - Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulos 1 y 2.
 
 
