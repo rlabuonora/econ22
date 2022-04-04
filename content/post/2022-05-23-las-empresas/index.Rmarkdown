@@ -30,9 +30,7 @@ celeste <- "#5e81ac"
 ```
 
 
-En esta sección analizamos a los agentes que se encargan de la oferta de los bienes y servicios de la economía. 
-
-Para entender cómo toman decisiones las empresas, es necesario entender las principales variables que toman en cuenta: los ingresos, los costos y los beneficios.
+En esta sección analizamos a los agentes que se encargan de la oferta de los bienes y servicios de la economía. Para entender cómo toman decisiones las empresas, es necesario entender las principales variables que toman en cuenta: los ingresos, los costos y los beneficios.
 
 
 ```{r}
