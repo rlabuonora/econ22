@@ -1,7 +1,7 @@
 ---
 title: Los consumidores
 author: ''
-date: '2022-05-22'
+date: '2022-04-02'
 slug: los-consumidores
 categories: []
 tags: []
@@ -21,6 +21,7 @@ knitr::opts_chunk$set(
 
 library(tidyverse)
 library(kableExtra)
+library(tibble)
 
 options(kableExtra.html.bsTable = TRUE)
 
@@ -47,14 +48,16 @@ xaringanExtra::embed_xaringan(
 
 1. Considere los siguientes datos para un bien:
 
-| Cantidad   | Utilidad Total  | Utilidad Marginal 
-|------------|:---------------:|------------------|
-| 0          |   0             |                  |
-| 1          |   4             |                  |
-| 2          |   7             |                  |
-| 3          |   9             |                  | 
-| 4          |   10            |                  |
-| 5          |   10            |                  |
+```{r}
+tibble(
+  q=0:5,
+  utilidad=c(0, 4, 7, 9, 10, 10),
+  utilidad_mg=rep("", 6)
+) %>% 
+  knitr::kable(col.names = c("Cantidad", "Utilidad Total", "Utilidad Marginal")) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
 
 
 a) Grafique la Utilidad Total.
@@ -64,15 +67,16 @@ d) ¿Tiene utilidad marginal creciente o decreciente?
 
 2. Considere un consumidor que consume solo papas y boniatos, con las siguientes curvas de utilidad total.
 
-| Cantidad   | Utilidad Papas  | Utilidad Boniatos | 
-|------------|:---------------:|-------------------|
-| 1          |   8             |   12              |
-| 2          |   15            |   23              |
-| 3          |   21            |   33              |
-| 4          |   26            |   42              |
-| 5          |   30            |   50              |
-| 6          |   33            |   57              |
+```{r}
 
+tibble(
+  q=1:6,
+  utilidad_papas=c(8, 15, 21, 26, 30, 33),
+  utilidad_boniatos=c(12, 23, 33, 42, 50, 57)
+) %>% 
+  knitr::kable(col.names = c("Cantidad", "Utilidad Papas", "Utilidad Boniatos")) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
 
 
 - Calcular la utilidad marginal para los dos productos.
@@ -82,14 +86,17 @@ d) ¿Tiene utilidad marginal creciente o decreciente?
 
 3. Considere los siguientes bienes y la utilidad que le reportan a un consumidor. Explique por qué ninguno cumple con el supuesto de utilidad marginal decreciente.
 
-| Cantidad   | Utilidad Bien A | Utilidad Bien B  | Utilidad Bien C |
-|------------|:---------------:|------------------|-----------------|
-| 1          |   8             |      8           |     8           |
-| 2          |   17            |      7           |     16          |
-| 3          |   27            |      6           |     24          |
-| 4          |   38            |      5           |     32          |
-| 5          |   50            |      4           |     40          |
-| 6          |   63            |      3           |     48          |
+
+```{r}
+tibble(
+  q=1:6,
+  utilidad_a=c(8, 17, 27, 38, 50, 63),
+  utilidad_b=c(8, 7, 6, 5, 4, 3),
+  utilidad_c=c(8, 16, 24, 32, 40, 48)
+) %>% 
+  knitr::kable(col.names = c("Cantidad", "Utilidad Bien A", "Utilidad Bien B", "Utilidad Bien C")) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
 
 3. Suponga que una familia tiene un ingreso de $100.000 y gasta un tercio en educación, un tercio en vivienda y un tercio en alimentación. Escriba la relación entre la utilidad marginal de cada uno de los tres bienes y el precio de los tres bienes. Si sube el precio de la educación, ¿cómo se debe reasignar el gasto para que esta relación se mantenga?
 

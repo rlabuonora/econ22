@@ -1,7 +1,7 @@
 ---
 title: Elasticidad, Eficiencia e Impuestos
 author: ''
-date: '2022-04-04'
+date: '2022-04-01'
 slug: elasticidad-eficiencia-e-impuestos
 categories: []
 tags: []

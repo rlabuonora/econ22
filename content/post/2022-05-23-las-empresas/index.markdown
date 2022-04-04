@@ -1,13 +1,16 @@
 ---
 title: Las empresas
 author: ''
-date: '2022-05-23'
+date: '2022-04-03'
 slug: las-empresas
 categories: []
 tags: []
 ---
 
 <script src="{{< blogdown/postref >}}index_files/fitvids/fitvids.min.js"></script>
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+
+<link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
 
 En esta sección analizamos a los agentes que se encargan de la oferta de los bienes y servicios de la economía.
 
@@ -22,7 +25,7 @@ Para entender cómo toman decisiones las empresas, es necesario entender las pri
 
 Analice la estructura de costos de una empresa que contrata capital y trabajadores con la siguiente estructura:
 
-<table>
+<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:right;">
@@ -35,13 +38,13 @@ Capital
 Trabajadores
 </th>
 <th style="text-align:left;">
-Costo Total
+CT
 </th>
 <th style="text-align:left;">
-Costo Fijo
+CF
 </th>
 <th style="text-align:left;">
-Costo Variable
+CV
 </th>
 </tr>
 </thead>

@@ -1,7 +1,7 @@
 ---
 title: Bienestar, Pobreza y Desigualdad
 author: ''
-date: '2022-05-28'
+date: '2022-04-09'
 slug: bienestar-pobreza-y-desigualdad
 categories: []
 tags: []

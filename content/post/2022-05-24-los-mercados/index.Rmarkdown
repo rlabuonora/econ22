@@ -1,14 +1,38 @@
 ---
 title: Los mercados
 author: ''
-date: '2022-05-24'
+date: '2022-04-04'
 slug: los-mercados
 categories: []
 tags: []
 ---
 
 
-<!-- # Ejercicio 1 -->
+```{r setup, include = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  fig.height=4, 
+  fig.width=6, 
+  warning=FALSE, 
+  message = FALSE,
+  dev = "png", 
+  dev.args = list(type = "cairo-png"))
+
+library(tidyverse)
+library(kableExtra)
+
+options(kableExtra.html.bsTable = TRUE)
+
+theme_set(theme_minimal() + 
+            theme(plot.title = element_text(hjust = 0.5)))
+
+celeste <- "#5e81ac"
+
+```
+
+
+
+
 
 
 ```{r}
@@ -19,7 +43,11 @@ xaringanExtra::embed_xaringan(
 ```
 
 
-```{r, warning=FALSE, include=FALSE, echo=FALSE, message=FALSE}
+# Ejercicio 1
+
+Considere un mercado que funciona en competencia perfecta. Analice dos situaciones mostradas en los siguientes gráficos, explicando los resultados de las empresas y la situación de entrada y salida de empresas al mercado.
+
+```{r}
 
 library(tidyverse)
 library(tidyr)
@@ -34,9 +62,9 @@ datos <- tibble(
   pivot_longer(cols=-q)
 ```
 
-<!-- Considere un mercado que funciona en competencia perfecta. Analice dos situaciones mostradas en los siguientes gráficos, explicando los resultados de las empresas y la situación de entrada y salida de empresas al mercado. -->
 
-```{r warning=FALSE, echo=FALSE, eval=FALSE}
+
+```{r}
 library(patchwork)
 
 a <- datos %>%
@@ -67,7 +95,7 @@ a +  b
 
 ```
 
-<!-- Ahora suponga que la entrada de empresas al sector aumenta la oferta y reduce los precios como se muestra en el siguiente gráfico. Explique la situación, y cuál es el resultado final esperado. -->
+Ahora suponga que la entrada de empresas al sector aumenta la oferta y reduce los precios como se muestra en el siguiente gráfico. Explique la situación, y cuál es el resultado final esperado.
 
 ## Bibliografía
 

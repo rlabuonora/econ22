@@ -1,7 +1,7 @@
 ---
 title: Externalidades y Bienes Públicos
 author: ''
-date: '2022-05-26'
+date: '2022-04-07'
 slug: bienes-publicos
 categories: []
 tags: []

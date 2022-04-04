@@ -1,7 +1,7 @@
 ---
 title: Las empresas
 author: ''
-date: '2022-05-23'
+date: '2022-04-03'
 slug: las-empresas
 categories: []
 tags: []
@@ -53,13 +53,15 @@ Analice la estructura de costos de una empresa que contrata capital y trabajador
 
 options(knitr.kable.NA = '')
 
-knitr::kable(
-  tibble::tibble(`Producción`=0:6,
+
+tibble::tibble(`Producción`=0:6,
          `Capital` = rep(10, 7),
          `Trabajadores`=c(0, 6, 11, 15, 21, 31, 45),
-         `Costo Total`=NA,
-         `Costo Fijo`=NA,
-         `Costo Variable`=NA))
+         `CT`=NA,
+         `CF`=NA,
+         `CV`=NA) %>% 
+  knitr::kable() %>% 
+  kable_styling(bootstrap_options = c("striped", "hover"))
 
 ```
 

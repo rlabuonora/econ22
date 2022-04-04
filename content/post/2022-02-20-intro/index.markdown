@@ -7,6 +7,11 @@ categories: []
 tags: []
 ---
 
+<script src="{{< blogdown/postref >}}index_files/clipboard/clipboard.min.js"></script>
+<link href="{{< blogdown/postref >}}index_files/shareon/shareon.min.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/shareon/shareon.min.js"></script>
+<link href="{{< blogdown/postref >}}index_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/xaringanExtra-shareagain/shareagain.js"></script>
 <script src="{{< blogdown/postref >}}index_files/fitvids/fitvids.min.js"></script>
 <style type="text/css">
 .twitter-tweet {

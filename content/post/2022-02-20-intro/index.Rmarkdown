@@ -53,6 +53,10 @@ blockquote p::after {
   }
 ```
 
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
 
 ```{r}
 xaringanExtra::embed_xaringan(
