@@ -34,7 +34,7 @@ xaringanExtra::use_share_again()
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://slides-oferta-demanda.netlify.app/", 
+  url = "https://slides-elasticidad.netlify.app/", 
   ratio = "16:9"
 )
 ```
