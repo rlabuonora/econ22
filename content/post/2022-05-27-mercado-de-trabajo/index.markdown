@@ -13,7 +13,7 @@ tags: []
 <link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
 
 <div class="shareagain" style="min-width:300px;margin:1em auto;">
-<iframe src="https://empleo--diapos-econ.netlify.app" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<iframe src="https://slides-empleo.netlify.app" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
 <script>fitvids('.shareagain', {players: 'iframe'});</script>
 </div>
 

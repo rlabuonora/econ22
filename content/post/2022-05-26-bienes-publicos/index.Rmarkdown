@@ -51,7 +51,7 @@ blockquote p::after {
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://bienes-publicos--diapos-econ.netlify.app/"
+  url = "https://slides-bienes-publicos.netlify.app/"
   #,
   #ratio = "16:9"
 )

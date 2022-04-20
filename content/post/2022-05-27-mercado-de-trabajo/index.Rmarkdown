@@ -34,7 +34,7 @@ celeste <- "#5e81ac"
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://empleo--diapos-econ.netlify.app"
+  url = "https://slides-empleo.netlify.app"
   
   #,
   #ratio = "16:9"
