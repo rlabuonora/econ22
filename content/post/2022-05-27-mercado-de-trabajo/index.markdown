@@ -1,5 +1,5 @@
 ---
-title: Mercado de Trabajo
+title: "El Mercado de Trabajo"
 author: ''
 date: '2022-04-08'
 slug: mercado-de-trabajo

@@ -57,10 +57,8 @@ table {
 ```{r}
 
 xaringanExtra::embed_xaringan(
-  url = "https://bienestar--diapos-econ.netlify.app"
-  
-  #,
-  #ratio = "16:9"
+  url = "https://slides-bienestar.netlify.app",
+  ratio = "16:9"
 )
 ```
 

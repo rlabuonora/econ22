@@ -1,5 +1,5 @@
 ---
-title: Mercado de Trabajo
+title: "El Mercado de Trabajo"
 author: ''
 date: '2022-04-08'
 slug: mercado-de-trabajo
@@ -34,10 +34,8 @@ celeste <- "#5e81ac"
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://slides-empleo.netlify.app"
-  
-  #,
-  #ratio = "16:9"
+  url = "https://slides-empleo.netlify.app",
+  ratio = "16:9"
 )
 ```
 
