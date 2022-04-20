@@ -157,6 +157,78 @@ $$P=\frac{1}{2}Q_s+25$$
 
 
 
+## Ejercicio 3
+
+La siguiente tabla muestra las curvas de oferta y demanda de alquileres en Montevideo.
+
+```{r}
+library(tibble)
+
+tibble(
+  alquiler=seq(1000, 200, by=-200),
+  qd=seq(150, 350, by=50),
+  qs=seq(350, 150, by=-50)
+) %>% 
+  kable(col.names=c("Alquiler", "Cantidad Demandada", "Cantidad Ofrecida")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+Si hay un techo en los alquileres de $200, ¿cuánto es la cantidad demandada, ofrecida y la escasez de viviendas?
+
+## Ejercicio 4
+
+La siguiente gráfica muestra el equilibrio en el mercado de trabajadores de la construcción.
+
+
+```{r}
+library(ggplot2)
+library(polynom)
+
+of <- tibble(
+  q=c(4, 8),
+  p=c(2, 4)
+)
+
+dem <- tibble(
+  q=c(4, 12),
+  p=c(6, 2)
+)
+
+
+of_p <- poly.calc(of$q, of$p) %>% 
+  as.function()
+
+dem_p <- poly.calc(dem$q, dem$p) %>% 
+  as.function
+
+theme_set(theme_minimal())
+
+puntos <- tibble(
+  q=c(8),
+  p=c(4)
+)
+
+ggplot() + 
+  geom_function(fun=of_p, xlim=c(2, 14)) + 
+  geom_function(fun=dem_p, xlim=c(2, 14)) +
+  geom_point(data=puntos, aes(q, p)) +
+  scale_x_continuous(limits = c(0, 14),
+                     expand = expansion(add=0),
+                     breaks=seq(2,14, by=2)) +
+  scale_y_continuous(breaks=1:7, expand=expansion(add=0)) +
+  # Eje Y
+    geom_segment(aes(x=0, y=0, xend=0, yend=Inf), alpha=.6) + 
+  # Eje X
+  geom_segment(aes(x=-Inf, y=0, xend=Inf, yend=0), alpha=.6) +
+  labs(x="Q", y="P")
+```
+
+- ¿Cuál es el equilibrio si el gobierno no interviene?
+
+- Si el gobierno impone un salario mínimo de $3, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
+
+- Si el gobierno impone un salario mínimo de $6, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
+
 
 
   <!-- - [La verdadera dimensión de la escasez en Venezuela](https://www.bbc.com/mundo/noticias/2015/05/150512_venezuela_escasez_reportaje_dp) -->
