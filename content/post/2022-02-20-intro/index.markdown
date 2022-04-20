@@ -36,7 +36,7 @@ blockquote p::after {
   }
 </style>
 <div class="shareagain" style="min-width:300px;margin:1em auto;">
-<iframe src="https://intro--diapos-econ.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<iframe src="https://slides-intro.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
 <script>fitvids('.shareagain', {players: 'iframe'});</script>
 </div>
 

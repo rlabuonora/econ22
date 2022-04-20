@@ -60,7 +60,7 @@ xaringanExtra::use_share_again()
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://intro--diapos-econ.netlify.app/",
+  url = "https://slides-intro.netlify.app/",
   ratio = "16:9"
 )
 ```
