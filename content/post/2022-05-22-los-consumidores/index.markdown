@@ -19,7 +19,7 @@ tags: []
 El princial propósito de la actividad económica es el consumo. En esta unidad analizamos el comportamiento de los consumidores.
 
 <div class="shareagain" style="min-width:300px;margin:1em auto;">
-<iframe src="https://consumidor--diapos-econ.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<iframe src="https://slides-consumidores.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
 <script>fitvids('.shareagain', {players: 'iframe'});</script>
 </div>
 

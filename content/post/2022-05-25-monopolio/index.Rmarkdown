@@ -44,7 +44,7 @@ En la clases anteriores analizamos cómo los mercados resuelven los problemas ec
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://monopolio--diapos-econ.netlify.app/",
+  url = "https://slides-monopolio.netlify.app/",
   ratio = "16:9"
 )
 ```

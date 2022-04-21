@@ -19,7 +19,7 @@ tags: []
 En la clases anteriores analizamos cómo los mercados resuelven los problemas económicos mediante la interacción de la oferta con la demanda. En esta unidad analizamos las distintas formas en qué se puede dar esta interacción según el **poder de mercado** que tienen consumidores y productores.
 
 <div class="shareagain" style="min-width:300px;margin:1em auto;">
-<iframe src="https://monopolio--diapos-econ.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<iframe src="https://slides-monopolio.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
 <script>fitvids('.shareagain', {players: 'iframe'});</script>
 </div>
 

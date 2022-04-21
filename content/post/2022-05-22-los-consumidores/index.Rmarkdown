@@ -38,7 +38,7 @@ El princial propósito de la actividad económica es el consumo. En esta unidad 
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://consumidor--diapos-econ.netlify.app/",
+  url = "https://slides-consumidores.netlify.app/",
   ratio = "16:9"
 )
 ```

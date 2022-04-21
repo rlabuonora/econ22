@@ -35,7 +35,7 @@ En esta sección analizamos a los agentes que se encargan de la oferta de los bi
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://produccion--diapos-econ.netlify.com/"
+  url = "https://slides-empresas.netlify.com/"
 )
 ```
 
