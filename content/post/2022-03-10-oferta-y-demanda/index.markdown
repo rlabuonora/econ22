@@ -281,7 +281,7 @@ Si hay un techo en los alquileres de \$200, ¿cuánto es la cantidad demandada, 
 
 La siguiente gráfica muestra el equilibrio en el mercado de trabajadores de la construcción.
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="576" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="384" />
 
 -   ¿Cuál es el equilibrio si el gobierno no interviene?
 

@@ -18,11 +18,16 @@ knitr::opts_chunk$set(
 
 library(tidyverse)
 library(kableExtra)
+library(tibble)
+library(ggplot2)
+library(showtext)
+font_add_google("Lato", "Lato")
+font_add_google("Merriweather", "Merriweather")
+
+theme_set(theme_minimal(base_family = 'Lato', base_size=16) + 
+            theme(plot.title = element_text(hjust = 0.5)))
 
 options(kableExtra.html.bsTable = TRUE)
-
-theme_set(theme_minimal() + 
-            theme(plot.title = element_text(hjust = 0.5)))
 
 celeste <- "#5e81ac"
 
@@ -62,6 +67,71 @@ Calcular la elasticidad precio de la demanda en los siguientes casos. Determinar
 <!-- - Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria.  -->
 <!-- - Explicar que pasa con los ingresos de los productores ante un aumento en la oferta en cada caso. -->
 
+# Ejercicio 3
+
+Considere un mercado con las siguientes curvas de oferta y mercado:
+
+```{r}
+tibble(
+  p=seq(.6, 1.8, by=.2),
+  qd=seq(240, 0, by=-40),
+  qs=seq(0, 480, by=80)
+) %>% 
+  kable(col.names=c("Precio", "Qd", "Qs")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+- ¿Cuál es el precio que están dispuestos a pagar los consumidores por la unidad 80 del producto?
+- ¿Cuál es el precio mínimo que pueden cobrar las empresas por esta unidad?
+- Encontrar el equilibrio de mercado y graficarlo. Calcular el excedente total para este precio y cantidad.
+- Si un dictador decide que la producción debe ser 120 unidades, cuánto es la pérdida de excedente?
+
+# Ejercicio 4
+
+El siguiente gráfico muestra el equilibrio del mercaod de pizzas.
+
+```{r}
+library(polynom)
+
+of <- tibble(
+  q=c(0, 100),
+  p=c(1, 3)
+)
+
+dem <- tibble(
+  q=c(0, 100),
+  p=c(5, 3)
+)
+
+
+of_p <- poly.calc(of$q, of$p) %>% 
+  as.function()
+
+dem_p <- poly.calc(dem$q, dem$p) %>% 
+  as.function
+
+
+puntos <- tibble(
+  q=100,
+  p=3
+)
+
+ggplot() + 
+  geom_function(fun=of_p, xlim=c(2, 125)) + 
+  geom_function(fun=dem_p, xlim=c(2, 125)) +
+  geom_point(data=puntos, aes(q, p)) +
+  scale_x_continuous(limits = c(0, 150),
+                     expand = expansion(add=0),
+                     breaks=seq(0,125, by=25)) +
+  scale_y_continuous(breaks=1:7, expand=expansion(add=.5)) +
+  annotate("text", y=3.5, x=138, label="Of=Cmg", family="Lato") +
+  annotate("text", y=2.5, x=138, label="Dem=Bmg", family="Merriweather") +
+  labs(x="Q (porciones)", y="P" )
+```
+
+- Si el precio de una porción de pizza es $3, ¿cuánto es el excedente del consumidor de la porción 50?
+- ¿Cuánto es el excedente del productor de esta porción?
+- ¿Cuál es la cantidad de porciones que produce el mercado en equilibrio?¿Cuál es la cantidad eficiente a producir?
 
 ## Bibliografía
 

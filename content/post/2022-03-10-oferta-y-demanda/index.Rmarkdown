@@ -11,20 +11,24 @@ tags: []
 ```{r setup, include = FALSE, warning = FALSE}
   knitr::opts_chunk$set(
     echo = FALSE, 
-    fig.height=4, 
-    fig.width=6, 
+    fig.height=3, 
+    fig.width=4, 
     warning=FALSE, 
     message = FALSE,
     dev = "png", 
     dev.args = list(type = "cairo-png"))
 
-library(tidyverse)
 library(kableExtra)
+library(tibble)
+library(ggplot2)
+library(showtext)
+font_add_google("Lato", "Lato")
+font_add_google("Merriweather", "Merriweather")
+
+theme_set(theme_minimal(base_family = 'Lato', base_size=16) + 
+            theme(plot.title = element_text(hjust = 0.5)))
 
 options(kableExtra.html.bsTable = TRUE)
-
-theme_set(theme_minimal() + 
-            theme(plot.title = element_text(hjust = 0.5)))
 
 celeste <- "#5e81ac"
 
@@ -181,7 +185,6 @@ La siguiente gráfica muestra el equilibrio en el mercado de trabajadores de la 
 
 
 ```{r}
-library(ggplot2)
 library(polynom)
 
 of <- tibble(
@@ -201,7 +204,6 @@ of_p <- poly.calc(of$q, of$p) %>%
 dem_p <- poly.calc(dem$q, dem$p) %>% 
   as.function
 
-theme_set(theme_minimal())
 
 puntos <- tibble(
   q=c(8),

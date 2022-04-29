@@ -13,6 +13,10 @@ tags: []
 <link href="{{< blogdown/postref >}}index_files/xaringanExtra-shareagain/shareagain.css" rel="stylesheet" />
 <script src="{{< blogdown/postref >}}index_files/xaringanExtra-shareagain/shareagain.js"></script>
 <script src="{{< blogdown/postref >}}index_files/fitvids/fitvids.min.js"></script>
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+
+<link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
+
 <div class="shareagain" style="min-width:300px;margin:1em auto;">
 <iframe src="https://slides-elasticidad.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
 <script>fitvids('.shareagain', {players: 'iframe'});</script>
@@ -37,6 +41,116 @@ Calcular la elasticidad precio de la demanda en los siguientes casos. Determinar
 <!-- ![](images/casos.png) -->
 <!-- - Calcular la elasticidad precio de la demanda en los tres casos y explicar si la demanda es elástica, inelástica o tiene elasticidad unitaria.  -->
 <!-- - Explicar que pasa con los ingresos de los productores ante un aumento en la oferta en cada caso. -->
+
+# Ejercicio 3
+
+Considere un mercado con las siguientes curvas de oferta y mercado:
+
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Precio
+</th>
+<th style="text-align:right;">
+Qd
+</th>
+<th style="text-align:right;">
+Qs
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+0.6
+</td>
+<td style="text-align:right;">
+240
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+0.8
+</td>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:right;">
+80
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.0
+</td>
+<td style="text-align:right;">
+160
+</td>
+<td style="text-align:right;">
+160
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.2
+</td>
+<td style="text-align:right;">
+120
+</td>
+<td style="text-align:right;">
+240
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.4
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:right;">
+320
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.6
+</td>
+<td style="text-align:right;">
+40
+</td>
+<td style="text-align:right;">
+400
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+1.8
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+480
+</td>
+</tr>
+</tbody>
+</table>
+
+-   ¿Cuál es el precio que están dispuestos a pagar los consumidores por la unidad 80 del producto?
+-   ¿Cuál es el precio mínimo que pueden cobrar las empresas por esta unidad?
+-   Encontrar el equilibrio de mercado y graficarlo. Calcular el excedente total para este precio y cantidad.
+-   Si un dictador decide que la producción debe ser 120 unidades, cuánto es la pérdida de excedente?
+
+# Ejercicio 4
+
+Considere un mercado con las siguientes curvas de oferta y demanda.
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="576" />
 
 ## Bibliografía
 
