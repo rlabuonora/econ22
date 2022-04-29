@@ -148,9 +148,13 @@ Qs
 
 # Ejercicio 4
 
-Considere un mercado con las siguientes curvas de oferta y demanda.
+El siguiente gráfico muestra el equilibrio del mercaod de pizzas.
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="576" />
+
+-   Si el precio de una porción de pizza es \$3, ¿cuánto es el excedente del consumidor de la porción 50?
+-   ¿Cuánto es el excedente del productor de esta porción?
+-   ¿Cuál es la cantidad de porciones que produce el mercado en equilibrio?¿Cuál es la cantidad eficiente a producir?
 
 ## Bibliografía
 
