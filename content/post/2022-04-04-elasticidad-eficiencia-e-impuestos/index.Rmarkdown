@@ -126,6 +126,10 @@ ggplot() +
   scale_y_continuous(breaks=1:7, expand=expansion(add=.5)) +
   annotate("text", y=3.5, x=138, label="Of=Cmg", family="Lato") +
   annotate("text", y=2.5, x=138, label="Dem=Bmg", family="Merriweather") +
+    # Eje Y
+  geom_segment(aes(x=0, y=0, xend=0, yend=Inf), size=1, alpha=.6) + 
+  # Eje X
+  geom_segment(aes(x=-Inf, y=0, xend=Inf, yend=0), size=1, alpha=.6) +
   labs(x="Q (porciones)", y="P" )
 ```
 
@@ -177,6 +181,10 @@ ggplot() +
                      expand = expansion(add=0, mult=0)) +
   annotate("text", y=1, x=10.5, label="D", family="Lato") +
   annotate("text", y=6, x=12.5, label="O", family="Lato") +
+    # Eje Y
+  geom_segment(aes(x=0, y=0, xend=0, yend=Inf), size=1, alpha=.6) + 
+  # Eje X
+  geom_segment(aes(x=-Inf, y=0, xend=Inf, yend=0), size=1, alpha=.6) +
   labs(x="Q", y="P" )
 ```
 
