@@ -219,7 +219,7 @@ ggplot() +
                      breaks=seq(2,14, by=2)) +
   scale_y_continuous(breaks=1:7, expand=expansion(add=0)) +
   # Eje Y
-    geom_segment(aes(x=0, y=0, xend=0, yend=Inf), alpha=.6) + 
+  geom_segment(aes(x=0, y=0, xend=0, yend=Inf), alpha=.6) + 
   # Eje X
   geom_segment(aes(x=-Inf, y=0, xend=Inf, yend=0), alpha=.6) +
   labs(x="Q", y="P")

@@ -84,11 +84,11 @@ tibble(
 - ¿Cuál es el precio que están dispuestos a pagar los consumidores por la unidad 80 del producto?
 - ¿Cuál es el precio mínimo que pueden cobrar las empresas por esta unidad?
 - Encontrar el equilibrio de mercado y graficarlo. Calcular el excedente total para este precio y cantidad.
-- Si un dictador decide que la producción debe ser 120 unidades, cuánto es la pérdida de excedente?
+- Si un dictador decide que la producción debe ser 120 unidades, ¿cuánto es la pérdida de excedente?
 
 # Ejercicio 4
 
-El siguiente gráfico muestra el equilibrio del mercaod de pizzas.
+El siguiente gráfico muestra el equilibrio del mercado de pizzas.
 
 ```{r}
 library(polynom)
@@ -132,6 +132,137 @@ ggplot() +
 - Si el precio de una porción de pizza es $3, ¿cuánto es el excedente del consumidor de la porción 50?
 - ¿Cuánto es el excedente del productor de esta porción?
 - ¿Cuál es la cantidad de porciones que produce el mercado en equilibrio?¿Cuál es la cantidad eficiente a producir?
+
+# Ejercicio 5
+
+La demanda para cruzar un peaje es $Q_d = 1000000 - 50000P$, donde $Q_d$ es la cantidad de autos que pasan por el peaje y $P$ es el precio que pagan. Calcular el excedente del consumidor si el precio es $0, $1 y $20.
+
+# Ejercicio 6 
+
+En un mercado hay tres consumidores. El consumidor 1 tiene la  función de demanda $Q_d = 100 - 6P$, el consumidor 2 tiene la demanda $Q_d = 80 - 5P$ y el consumidor 3 $Q_d = 90 - 7P$. Calcular la cantidad demandada de todo el mercado cuando el precio es $5.
+
+
+# Ejercicio 7
+
+```{r}
+library(polynom)
+
+of <- tibble(
+  q=c(4, 8),
+  p=c(2, 4)
+)
+
+dem <- tibble(
+  q=c(4, 8),
+  p=c(10, 4)
+)
+
+
+of_p <- poly.calc(of$q, of$p) %>% 
+  as.function()
+
+dem_p <- poly.calc(dem$q, dem$p) %>% 
+  as.function
+
+ticks <- seq(2, 14, by=2)
+
+ggplot() + 
+  geom_function(fun=of_p, xlim=c(2, 12)) + 
+  geom_function(fun=dem_p, xlim=c(2, 10)) +
+  scale_x_continuous(limits = c(0, 15),
+                     expand = expansion(add=0),
+                     breaks=ticks) +
+  scale_y_continuous(breaks=c(0, ticks), 
+                     limits = c(0, 15),
+                     expand = expansion(add=0, mult=0)) +
+  annotate("text", y=1, x=10.5, label="D", family="Lato") +
+  annotate("text", y=6, x=12.5, label="O", family="Lato") +
+  labs(x="Q", y="P" )
+```
+
+- La gráfica muestra el equilibrio en el mercado de fertilizantes. Si el gobierno decide imponer un impuesto de $8 por unidad:
+  - Graficar el equilibrio en el mercado.
+  - Calcular los precios y las cantidades en el nuevo equilibio.
+  - Calcular la recaudación del impuesto. ¿Sobre quién recae la mayor parte del impuesto, sobre los consumidores o los productores?
+  - Calcular la pérdida de eficiencia ocasionada por el impuesto.
+  
+# Ejercicio 8
+
+```{r}
+library(polynom)
+library(patchwork)
+library(tibble)
+
+of <- tibble(
+  q=c(4, 12),
+  p=c(50, 250)
+)
+
+dem <- tibble(
+  q=c(40, 100),
+  p=c(300, 150)
+)
+
+
+of_p <- poly.calc(of$q, of$p) %>% 
+  as.function()
+
+dem_p <- poly.calc(dem$q, dem$p) %>% 
+  as.function
+
+ticks <- seq(2, 14, by=2)
+
+ggplot() + 
+  geom_function(fun=of_p, xlim=c(4, 14)) + 
+  geom_segment(aes(x=8, y=0, xend=8, yend=350)) + 
+  scale_x_continuous(limits = c(0, 15),
+                     expand = expansion(add=0),
+                     breaks=ticks) +
+  scale_y_continuous(breaks=seq(0, 350, by=50), 
+                     limits = c(0, 350),
+                     expand = expansion(add=c(0, 40), mult=0)) +
+  geom_segment(aes(x=0, y=0, xend=0, yend=Inf), size=1, alpha=.6) + 
+  # Eje X
+  geom_segment(aes(x=-Inf, y=0, xend=Inf, yend=0), size=1, alpha=.6) +
+  annotate("text", y=350, x=8.75, label="D", family="Lato") +
+  annotate("text", y=325, x=14, label="O", family="Lato") +
+  labs(x="Q", y="P", subtitle="Insulina para diabéticos")
+
+
+
+
+```
+
+  
+```{r}
+ggplot() + 
+  geom_function(fun=dem_p, xlim=c(25, 120)) + 
+  geom_segment(aes(x=80, y=0, xend=80, yend=350)) + 
+  scale_x_continuous(limits = c(0, 150),
+                     expand = expansion(add=0),
+                     breaks=ticks*10) +
+  scale_y_continuous(breaks=seq(0, 350, by=50), 
+                     limits = c(0, 350),
+                     expand = expansion(add=c(0, 40), mult=0)) +
+  # Eje Y
+  geom_segment(aes(x=0, y=0, xend=0, yend=Inf), size=1, alpha=.6) + 
+  # Eje X
+  geom_segment(aes(x=-Inf, y=0, xend=Inf, yend=0), size=1, alpha=.6) +
+  annotate("text", y=350, x=87.5, label="O", family="Lato") +
+  annotate("text", y=100, x=130, label="D", family="Lato") +
+  labs(x="Q", y="P", subtitle="Entradas para la final de la \nChampions League" )
+```
+  
+  
+Los gráficos anteriores muestran el equilibrio de dos mercados. 
+
+- ¿Cómo es la elasticidad de la demanda en el mercado de insulina para diabéticos? ¿Qué implica esto sobre la incidencia económica de un impuesto a este bien?
+
+- Suponga que el gobierno impone un impuesto de $150 por unidad de este producto vendido. Calcular el nuevo equilibrio, la recaudación y la incidencia económica para productores y vendedores. 
+
+- ¿Cómo es la elasticidad de la demanda en el mercado de entradas para la final de la Champions League? ¿Qué implica esto sobre la incidencia económica de un impuesto a este bien?
+
+- Suponga que el gobierno impone un impuesto de $100 por entrada vendida. Calcular el nuevo equilibrio, la recaudación y la incidencia económica para productores y vendedores.
 
 ## Bibliografía
 

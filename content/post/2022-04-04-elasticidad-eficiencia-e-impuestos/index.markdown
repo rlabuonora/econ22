@@ -144,17 +144,51 @@ Qs
 -   ¿Cuál es el precio que están dispuestos a pagar los consumidores por la unidad 80 del producto?
 -   ¿Cuál es el precio mínimo que pueden cobrar las empresas por esta unidad?
 -   Encontrar el equilibrio de mercado y graficarlo. Calcular el excedente total para este precio y cantidad.
--   Si un dictador decide que la producción debe ser 120 unidades, cuánto es la pérdida de excedente?
+-   Si un dictador decide que la producción debe ser 120 unidades, ¿cuánto es la pérdida de excedente?
 
 # Ejercicio 4
 
-El siguiente gráfico muestra el equilibrio del mercaod de pizzas.
+El siguiente gráfico muestra el equilibrio del mercado de pizzas.
 
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="576" />
 
 -   Si el precio de una porción de pizza es \$3, ¿cuánto es el excedente del consumidor de la porción 50?
 -   ¿Cuánto es el excedente del productor de esta porción?
 -   ¿Cuál es la cantidad de porciones que produce el mercado en equilibrio?¿Cuál es la cantidad eficiente a producir?
+
+# Ejercicio 5
+
+La demanda para cruzar un peaje es `\(Q_d = 1000000 - 50000P\)`, donde `\(Q_d\)` es la cantidad de autos que pasan por el peaje y `\(P\)` es el precio que pagan. Calcular el excedente del consumidor si el precio es \$0, \$1 y \$20.
+
+# Ejercicio 6
+
+En un mercado hay tres consumidores. El consumidor 1 tiene la función de demanda `\(Q_d = 100 - 6P\)`, el consumidor 2 tiene la demanda `\(Q_d = 80 - 5P\)` y el consumidor 3 `\(Q_d = 90 - 7P\)`. Calcular la cantidad demandada de todo el mercado cuando el precio es \$5.
+
+# Ejercicio 7
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="576" />
+
+-   La gráfica muestra el equilibrio en el mercado de fertilizantes. Si el gobierno decide imponer un impuesto de \$8 por unidad:
+    -   Graficar el equilibrio en el mercado.
+    -   Calcular los precios y las cantidades en el nuevo equilibio.
+    -   Calcular la recaudación del impuesto. ¿Sobre quién recae la mayor parte del impuesto, sobre los consumidores o los productores?
+    -   Calcular la pérdida de eficiencia ocasionada por el impuesto.
+
+# Ejercicio 8
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="576" />
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="576" />
+
+Los gráficos anteriores muestran el equilibrio de dos mercados.
+
+-   ¿Cómo es la elasticidad de la demanda en el mercado de insulina para diabéticos? ¿Qué implica esto sobre la incidencia económica de un impuesto a este bien?
+
+-   Suponga que el gobierno impone un impuesto de \$150 por unidad de este producto vendido. Calcular el nuevo equilibrio, la recaudación y la incidencia económica para productores y vendedores.
+
+-   ¿Cómo es la elasticidad de la demanda en el mercado de entradas para la final de la Champions League? ¿Qué implica esto sobre la incidencia económica de un impuesto a este bien?
+
+-   Suponga que el gobierno impone un impuesto de \$100 por entrada vendida. Calcular el nuevo equilibrio, la recaudación y la incidencia económica para productores y vendedores.
 
 ## Bibliografía
 

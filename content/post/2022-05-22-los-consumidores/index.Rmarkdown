@@ -100,9 +100,6 @@ tibble(
 
 3. Suponga que una familia tiene un ingreso de $100.000 y gasta un tercio en educación, un tercio en vivienda y un tercio en alimentación. Escriba la relación entre la utilidad marginal de cada uno de los tres bienes y el precio de los tres bienes. Si sube el precio de la educación, ¿cómo se debe reasignar el gasto para que esta relación se mantenga?
 
-4. La demanda para cruzar un peaje es $Q_d = 1000000 - 50000P$, donde $Q_d$ es la cantidad de autos que pasan por el peaje y $P$ es el precio que pagan. Calcular el excedente del consumidor si el precio es $0, $1 y $20.
-
-5. En un mercado hay tres consumidores. El consumidor 1 tiene la  función de demanda $Q_d = 100 - 6P$, el consumidor 2 tiene la demanda $Q_d = 80 - 5P$ y el consumidor 3 $Q_d = 90 - 7P$. Calcular la cantidad demandada de todo el mercado cuando el precio es $5.
 
 
 ## Materiales
