@@ -16,16 +16,16 @@ tags: []
 
 <link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
 
-El princial propósito de la actividad económica es el consumo. En esta unidad analizamos el comportamiento de los consumidores.
+El princial propósito de la actividad económica es el consumo. En esta unidad analizamos cómo los consumidores asignan el dinero del que disponen entre dos bienes, según la utilidad marginal que cada bien le reporta.
 
 <div class="shareagain" style="min-width:300px;margin:1em auto;">
 <iframe src="https://slides-consumidores.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
 <script>fitvids('.shareagain', {players: 'iframe'});</script>
 </div>
 
-## Ejercicios
+## Ejercicio 1
 
-1.  Considere los siguientes datos para un bien:
+Considere los siguientes datos para un bien:
 
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <thead>
@@ -110,18 +110,136 @@ Utilidad Marginal
 3.  Complete la columna de Utilidad Marginal.
 4.  ¿Tiene utilidad marginal creciente o decreciente?
 
-<!-- -->
-
-2.  Considere un consumidor que consume solo papas y boniatos, con las siguientes curvas de utilidad total.
+## Ejercicio 2
 
 <table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:right;">
-Cantidad
+Bananas
+</th>
+<th style="text-align:right;">
+Umg B
+</th>
+<th style="text-align:right;">
+Manzanas Umg M
+</th>
+<th style="text-align:right;">
+Umg B
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+30
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+20
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+24
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+17
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+12
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+12
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+8
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+0
+</td>
+</tr>
+</tbody>
+</table>
+
+Un consumidor tiene un presupuesto de \$10. La tabla anterior muestra la utilidad marginal para cada cantidad de bananas y manzanas consumidas.
+
+-   Si el precio de las bananas es \$1 y el de las manzanas \$2 ¿cuál será la utilidad marginal por peso gastado para las cantidades de la tabla? ¿qué combinación de manzanas y bananas consume?
+-   Si el precio de las bananas sube a \$2, ¿cómo cambia la utilidad marginal por dólar? ¿cuál será la nueva combinación de manzanas y bananas que comprará este consumidor?
+
+## Ejercicio 3
+
+Ricardo consume dos bienes, entradas al cine y videojuegos. El precio de las entradas al cine es \$4 y el de los videojuegos \$40. La utilidad marginal de las entradas al cine es 20. ¿Cuál es la utilidad marginal de los videojuegos?
+
+# Ejercicio 4
+
+La tabla siguiente muestra la utilidad total que tiene un consumidor del consumo de salud y educación.
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Papas (kilos)
 </th>
 <th style="text-align:right;">
 Utilidad Papas
+</th>
+<th style="text-align:right;">
+Boniatos (kilos)
 </th>
 <th style="text-align:right;">
 Utilidad Boniatos
@@ -131,13 +249,30 @@ Utilidad Boniatos
 <tbody>
 <tr>
 <td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
 1
 </td>
 <td style="text-align:right;">
-8
+126
 </td>
 <td style="text-align:right;">
-12
+1
+</td>
+<td style="text-align:right;">
+54.0
 </td>
 </tr>
 <tr>
@@ -145,110 +280,13 @@ Utilidad Boniatos
 2
 </td>
 <td style="text-align:right;">
-15
+243
 </td>
-<td style="text-align:right;">
-23
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-3
-</td>
-<td style="text-align:right;">
-21
-</td>
-<td style="text-align:right;">
-33
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-26
-</td>
-<td style="text-align:right;">
-42
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-30
-</td>
-<td style="text-align:right;">
-50
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-33
-</td>
-<td style="text-align:right;">
-57
-</td>
-</tr>
-</tbody>
-</table>
-
--   Calcular la utilidad marginal para los dos productos.
--   Si un consumidor compra 5 boniatos y 1 papa, ¿cuánto debe ser el precio relativo de los boniatos ( `\(\frac{P_{boniato}}{P_{papa}}\)` ) ?
--   ¿Y si este consumidor compra 3 papas y un boniato?
--   ¿Qué haría un consumidor que maximiza su utilidad si este precio es 3?
-
-3.  Considere los siguientes bienes y la utilidad que le reportan a un consumidor. Explique por qué ninguno cumple con el supuesto de utilidad marginal decreciente.
-
-<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:right;">
-Cantidad
-</th>
-<th style="text-align:right;">
-Utilidad Bien A
-</th>
-<th style="text-align:right;">
-Utilidad Bien B
-</th>
-<th style="text-align:right;">
-Utilidad Bien C
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right;">
-1
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-8
-</td>
-<td style="text-align:right;">
-8
-</td>
-</tr>
-<tr>
 <td style="text-align:right;">
 2
 </td>
 <td style="text-align:right;">
-17
-</td>
-<td style="text-align:right;">
-7
-</td>
-<td style="text-align:right;">
-16
+103.5
 </td>
 </tr>
 <tr>
@@ -256,61 +294,49 @@ Utilidad Bien C
 3
 </td>
 <td style="text-align:right;">
-27
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-24
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-38
-</td>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-32
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-5
-</td>
-<td style="text-align:right;">
-50
-</td>
-<td style="text-align:right;">
-4
-</td>
-<td style="text-align:right;">
-40
-</td>
-</tr>
-<tr>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:right;">
-63
+342
 </td>
 <td style="text-align:right;">
 3
 </td>
 <td style="text-align:right;">
-48
+145.5
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+414
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+177.0
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+441
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+196.5
 </td>
 </tr>
 </tbody>
 </table>
 
-3.  Suponga que una familia tiene un ingreso de \$100.000 y gasta un tercio en educación, un tercio en vivienda y un tercio en alimentación. Escriba la relación entre la utilidad marginal de cada uno de los tres bienes y el precio de los tres bienes. Si sube el precio de la educación, ¿cómo se debe reasignar el gasto para que esta relación se mantenga?
+-   Si el consumidor tiene un presupuesto de \$12, el precio de los boniatos \$3 y el de las papas \$1.5, ¿cuántos kilos de papas y de boniatos compra?
+
+-   Si el precio de las papas sube a \$6, ¿qué cantidades de los dos bienes compra? Dibuje dos puntos en la curva de demanda de papas de este consumidor.
 
 ## Materiales
 
