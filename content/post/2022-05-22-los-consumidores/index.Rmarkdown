@@ -74,7 +74,7 @@ tibble(
   utilidad_marginal_b=c(30, 24, 18, 12, 6, 0),
   q_m=1:6,
   utilidad_marginal_m=c(40, 34, 24, 16, 8, 0)) %>% 
-  knitr::kable(col.names = c("Bananas", "Umg B", "Manzanas Umg M","Umg B")) %>% 
+  knitr::kable(col.names = c("Bananas", "Umg B", "Manzanas","Umg M")) %>% 
   kable_styling(bootstrap_options = c("striped", "hover"))
 ```
 

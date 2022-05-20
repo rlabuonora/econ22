@@ -122,10 +122,10 @@ Bananas
 Umg B
 </th>
 <th style="text-align:right;">
-Manzanas Umg M
+Manzanas
 </th>
 <th style="text-align:right;">
-Umg B
+Umg M
 </th>
 </tr>
 </thead>
