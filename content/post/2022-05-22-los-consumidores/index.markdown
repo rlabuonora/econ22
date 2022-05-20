@@ -141,7 +141,7 @@ Umg B
 1
 </td>
 <td style="text-align:right;">
-20
+40
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Umg B
 2
 </td>
 <td style="text-align:right;">
-17
+34
 </td>
 </tr>
 <tr>
@@ -169,7 +169,7 @@ Umg B
 3
 </td>
 <td style="text-align:right;">
-12
+24
 </td>
 </tr>
 <tr>
@@ -183,7 +183,7 @@ Umg B
 4
 </td>
 <td style="text-align:right;">
-8
+16
 </td>
 </tr>
 <tr>
@@ -197,7 +197,7 @@ Umg B
 5
 </td>
 <td style="text-align:right;">
-4
+8
 </td>
 </tr>
 <tr>
@@ -219,7 +219,7 @@ Umg B
 
 Un consumidor tiene un presupuesto de \$10. La tabla anterior muestra la utilidad marginal para cada cantidad de bananas y manzanas consumidas.
 
--   Si el precio de las bananas es \$1 y el de las manzanas \$2 ¿cuál será la utilidad marginal por peso gastado para las cantidades de la tabla? ¿qué combinación de manzanas y bananas consume?
+-   Si el precio de las bananas es \$1 y el de las manzanas \$2 ¿cuál será la utilidad marginal por peso gastado para las cantidades de la tabla? ¿cómo asigna su presupuesto entre ambos bienes?
 -   Si el precio de las bananas sube a \$2, ¿cómo cambia la utilidad marginal por dólar? ¿cuál será la nueva combinación de manzanas y bananas que comprará este consumidor?
 
 ## Ejercicio 3
@@ -228,7 +228,7 @@ Ricardo consume dos bienes, entradas al cine y videojuegos. El precio de las ent
 
 # Ejercicio 4
 
-La tabla siguiente muestra la utilidad total que tiene un consumidor del consumo de salud y educación.
+La tabla siguiente muestra la utilidad total que tiene un consumidor del consumo de papas y boniatos.
 <table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
