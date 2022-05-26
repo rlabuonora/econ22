@@ -45,29 +45,71 @@ xaringanExtra::embed_xaringan(
 
 # Ejercicio 1 
 
-Analice la estructura de costos de una empresa que contrata capital y trabajadores con la siguiente estructura:
+Juan tiene una fábrica de camisetas. El salario es $50 y el costo fijo \$100. 
 
 ```{r echo=FALSE}
 
 options(knitr.kable.NA = '')
 
 
-tibble::tibble(`Producción`=0:6,
-         `Capital` = rep(10, 7),
-         `Trabajadores`=c(0, 6, 11, 15, 21, 31, 45),
-         `CT`=NA,
-         `CF`=NA,
-         `CV`=NA) %>% 
-  knitr::kable() %>% 
-  kable_styling(bootstrap_options = c("striped", "hover"))
+tibble::tibble(`L`=0:5,
+         `Y` = c(0, 20, 36, 48, 56, 60)) %>% 
+  knitr::kable(col.names = c("Trabajadores", "Producción")) %>% 
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
 
 ```
 
 
-- ¿Cuáles son los factores variables y fijos?
-- Calcular el Costo Total, Costo Fijo y el Costo Variable para cada nivel de producción.
+- ¿Cuáles es el producto marginal del tercer trabajador?
+- ¿Cuál es el costo fijo medio si produce 48 camisetas?
+- ¿Cuál es el costo variable medio si produce 56 camisetas?
+- ¿Cuál es el costo marginal del la camiseta 52?
+- ¿Cuál es el costo medio si produce 48 camisetas?
+
+
 
 # Ejercicio 2
+
+
+```{r echo=FALSE}
+
+options(knitr.kable.NA = '')
+
+
+tibble::tibble(`L`=0:6,
+         `Y` = c(0, 5, 15, 35, 50, 60, 65)) %>% 
+  knitr::kable(col.names = c("Trabajadores", "Producción")) %>% 
+  kable_styling(full_width=FALSE, bootstrap_options = c("striped", "hover"))
+
+```
+
+
+Considerando que el costo del capital es $100 y el salario por trabajador \$25, completar la tabla con las columnas Costo Fijo Total, Costo Variable Total, Costo Total, Costo Fijo Medio, Costo Variable Medio, Costo Total Medio y Costo Marginal. 
+
+
+## Ejercicio 3
+
+Los siguientes datos muestra la producción de una fábrica de galletitas.
+
+
+```{r echo=FALSE}
+
+options(knitr.kable.NA = '')
+
+
+tibble::tibble(`t`=1:6,
+         Y = c(100, 240, 500, 1000, 1800, 2500),
+         C=c(1000, 2000, 4000, 8e3, 16e3, 32e3)) %>% 
+  knitr::kable(col.names = c("Trabajadores", "Producción", "Costos")) %>% 
+  kable_styling(full_width=FALSE, bootstrap_options = c("striped", "hover"))
+
+```
+
+
+- Calcular el costo medio para las cantidades de la tabla.
+- ¿Para qué niveles de producción la fábrica tiene economías de escala y deseconomías de escala?
+
+## Ejercicio 4
 
 En [esta planilla](https://docs.google.com/spreadsheets/d/1haqSHV89zGkzHPeDg2iDPXjnahR2-ULGC9rlpaHyWfk/edit?usp=sharing) se encuentra información económica de una empresa que productora de arroz.
 

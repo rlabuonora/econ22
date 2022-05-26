@@ -9,8 +9,17 @@ tags: []
 
 <script src="{{< blogdown/postref >}}index_files/fitvids/fitvids.min.js"></script>
 <script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
-
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
 <link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.js"></script>
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+<link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.js"></script>
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+<link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.js"></script>
 
 En esta sección analizamos a los agentes que se encargan de la oferta de los bienes y servicios de la economía. Para entender cómo toman decisiones las empresas, es necesario entender las principales variables que toman en cuenta: los ingresos, los costos y los beneficios.
 
@@ -21,28 +30,16 @@ En esta sección analizamos a los agentes que se encargan de la oferta de los bi
 
 # Ejercicio 1
 
-Analice la estructura de costos de una empresa que contrata capital y trabajadores con la siguiente estructura:
+Juan tiene una fábrica de camisetas. El salario es \$50 y el costo fijo \$100.
 
-<table class="table table-striped table-hover" style="margin-left: auto; margin-right: auto;">
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
 <th style="text-align:right;">
-Producción
-</th>
-<th style="text-align:right;">
-Capital
-</th>
-<th style="text-align:right;">
 Trabajadores
 </th>
-<th style="text-align:left;">
-CT
-</th>
-<th style="text-align:left;">
-CF
-</th>
-<th style="text-align:left;">
-CV
+<th style="text-align:right;">
+Producción
 </th>
 </tr>
 </thead>
@@ -52,16 +49,7 @@ CV
 0
 </td>
 <td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
 0
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
 </td>
 </tr>
 <tr>
@@ -69,16 +57,7 @@ CV
 1
 </td>
 <td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-6
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
+20
 </td>
 </tr>
 <tr>
@@ -86,16 +65,7 @@ CV
 2
 </td>
 <td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-11
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
+36
 </td>
 </tr>
 <tr>
@@ -103,16 +73,7 @@ CV
 3
 </td>
 <td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-15
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
+48
 </td>
 </tr>
 <tr>
@@ -120,16 +81,7 @@ CV
 4
 </td>
 <td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-21
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
+56
 </td>
 </tr>
 <tr>
@@ -137,16 +89,78 @@ CV
 5
 </td>
 <td style="text-align:right;">
-10
+60
+</td>
+</tr>
+</tbody>
+</table>
+
+-   ¿Cuáles es el producto marginal del tercer trabajador?
+-   ¿Cuál es el costo fijo medio si produce 48 camisetas?
+-   ¿Cuál es el costo variable medio si produce 56 camisetas?
+-   ¿Cuál es el costo marginal del la camiseta 52?
+-   ¿Cuál es el costo medio si produce 48 camisetas?
+
+# Ejercicio 2
+
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Trabajadores
+</th>
+<th style="text-align:right;">
+Producción
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+0
 </td>
 <td style="text-align:right;">
-31
+0
 </td>
-<td style="text-align:left;">
+</tr>
+<tr>
+<td style="text-align:right;">
+1
 </td>
-<td style="text-align:left;">
+<td style="text-align:right;">
+5
 </td>
-<td style="text-align:left;">
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+15
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+35
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+50
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+60
 </td>
 </tr>
 <tr>
@@ -154,25 +168,106 @@ CV
 6
 </td>
 <td style="text-align:right;">
-10
-</td>
-<td style="text-align:right;">
-45
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
-</td>
-<td style="text-align:left;">
+65
 </td>
 </tr>
 </tbody>
 </table>
 
--   ¿Cuáles son los factores variables y fijos?
--   Calcular el Costo Total, Costo Fijo y el Costo Variable para cada nivel de producción.
+Considerando que el costo del capital es \$100 y el salario por trabajador \$25, completar la tabla con las columnas Costo Fijo Total, Costo Variable Total, Costo Total, Costo Fijo Medio, Costo Variable Medio, Costo Total Medio y Costo Marginal.
 
-# Ejercicio 2
+## Ejercicio 3
+
+Los siguientes datos muestra la producción de una fábrica de galletitas.
+
+<table class="table table-striped table-hover" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Trabajadores
+</th>
+<th style="text-align:right;">
+Producción
+</th>
+<th style="text-align:right;">
+Costos
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+1000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+240
+</td>
+<td style="text-align:right;">
+2000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:right;">
+4000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+1000
+</td>
+<td style="text-align:right;">
+8000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+1800
+</td>
+<td style="text-align:right;">
+16000
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+2500
+</td>
+<td style="text-align:right;">
+32000
+</td>
+</tr>
+</tbody>
+</table>
+
+-   Calcular el costo medio para las cantidades de la tabla.
+-   ¿Para qué niveles de producción la fábrica tiene economías de escala y deseconomías de escala?
+
+## Ejercicio 4
 
 En [esta planilla](https://docs.google.com/spreadsheets/d/1haqSHV89zGkzHPeDg2iDPXjnahR2-ULGC9rlpaHyWfk/edit?usp=sharing) se encuentra información económica de una empresa que productora de arroz.
 
