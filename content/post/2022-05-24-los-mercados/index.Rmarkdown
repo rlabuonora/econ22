@@ -1,5 +1,5 @@
 ---
-title: Los mercados
+title: "Los mercados I: Competencia Perfecta"
 author: ''
 date: '2022-04-03'
 slug: los-mercados
@@ -11,7 +11,7 @@ tags: []
 ```{r setup, include = FALSE, warning = FALSE}
 knitr::opts_chunk$set(
   echo = FALSE, 
-  fig.height=4, 
+  #fig.height=8, 
   fig.width=6, 
   warning=FALSE, 
   message = FALSE,
@@ -23,15 +23,27 @@ library(kableExtra)
 
 options(kableExtra.html.bsTable = TRUE)
 
-theme_set(theme_minimal() + 
-            theme(plot.title = element_text(hjust = 0.5)))
+library(tidyverse)
+
+theme_set(
+    theme_minimal(base_size=14) +
+    theme(
+      panel.grid.major = element_line(colour = "gray80"),
+      plot.margin = margin(t = 10, r = 5, b = 1, l = 5, unit = "mm"),
+      axis.line = element_line(color="gray30",
+                               arrow = arrow(length = unit(2, "mm"))),
+      axis.ticks.length = unit(-1, "mm"),
+      axis.ticks = element_line(size = .3, colour = "gray30")
+      #plot.background = element_rect(color="gray30")
+    )
+)
 
 celeste <- "#5e81ac"
 
 ```
 
 
-
+En este unidad analizamos las empresas que operan en mercados competitivos. En estos mercados, todos los agentes están bien informados, no hay diferenciación en los productos, y no hay barreras a la entrada y salida de empresas.
 
 
 
@@ -42,60 +54,135 @@ xaringanExtra::embed_xaringan(
 )
 ```
 
-
 # Ejercicio 1
 
-Considere un mercado que funciona en competencia perfecta. Analice dos situaciones mostradas en los siguientes gráficos, explicando los resultados de las empresas y la situación de entrada y salida de empresas al mercado.
-
-```{r}
-
-library(tidyverse)
-library(tidyr)
-
-datos <- tibble( 
- q = c(0, 1000, 2000, 3000, 3999, 4000, 4001, 5000), 
- CT = c(55000, 85000, 110000, 130000, 159960.01, 160000, 160040.01, 210000), 
- CMg = c(NA, 27, 22, 21, 38.98, 40, 40.02, 60), 
- Precio=40) %>% 
-  mutate(Cme=CT/q) %>% 
-  select(-CT) %>% 
-  pivot_longer(cols=-q)
-```
-
+El siguiente gráfico muestra las curvas de ingresos y costos de un productor de trigo.
 
 
 ```{r}
-library(patchwork)
 
-a <- datos %>%
-  filter(name!="Precio") %>% 
-  ggplot(aes(q, value, color=name)) +
-  geom_hline(yintercept = 50, linetype="dashed") +
-  geom_line() + 
-  scale_color_discrete("") +
-  scale_x_continuous(limits = c(1e3, 5e3)) +
-  scale_y_continuous(breaks=c(20, 40, 50, 60, 80),
-                     labels=c("20", "40", "P=50", "60", "80")) +
-  theme_minimal() +
-  labs(x="Q", y="CMe, CMg, P", title="A")
+# MC curve
+df_mc <- data.frame(p=c(2, 10, 25, 30, 34), 
+                 mc=c(1.5, .4, 2, 3, 5))
 
-b <- datos %>%
-  filter(name!="Precio") %>% 
-  ggplot(aes(q, value, color=name)) +
-  geom_hline(yintercept = 30, linetype="dashed") +
-  geom_line() + 
-  scale_color_discrete("") +
-  scale_x_continuous(limits = c(1e3, 5e3)) +
-  scale_y_continuous(breaks=c(20, 30, 40, 60, 80),
-                     labels=c("20", "P=30", "40", "60", "80")) +
-  theme_minimal() +
-  labs(x="Q", y="CMe, CMg, P", title="B")
+# AC curve
+df_ac <- data.frame(ac=c(5, 2, 5),
+                    p=c(10, 25, 40))
 
-a +  b
-
+ggplot(df_mc, aes(p, mc)) + 
+  geom_line(aes(x, y),
+            data=as.data.frame(spline(df_ac$p, df_ac$ac, n=50))) +
+  geom_line(aes(x, y), 
+            data=as.data.frame(spline(df_mc$p, df_mc$mc, n=50))) +
+  geom_hline(yintercept = 3) + 
+  annotate("text", x=33, y=5.2, label="CMg")+
+  annotate("text", x=40, y=5.2, label="CMed")+
+  annotate("text", y=3.3, x=50, label="P=IMg")+
+  scale_x_continuous(limits = c(0, 50),
+                     expand = expansion(0, c(0, 6))) + 
+  scale_y_continuous(limits = c(0, 6),
+                     breaks=1:5,
+                     expand=expansion(0, c(0))) +
+  labs(x="Q", y="") +
+  coord_fixed(10)
 ```
 
-Ahora suponga que la entrada de empresas al sector aumenta la oferta y reduce los precios como se muestra en el siguiente gráfico. Explique la situación, y cuál es el resultado final esperado.
+- ¿Cuánto es la cantidad producida si el productor maximiza beneficios?
+- ¿Qúe pasa si el productor decide vender su producción a \$2?¿Y a \$4?
+- ¿Cómo son los resultados económicos de este productor?¿Es factible que estos resultados se sostengan en el tiempo?
+
+## Ejercicio 2
+
+El siguiente gráfico muestra las curvas de costos de un productor de soja. 
+
+```{r}
+
+# MC curve
+df_mc <- data.frame(p=c(2,   10,  20, 25, 30, 35), 
+                    mc=c(1.5, .4, 1,  2, 3, 5))
+
+# AC curve
+df_atc <- data.frame(p=c(10, 25, 40),
+                    atc=c(5, 2, 5))
+
+df_avc <- data.frame(p=c(2.5,   20, 30, 40, 42),
+                    avc=c(4.2, 1, 1.4, 3.2, 4.2))
+
+ggplot(df_mc, aes(p, mc)) + 
+  geom_line(aes(x, y),
+            data=as.data.frame(spline(df_avc$p, df_avc$avc, n=50))) +
+  geom_line(aes(x, y),
+            data=as.data.frame(spline(df_atc$p, df_atc$atc, n=50))) +
+  geom_line(aes(x, y), 
+            data=as.data.frame(spline(df_mc$p, df_mc$mc, n=50))) +
+  annotate("text", x=33, y=5.2, label="CMg")+
+  annotate("text", x=42, y=5.2, label="CTMed")+
+  annotate("text", y=4, x=47, label="CVMed")+
+  scale_x_continuous(limits = c(0, 50),
+                     expand = expansion(0, c(0, 6))) + 
+  scale_y_continuous(limits = c(0, 6),
+                     breaks=1:5,
+                     expand=expansion(0, c(0))) +
+  labs(x="Q", y="") +
+  coord_fixed(10)
+```
+
+- Hacer una tabla con la cantidad producida si el precio es \$1, \$2 y \$3. ¿Cómo se llama esta curva?
+- Explicar si la empresa tiene resultados económicos positivos o negativos en cada caso.
+
+<!-- # Ejercicio 1 -->
+
+<!-- Considere un mercado que funciona en competencia perfecta. Analice dos situaciones mostradas en los siguientes gráficos, explicando los resultados de las empresas y la situación de entrada y salida de empresas al mercado. -->
+
+<!-- ```{r} -->
+
+<!-- library(tidyverse) -->
+<!-- library(tidyr) -->
+
+<!-- datos <- tibble(  -->
+<!--  q = c(0, 1000, 2000, 3000, 3999, 4000, 4001, 5000),  -->
+<!--  CT = c(55000, 85000, 110000, 130000, 159960.01, 160000, 160040.01, 210000),  -->
+<!--  CMg = c(NA, 27, 22, 21, 38.98, 40, 40.02, 60),  -->
+<!--  Precio=40) %>%  -->
+<!--   mutate(Cme=CT/q) %>%  -->
+<!--   select(-CT) %>%  -->
+<!--   pivot_longer(cols=-q) -->
+<!-- ``` -->
+
+
+
+<!-- ```{r} -->
+<!-- library(patchwork) -->
+
+<!-- a <- datos %>% -->
+<!--   filter(name!="Precio") %>%  -->
+<!--   ggplot(aes(q, value, color=name)) + -->
+<!--   geom_hline(yintercept = 50, linetype="dashed") + -->
+<!--   geom_line() +  -->
+<!--   scale_color_discrete("") + -->
+<!--   scale_x_continuous(limits = c(1e3, 5e3)) + -->
+<!--   scale_y_continuous(breaks=c(20, 40, 50, 60, 80), -->
+<!--                      labels=c("20", "40", "P=50", "60", "80")) + -->
+<!--   theme_minimal() + -->
+<!--   labs(x="Q", y="CMe, CMg, P", title="A") -->
+
+<!-- b <- datos %>% -->
+<!--   filter(name!="Precio") %>%  -->
+<!--   ggplot(aes(q, value, color=name)) + -->
+<!--   geom_hline(yintercept = 30, linetype="dashed") + -->
+<!--   geom_line() +  -->
+<!--   scale_color_discrete("") + -->
+<!--   scale_x_continuous(limits = c(1e3, 5e3)) + -->
+<!--   scale_y_continuous(breaks=c(20, 30, 40, 60, 80), -->
+<!--                      labels=c("20", "P=30", "40", "60", "80")) + -->
+<!--   theme_minimal() + -->
+<!--   labs(x="Q", y="CMe, CMg, P", title="B") -->
+
+<!-- a +  b -->
+
+<!-- ``` -->
+
+<!-- Ahora suponga que la entrada de empresas al sector aumenta la oferta y reduce los precios como se muestra en el siguiente gráfico. Explique la situación, y cuál es el resultado final esperado. -->
 
 ## Bibliografía
 
