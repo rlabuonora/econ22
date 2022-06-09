@@ -9,17 +9,12 @@ tags: []
 
 <script src="{{< blogdown/postref >}}index_files/fitvids/fitvids.min.js"></script>
 <script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
-<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
 <link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.js"></script>
 <script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
-<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
 <link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.js"></script>
 <script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
-<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+
 <link href="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.min.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/bsTable/bootstrapTable.js"></script>
 
 En esta sección analizamos a los agentes que se encargan de la oferta de los bienes y servicios de la economía. Para entender cómo toman decisiones las empresas, es necesario entender las principales variables que toman en cuenta: los ingresos, los costos y los beneficios.
 
