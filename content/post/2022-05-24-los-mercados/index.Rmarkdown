@@ -62,8 +62,8 @@ El siguiente gráfico muestra las curvas de ingresos y costos de un productor de
 ```{r}
 
 # MC curve
-df_mc <- data.frame(p=c(2, 10, 25, 30, 34), 
-                 mc=c(1.5, .4, 2, 3, 5))
+df_mc <- data.frame(p=c(4, 10, 25, 30, 34), 
+                 mc=c(.8, .4, 2, 3, 5))
 
 # AC curve
 df_ac <- data.frame(ac=c(5, 2, 5),
