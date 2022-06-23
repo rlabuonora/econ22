@@ -1,5 +1,5 @@
 ---
-title: Monopolio
+title: "Los Mercados II: Monopolio"
 author: ''
 date: '2022-04-04'
 slug: monopolio
