@@ -15,6 +15,7 @@ knitr::opts_chunk$set(
   fig.width=6, 
   warning=FALSE, 
   message = FALSE,
+  out.width="90%",
   dev = "png", 
   dev.args = list(type = "cairo-png"))
 
@@ -43,6 +44,19 @@ celeste <- "#5e81ac"
 ```
 
 
+```{css}
+
+.twitter-tweet {
+  margin: 0 auto;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+```
+
 En este unidad analizamos las empresas que operan en mercados competitivos. En estos mercados, todos los agentes están bien informados, no hay diferenciación en los productos, y no hay barreras a la entrada y salida de empresas.
 
 
@@ -58,7 +72,7 @@ xaringanExtra::embed_xaringan(
 
 El siguiente gráfico muestra las curvas de ingresos y costos de un productor de trigo.
 
-
+<div class="img-wrap">
 ```{r}
 
 # MC curve
@@ -87,6 +101,9 @@ ggplot(df_mc, aes(p, mc)) +
   coord_fixed(10)
 ```
 
+
+</div>
+
 - ¿Cuánto es la cantidad producida si el productor maximiza beneficios?
 - ¿Qúe pasa si el productor decide vender su producción a \$2?¿Y a \$4?
 - ¿Cómo son los resultados económicos de este productor?¿Es factible que estos resultados se sostengan en el tiempo?
@@ -94,6 +111,8 @@ ggplot(df_mc, aes(p, mc)) +
 ## Ejercicio 2
 
 El siguiente gráfico muestra las curvas de costos de un productor de soja. 
+
+<div class="img-wrap>
 
 ```{r}
 
@@ -127,6 +146,7 @@ ggplot(df_mc, aes(p, mc)) +
   coord_fixed(10)
 ```
 
+</div>
 - Hacer una tabla con la cantidad producida si el precio es \$1, \$2 y \$3. ¿Cómo se llama esta curva?
 - Explicar si la empresa tiene resultados económicos positivos o negativos en cada caso.
 

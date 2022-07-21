@@ -23,7 +23,13 @@ blockquote p::before {
 
 blockquote p::after {
     content: '”';
-  }
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 </style>
 <div class="shareagain" style="min-width:300px;margin:1em auto;">
 <iframe src="https://slides-bienes-publicos.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
@@ -133,7 +139,12 @@ BMg Social
 # Ejercicio 2
 
 Considere la siguiente información para el mercado de estudiantes de virología.
+
+<div class="img-wrap">
+
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-6-1.png" width="576" />
+
+</div>
 
 -   ¿Cuál es el beneficio marginal social del el estudiante número 40? ¿Y del 60?
 -   ¿Cuál es el beneficio marginal privado del estudiante número 40?
@@ -145,7 +156,12 @@ Considere la siguiente información para el mercado de estudiantes de virología
 # Ejercicio 3
 
 Considere un mercado con la siguiente esctructura de costos:
+
+<div class="img-wrap">
+
 <img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-7-1.png" width="576" />
+
+</div>
 
 -   ¿Cuál es el equilibrio de mercado sin intervención pública?
 

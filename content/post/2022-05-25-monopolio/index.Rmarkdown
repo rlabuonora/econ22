@@ -13,6 +13,7 @@ knitr::opts_chunk$set(
   fig.width=6, 
   warning=FALSE, 
   message = FALSE,
+  out.width = "70%",
   dev = "png", 
   dev.args = list(type = "cairo-png"))
 
@@ -21,8 +22,7 @@ library(kableExtra)
 
 options(kableExtra.html.bsTable = TRUE)
 
-theme_set(theme_minimal() + 
-            theme(plot.title = element_text(hjust = 0.5)))
+
 
 celeste <- "#5e81ac"
 
@@ -32,6 +32,11 @@ celeste <- "#5e81ac"
 
 .twitter-tweet {
   margin: 0 auto;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
 }
 
 ```
@@ -72,7 +77,8 @@ Un mercado opera como un monopolio con la siguiente estructura de demanda y cost
 library(tidyverse)
 library(extrafont)
 loadfonts()
-theme_set(theme_minimal(base_family = 'Montserrat'))
+theme_set(theme_minimal(base_family = 'Montserrat') +
+            theme(panel.grid = element_line(color="gray80")))
 knitr::opts_chunk$set(
   message=FALSE, 
   echo=FALSE,
@@ -82,6 +88,9 @@ knitr::opts_chunk$set(
 
 
 ```
+
+
+<div class="img-wrap">
 
 ```{r warning=FALSE, echo=FALSE}
 
@@ -118,7 +127,7 @@ ggplot(data.frame(x=0, y=0)) +
   labs(x="Q", y="Precio y Costos")
 ```
 
-
+</div>
 - Calcular la cantidad producida y el nivel de precios.
 - Calcular el ingreso total de la empresa.
 - Calcular el costo total de la empresa.
@@ -128,10 +137,11 @@ ggplot(data.frame(x=0, y=0)) +
 
 Considere un mercado con esta estructura de costos y demanda:
 
+<div class="img-wrap>
+
 ```{r}
 
 
-theme_set(theme_minimal(base_family = 'Montserrat'))
 
 # Figure 13.3
 cme_df <- tibble(x=c(5,   18, 30,  35, 40, 42), 
@@ -173,6 +183,9 @@ ggplot(data.frame(x=0, y=0)) +
   labs(title="", x="Q", y="Precio y Costos")
 
 ```
+
+
+</div>
 
 - ¿Cuál es la cantidad y el precio si el mercado funciona como un monopolio sin regulación?
 - ¿Cuáles son el precio y la cantidad de equilibrio si un regulador aplica la regla del costo marginal?

@@ -14,6 +14,11 @@ tags: []
   margin: 0 auto;
 }
 
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 </style>
 
 En la clases anteriores analizamos cómo los mercados resuelven los problemas económicos mediante la interacción de la oferta con la demanda. En esta unidad analizamos las distintas formas en qué se puede dar esta interacción según el **poder de mercado** que tienen consumidores y productores.
@@ -40,7 +45,11 @@ Calcule el Costo Marginal, el Ingreso Marginal, el precio y la cantidad de equil
 
 Un mercado opera como un monopolio con la siguiente estructura de demanda y costos:
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="432" />
+<div class="img-wrap">
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="70%" />
+
+</div>
 
 -   Calcular la cantidad producida y el nivel de precios.
 -   Calcular el ingreso total de la empresa.
@@ -51,7 +60,11 @@ Un mercado opera como un monopolio con la siguiente estructura de demanda y cost
 
 Considere un mercado con esta estructura de costos y demanda:
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="432" />
+<div class="img-wrap>
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-5-1.png" width="70%" />
+
+</div>
 
 -   ¿Cuál es la cantidad y el precio si el mercado funciona como un monopolio sin regulación?
 -   ¿Cuáles son el precio y la cantidad de equilibrio si un regulador aplica la regla del costo marginal?

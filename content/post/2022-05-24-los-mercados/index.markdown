@@ -8,6 +8,18 @@ tags: []
 ---
 
 <script src="{{< blogdown/postref >}}index_files/fitvids/fitvids.min.js"></script>
+<style type="text/css">
+
+.twitter-tweet {
+  margin: 0 auto;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+</style>
 
 En este unidad analizamos las empresas que operan en mercados competitivos. En estos mercados, todos los agentes están bien informados, no hay diferenciación en los productos, y no hay barreras a la entrada y salida de empresas.
 
@@ -20,7 +32,11 @@ En este unidad analizamos las empresas que operan en mercados competitivos. En e
 
 El siguiente gráfico muestra las curvas de ingresos y costos de un productor de trigo.
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-2-1.png" width="576" />
+<div class="img-wrap">
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="90%" />
+
+</div>
 
 -   ¿Cuánto es la cantidad producida si el productor maximiza beneficios?
 -   ¿Qúe pasa si el productor decide vender su producción a \$2?¿Y a \$4?
@@ -30,7 +46,11 @@ El siguiente gráfico muestra las curvas de ingresos y costos de un productor de
 
 El siguiente gráfico muestra las curvas de costos de un productor de soja.
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-3-1.png" width="576" />
+<div class="img-wrap>
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="90%" />
+
+</div>
 
 -   Hacer una tabla con la cantidad producida si el precio es \$1, \$2 y \$3. ¿Cómo se llama esta curva?
 -   Explicar si la empresa tiene resultados económicos positivos o negativos en cada caso.

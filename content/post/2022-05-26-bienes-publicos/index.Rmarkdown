@@ -24,7 +24,9 @@ library(kableExtra)
 options(kableExtra.html.bsTable = TRUE)
 
 theme_set(theme_minimal() + 
-            theme(plot.title = element_text(hjust = 0.5)))
+            theme(
+              panel.grid = element_line(color="gray70"),
+              plot.title = element_text(hjust = 0.5)))
 
 celeste <- "#5e81ac"
 
@@ -45,8 +47,15 @@ blockquote p::before {
 
 blockquote p::after {
     content: '”';
-  }
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 ```
+
 
 
 ```{r}
@@ -66,7 +75,7 @@ library(tidyverse)
 
 theme_set(
   theme_minimal(base_family = 'Montserrat',
-                base_size=16) + 
+                base_size=12) + 
     theme(plot.title=element_text(hjust=.5)))
 
 
@@ -152,10 +161,7 @@ p2 <- p  +
               aes(x=x, ymin=Demanda, ymax=MSC), 
               inherit.aes = FALSE)
 
-agg_png(here::here("static", "imgs", "plots", "externalidades.png"),
-        width=20, height=12, units="cm", res=300)
-p2
-dev.off()
+
 ```
 
 # Ejercicio 1
@@ -184,6 +190,8 @@ tibble(
 # Ejercicio 2
 
 Considere la siguiente información para el mercado de estudiantes de virología.
+
+<div class="img-wrap">
 ```{r}
 mpb_df <- tibble(x=c(40,  60), 
                  y=c(60, 40))
@@ -203,11 +211,11 @@ msc_fun <- splinefun(msc_df$x, msc_df$y)
 
 ggplot(data.frame(x=0, y=0)) + 
   geom_function(fun=mpb_fun, xlim=c(20, 80)) +
-  annotate("text", y=26, x=90, size=7, label="BMP") +
+  annotate("text", y=26, x=90, size=4, label="BMP") +
   geom_function(fun=msb_fun, xlim=c(40, 80)) +
-  annotate("text", y=70, x=90, size=7, label="BMS") +
+  annotate("text", y=70, x=90, size=4, label="BMS") +
   geom_function(fun=msc_fun, xlim=c(0, 75)) +
-  annotate("text", y=100, x=80, size=7, label="CMS") +
+  annotate("text", y=100, x=80, size=4, label="CMS") +
   geom_vline(xintercept = 0) +
   geom_hline(yintercept = 0) +
   marcar_punto(40, 60) +
@@ -220,6 +228,7 @@ ggplot(data.frame(x=0, y=0)) +
        title="")
 
 ```
+</div>
 
 - ¿Cuál es el beneficio marginal social del el estudiante número 40? ¿Y del 60?
 - ¿Cuál es el beneficio marginal privado del estudiante número 40?
@@ -231,6 +240,8 @@ ggplot(data.frame(x=0, y=0)) +
 # Ejercicio 3
 
 Considere un mercado con la siguiente esctructura de costos:
+
+<div class="img-wrap">
 ```{r}
 curvas <- list(
   cmg_soc=tribble(
@@ -251,14 +262,14 @@ curvas <- list(
 p1 <- data.frame(x=0, y=0) %>% 
   ggplot(aes(x, y)) + 
   geom_function(fun=curvas$cmg_soc, xlim=c(0, 6)) +
-  annotate("text", y=300, x=7.5, size=6, label="CMG Social") +
+  annotate("text", y=300, x=7.5, size=4, label="CMG Social") +
   geom_function(fun=curvas$cmg_priv, xlim=c(0, 6)) +
-  annotate("text", y=115, x=7.5, size=6, label="CMG Privado") +
+  annotate("text", y=115, x=7.5, size=4, label="CMG Privado") +
   geom_function(fun=curvas$demanda, xlim=c(0, 6)) +
-  annotate("text", y=55, x=7, size=6, label="Demanda") + 
+  annotate("text", y=55, x=7, size=4, label="Demanda") + 
   scale_x_continuous(breaks=c(0, 2, 4, 6),
                      limits=c(0, 10)) +
-  scale_y_continuous(breaks=c(0, 75, 87.5, 100, 150, 225, 300),
+  scale_y_continuous(breaks=c(100, 150, 225, 300),
                      limits=c(0, 300)) +
   labs(x="Cantidad", y="Precio y Costos") + 
   geom_vline(xintercept = 0) +
@@ -266,7 +277,7 @@ p1 <- data.frame(x=0, y=0) %>%
 
 p1
 ```
-
+</div>
 - ¿Cuál es el equilibrio de mercado sin intervención pública?
 
 - ¿Es eficiente ese equilibrio?¿Cuál sería el equilibrio eficiente?
