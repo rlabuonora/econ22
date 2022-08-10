@@ -23,7 +23,7 @@ library(knitr)
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://macroeconomia--diapos-econ.netlify.app/"
+  url = "https://slides-macroeconomia.netlify.app/"
   
   #,
   #ratio = "16:9"
