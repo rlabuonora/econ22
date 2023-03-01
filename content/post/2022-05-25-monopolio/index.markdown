@@ -1,7 +1,7 @@
 ---
 title: "Los Mercados II: Monopolio"
 author: ''
-date: '2023-04-04'
+date: '2022-04-04'
 slug: monopolio
 categories: []
 tags: []

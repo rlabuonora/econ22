@@ -1,7 +1,7 @@
 ---
 title: Oferta y Demanda
 author: ''
-date: '2023-03-10'
+date: '2022-03-10'
 slug: oferta-y-demanda
 categories: []
 tags: []
