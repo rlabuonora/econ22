@@ -1,7 +1,7 @@
 ---
 title: Los consumidores
 author: ''
-date: '2022-04-01'
+date: '2023-04-01'
 slug: los-consumidores
 categories: []
 tags: []

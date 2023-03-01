@@ -1,7 +1,7 @@
 ---
 title: Tipo de Cambio y Sector Externo
 author: ''
-date: '2022-06-06'
+date: '2023-06-06'
 slug: tipo-de-cambio
 categories: []
 tags: []
