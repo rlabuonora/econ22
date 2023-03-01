@@ -1,11 +1,12 @@
 ---
-title: "Los Mercados II: Monopolio"
+title: 'Los Mercados II: Monopolio'
 author: ''
-date: '2022-04-04'
-slug: los-mercados-i-competencia-perfecta
+date: '2023-05-25'
+slug: los-mercados-ii-monopolio
 categories: []
 tags: []
 ---
+
 
 ```{r setup, include = FALSE, warning = FALSE}
 knitr::opts_chunk$set(

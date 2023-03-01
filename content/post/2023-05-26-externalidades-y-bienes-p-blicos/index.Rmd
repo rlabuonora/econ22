@@ -1,0 +1,318 @@
+---
+title: Externalidades y Bienes Públicos
+author: ''
+date: '2023-05-26'
+slug: externalidades-y-bienes-p-blicos
+categories: []
+tags: []
+---
+
+
+```{r setup, include = FALSE, warning = FALSE}
+  knitr::opts_chunk$set(
+    echo = FALSE, 
+    fig.height=4, 
+    fig.width=6, 
+    warning=FALSE, 
+    message = FALSE,
+    dev = "png", 
+    dev.args = list(type = "cairo-png"))
+
+library(tidyverse)
+library(kableExtra)
+
+options(kableExtra.html.bsTable = TRUE)
+
+theme_set(theme_minimal() + 
+            theme(
+              panel.grid = element_line(color="gray70"),
+              plot.title = element_text(hjust = 0.5)))
+
+celeste <- "#5e81ac"
+
+```
+
+```{css}
+blockquote {
+  margin-top: 3em;
+  background: hsl(0deg 0% 90%);
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+blockquote p::before {
+    content: '“';
+  }
+
+blockquote p::after {
+    content: '”';
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+```
+
+
+
+```{r}
+xaringanExtra::embed_xaringan(
+  url = "https://slides-bienes-publicos.netlify.app/",
+  ratio = "16:9"
+)
+```
+
+
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning = FALSE,
+                       message=FALSE)
+
+library(tidyverse)
+
+theme_set(
+  theme_minimal(base_family = 'Montserrat',
+                base_size=12) + 
+    theme(plot.title=element_text(hjust=.5)))
+
+
+
+marcar_punto <- function(x, y, linetype="dashed") {
+  list(
+    geom_segment(x=x, y=0, xend=x, yend=y, color="gray50",
+                 linetype="dotted", inherit.aes = FALSE),
+    geom_segment(x=0, y=y, xend=x, yend=y,  color="gray50",
+                 linetype="dotted", inherit.aes = FALSE),
+    geom_point(x=x, y=y, inherit.aes = FALSE)
+  )
+}
+
+
+```
+
+
+```{r include=FALSE, eval=FALSE}
+
+# Codigo para generar los plots
+library(ragg)
+
+
+df_1 <- tribble(
+  ~x,   ~y,   ~curva,
+  0,        75,     "MPC",
+  4,        100,    "MPC",
+  0,        75,     "MSC",
+  4,        225,    "MSC",
+  2,       150,    "Demanda",
+  4,       100,    "Demanda"
+) 
+
+df_2 <- tribble(
+  ~x,      ~y,     ~curva,
+  4L,       50L,     "MPC",
+  8L,       150L,    "MPC",
+  4L,       150L,    "MSC",
+  8L,       250L,    "MSC",
+  2L,       300L,    "Demanda",
+  8L,       150L,    "Demanda"
+) %>% 
+  nest(data=c(x, y)) %>% 
+  # Agregar la x
+  mutate(x=map(data, ~ 2:12)) %>% 
+  # Estimar modelo
+  mutate(mod=map(data, ~coefficients(lm(y~x, data=.x)))) %>% 
+  mutate(y=map2(mod, x, 
+                ~.x[[1]] + .x[[2]] * .y
+  )) %>% 
+  unnest(c(x, y)) %>% 
+  select(x, y, curva)
+
+p <- df_2 %>% 
+  ggplot(aes(x, y, color=curva)) +
+  geom_line(size=1.1) +
+  scale_x_continuous(breaks=seq(from=2, to=12, by=2)) +
+  geom_vline(xintercept = 0) + 
+  geom_hline(yintercept=0)
+
+
+
+df_wide <- df_2 %>% 
+  pivot_wider(id_cols=x, names_from=curva, values_from=y) %>% 
+  filter(x>=6, x<=8)
+
+p2 <- p  +
+  annotate(
+    geom = "curve", x = 5, y = 280, xend = 6, yend = 210, 
+    curvature = -.1, arrow = arrow(length = unit(2, "mm"))
+  ) +
+  annotate(geom="text", x=4, y=330, label="Equilibrio\nEficiente" ) +
+  annotate(
+    geom = "curve", x = 7, y = 80, xend = 8, yend = 130, 
+    curvature = .1, arrow = arrow(length = unit(2, "mm"))
+  ) +
+  annotate(geom = "text", x = 5, y = 35, 
+           label = "Equilibrio\nIneficiente", 
+           hjust = "left") +
+  geom_ribbon(data=df_wide, 
+              alpha=.3,
+              aes(x=x, ymin=Demanda, ymax=MSC), 
+              inherit.aes = FALSE)
+
+
+```
+
+# Ejercicio 1
+
+La investigación científica tiene externalidades para toda la sociedad. Contamos con la siguiente información sobre la cantidad de investigadores en un país:
+
+```{r}
+tibble(
+  cmg=seq(100, 20, by=-20),
+  inv=seq(4500, 2500, by=-500),
+  ben_priv=seq(20, 100, by=20),
+  ben_soc=seq(60, 140, by=20)
+) %>% 
+  knitr::kable(col.names = c("CMg",
+                             "Investigadores",
+                             "BMg Privado", 
+                             "BMg Social"))
+```
+
+
+- ¿Cuál es el beneficio externo cuando hay 4500 investigadores por año?
+- Si el gobierno no interviene en el mercado, ¿cuántos investigadores habrá?
+- ¿Cuál es la cantidad socialmente óptima de investigadores?
+- ¿Cuál es el precio que hace que el mercado provea la cantidad eficiente de investigadores?
+
+# Ejercicio 2
+
+Considere la siguiente información para el mercado de estudiantes de virología.
+
+<div class="img-wrap">
+```{r}
+mpb_df <- tibble(x=c(40,  60), 
+                 y=c(60, 40))
+
+msb_df <- tibble(x=c(40,  60),
+                 y=c(100, 80))
+
+
+mpb_fun <- splinefun(mpb_df$x, mpb_df$y)
+msb_fun <- splinefun(msb_df$x, msb_df$y)
+
+msc_df <- tibble(x=c(40, 60),
+                 y=c(60, 80))
+
+
+msc_fun <- splinefun(msc_df$x, msc_df$y)
+
+ggplot(data.frame(x=0, y=0)) + 
+  geom_function(fun=mpb_fun, xlim=c(20, 80)) +
+  annotate("text", y=26, x=90, size=4, label="BMP") +
+  geom_function(fun=msb_fun, xlim=c(40, 80)) +
+  annotate("text", y=70, x=90, size=4, label="BMS") +
+  geom_function(fun=msc_fun, xlim=c(0, 75)) +
+  annotate("text", y=100, x=80, size=4, label="CMS") +
+  geom_vline(xintercept = 0) +
+  geom_hline(yintercept = 0) +
+  marcar_punto(40, 60) +
+  marcar_punto(60, 80) +
+  scale_x_continuous(limits = c(0, 100),
+                     breaks=c(0, 20, 40, 60, 80, 100)) + 
+  scale_y_continuous(limits = c(0, 100),
+                     breaks=c(0, 20, 40, 60, 80, 100)) + 
+  labs(x="Cantidad", y="Precio y Costo Social", 
+       title="")
+
+```
+</div>
+
+- ¿Cuál es el beneficio marginal social del el estudiante número 40? ¿Y del 60?
+- ¿Cuál es el beneficio marginal privado del estudiante número 40?
+- ¿Cuál es el beneficio externo del estudiante número 40?
+- ¿Cuál es el equilibrio del mercado si no hay intervención?
+- ¿Cuál es la cantidad eficiente?
+- ¿A cuánto asciende la pérdida de eficiencia si el mercado no se regula?
+
+# Ejercicio 3
+
+Considere un mercado con la siguiente esctructura de costos:
+
+<div class="img-wrap">
+```{r}
+curvas <- list(
+  cmg_soc=tribble(
+    ~x, ~y, 
+    0,   75,
+    4,   225),
+  cmg_priv=tribble(
+    ~x, ~y,
+    0,   75, 
+    4,   100),
+  demanda=tribble(
+    ~x, ~y,
+    2,   150,
+    4,   100)) %>% 
+  map(~splinefun(.x$x,.x$y))
+  
+
+p1 <- data.frame(x=0, y=0) %>% 
+  ggplot(aes(x, y)) + 
+  geom_function(fun=curvas$cmg_soc, xlim=c(0, 6)) +
+  annotate("text", y=300, x=7.5, size=4, label="CMG Social") +
+  geom_function(fun=curvas$cmg_priv, xlim=c(0, 6)) +
+  annotate("text", y=115, x=7.5, size=4, label="CMG Privado") +
+  geom_function(fun=curvas$demanda, xlim=c(0, 6)) +
+  annotate("text", y=55, x=7, size=4, label="Demanda") + 
+  scale_x_continuous(breaks=c(0, 2, 4, 6),
+                     limits=c(0, 10)) +
+  scale_y_continuous(breaks=c(100, 150, 225, 300),
+                     limits=c(0, 300)) +
+  labs(x="Cantidad", y="Precio y Costos") + 
+  geom_vline(xintercept = 0) +
+  geom_hline(yintercept = 0) 
+
+p1
+```
+</div>
+- ¿Cuál es el equilibrio de mercado sin intervención pública?
+
+- ¿Es eficiente ese equilibrio?¿Cuál sería el equilibrio eficiente?
+
+- ¿Cuánto debería ser el impuesto que lleve al mercado a producir la cantidad eficiente?¿Cuál sería el precio que pagan los consumidores y la recaudación resultante?
+
+4. Escuchar [esta entrevista](https://delsol.uy/notoquennada/sebastianfleitas/vacunas-contra-el-covid-oferta-limitada-y-demanda-desesperada) sobre el mercado de vacunas contra el Covid-19.
+
+  - ¿Quiénes los oferentes? ¿Cómo es la estructura de costos de las empresas que fabrican las vacunas? ¿Qué barreras hay a la libre competencia en el lado de la oferta en este mercado?
+  
+  - ¿Quiénes son los demandantes de vacunas? ¿Cómo es la elasticidad de esta demanda? 
+  
+  - ¿Qué resultados se pueden esperar en este mercado?¿Quiénes tendrán mayor acceso a las vacunas en este contexto?¿Por qué este resultado no es eficiente desde el punto de vista global?
+  
+  - Explique los dos canales por los que los que los países ricos se benefician de que los países pobres accedan a vacunas. 
+  - Comente la siguiente afirmación: 
+  
+> Si bien puede ser moralmente correcto que los países desarrollados compartan las vacunas con los países más pobres, los gobernantes de estos países tienen la obligación de actuar en beneficio de sus ciudadanos.
+  
+# Ejercicio 4
+
+Leer [esta entrevista](entrevista-hoxby.pdf).
+
+- ¿Cuál es la principal diferencia entre la educación y otros bienes que se transan en mercados competitivos?
+
+- ¿Por qué se justifica una intervención pública en este tipo de mercados?
+
+
+  
+# Materiales
+
+
+- Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulos 16 y 17.
+
+
+
+
+

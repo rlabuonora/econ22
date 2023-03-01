@@ -1,0 +1,139 @@
+---
+title: Las empresas
+author: ''
+date: '2023-05-23'
+slug: las-empresas
+categories: []
+tags: []
+---
+
+```{r setup, include = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  fig.height=4, 
+  fig.width=6, 
+  warning=FALSE, 
+  message = FALSE,
+  dev = "png", 
+  dev.args = list(type = "cairo-png"))
+
+library(tidyverse)
+library(kableExtra)
+
+options(kableExtra.html.bsTable = TRUE)
+
+theme_set(theme_minimal() + 
+            theme(plot.title = element_text(hjust = 0.5)))
+
+celeste <- "#5e81ac"
+
+```
+
+
+En esta sección analizamos a los agentes que se encargan de la oferta de los bienes y servicios de la economía. Para entender cómo toman decisiones las empresas, es necesario entender las principales variables que toman en cuenta: los ingresos, los costos y los beneficios.
+
+
+```{r}
+xaringanExtra::embed_xaringan(
+  url = "https://slides-empresas.netlify.com/"
+)
+```
+
+
+
+
+
+# Ejercicio 1 
+
+Juan tiene una fábrica de camisetas. El salario es $50 y el costo fijo \$100. 
+
+```{r echo=FALSE}
+
+options(knitr.kable.NA = '')
+
+
+tibble::tibble(`L`=0:5,
+         `Y` = c(0, 20, 36, 48, 56, 60)) %>% 
+  knitr::kable(col.names = c("Trabajadores", "Producción")) %>% 
+  kable_styling(full_width = FALSE, bootstrap_options = c("striped", "hover"))
+
+```
+
+
+- ¿Cuáles es el producto marginal del tercer trabajador?
+- ¿Cuál es el costo fijo medio si produce 48 camisetas?
+- ¿Cuál es el costo variable medio si produce 56 camisetas?
+- ¿Cuál es el costo marginal del la camiseta 52?
+- ¿Cuál es el costo medio si produce 48 camisetas?
+
+
+
+# Ejercicio 2
+
+
+```{r echo=FALSE}
+
+options(knitr.kable.NA = '')
+
+
+tibble::tibble(`L`=0:6,
+         `Y` = c(0, 5, 15, 35, 50, 60, 65)) %>% 
+  knitr::kable(col.names = c("Trabajadores", "Producción")) %>% 
+  kable_styling(full_width=FALSE, bootstrap_options = c("striped", "hover"))
+
+```
+
+
+Considerando que el costo del capital es $100 y el salario por trabajador \$25, completar la tabla con las columnas Costo Fijo Total, Costo Variable Total, Costo Total, Costo Fijo Medio, Costo Variable Medio, Costo Total Medio y Costo Marginal. 
+
+
+## Ejercicio 3
+
+Los siguientes datos muestra la producción de una fábrica de galletitas.
+
+
+```{r echo=FALSE}
+
+options(knitr.kable.NA = '')
+
+
+tibble::tibble(`t`=1:6,
+         Y = c(100, 240, 500, 1000, 1800, 2500),
+         C=c(1000, 2000, 4000, 8e3, 16e3, 32e3)) %>% 
+  knitr::kable(col.names = c("Trabajadores", "Producción", "Costos")) %>% 
+  kable_styling(full_width=FALSE, bootstrap_options = c("striped", "hover"))
+
+```
+
+
+- Calcular el costo medio para las cantidades de la tabla.
+- ¿Para qué niveles de producción la fábrica tiene economías de escala y deseconomías de escala?
+
+## Ejercicio 4
+
+En [esta planilla](https://docs.google.com/spreadsheets/d/1haqSHV89zGkzHPeDg2iDPXjnahR2-ULGC9rlpaHyWfk/edit?usp=sharing) se encuentra información económica de una empresa que productora de arroz.
+
+a) En la hoja __Función de Producción__, hay datos de cuántas toneladas de arroz se producirían con distintas cantidades de trabajadores contratados. Completar las columnas __Producto Marginal__ y __Producto Medio__, y graficar la producción y el producto marginal en dos gráficos separados.
+
+b) En la hoja __Costos__ hay datos de los costos variables y fijos de la empresa para cada cantidad producida posible. Completar las columnas de Costo Total, Costo Marginal, Costo Fijo Medio, Costo Variable Medio y Costo Total Medio. Graficar los Costos Marginales y Medios para cada nivel de producción en gráficos separados.
+
+c) En la hoja __Beneficios__ hay datos de las ventas, los precios, los salarios y los empleados contratados por la empresa desde 2005. Suponiendo que los salarios son el único costo variable, completar la columna beneficios.
+
+
+
+
+# Ejercicio 3
+
+
+
+Leer [esta nota](https://ladiaria.com.uy/articulo/2010/5/salarios-productividad-y-poder/) y contestar las siguientes preguntas:
+
+1) ¿Qué tan extendido está el uso de pago por productividad en la economía Uruguaya?
+2) ¿Qué ventajas tiene este sistema? ¿Qué desventajas tiene?
+4) Qué dificultades tiene ajustar las remuneraciones x los resultados de las empresas? ¿Qué solución implementaron las economías de la UE a estos problemas?
+5) ¿Por qué sugiere el autor que Uruguay está en una posición favorable para experimentar con la reglamentación en estos temas?
+
+
+# Materiales
+
+- Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulos 10y 11.
