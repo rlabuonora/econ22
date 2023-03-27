@@ -1,5 +1,5 @@
 ---
-title: 'Los mercados I: Competencia Perfecta'
+title: 'Los Mercados I: Competencia Perfecta'
 author: ''
 date: '2023-05-24'
 slug: los-mercados-i-competencia-perfecta
