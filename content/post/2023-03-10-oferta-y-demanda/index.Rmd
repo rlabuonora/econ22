@@ -128,7 +128,7 @@ tibble(
 
 Graficar la oferta y la demanda. Encontrar el punto de equilibrio del mercado. 
 
-## Ejercicio 6
+## Ejercicio 5
 
 Analizar los siguiente párrafos tomados de Apogeo y Crisis del Uruguay Pastoril y Caudillesco, de José Pedro Barrán:
 
@@ -139,7 +139,7 @@ Hacer tres gráficos: unos con los cambios en la oferta, otro con los cambios en
 
 
 
-## Ejercicio 7
+## Ejercicio 6
 
 Graficar la curva de demanda $$P=-3Q+75$$
 
@@ -148,7 +148,7 @@ Graficar la curva de demanda $$P=-3Q+75$$
 - ¿Cuánto es la pendiente de la curva de demanda?
 - Si quiero vender una unidad más, cuánto debo bajar el precio?
 
-## Ejercicio 8
+## Ejercicio 7
 
 Las curvas de oferta y demanda en un mercado son:
 
@@ -161,7 +161,7 @@ $$P=\frac{1}{2}Q_s+25$$
 
 
 
-## Ejercicio 3
+## Ejercicio 8
 
 La siguiente tabla muestra las curvas de oferta y demanda de alquileres en Montevideo.
 
@@ -179,7 +179,7 @@ tibble(
 
 Si hay un techo en los alquileres de $200, ¿cuánto es la cantidad demandada, ofrecida y la escasez de viviendas?
 
-## Ejercicio 4
+## Ejercicio 9
 
 La siguiente gráfica muestra el equilibrio en el mercado de trabajadores de la construcción.
 
@@ -232,9 +232,26 @@ ggplot() +
 - Si el gobierno impone un salario mínimo de $6, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
 
 
+## Ejercicio 10
+
+a) Graficar en una planilla electrónica las siguientes funciones lineales:
+
+$$4x+3y=11$$
+$$2x+y=5$$
+
+Identificar el punto de corte de las dos funciones con los ejes $x$ e $y$ y el corte entre las dos funciones. Sustituir las coordenadas de ese punto y verificar que ambas ecuaciones.
+
+b) Graficar en una planilla electrónica las siguientes funciones lineales:
+
+$$y=3x+2$$
+$$y=-2x+2$$
+$$y=\frac{1}{2}x+2$$
+
+Encontrar el punto en el que se cortan.
 
   <!-- - [La verdadera dimensión de la escasez en Venezuela](https://www.bbc.com/mundo/noticias/2015/05/150512_venezuela_escasez_reportaje_dp) -->
   <!-- - [¿Por qué hay que hacer tanta fila en Venezuela?](https://www.bbc.com/mundo/noticias/2014/02/140203_venezuela_colas_escasez_dp) -->
+  
   
 ## Bibliografía
 
