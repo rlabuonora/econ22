@@ -102,6 +102,38 @@ Analice las siguientes notas de prensa:
  
 ## Ejercicio 3
 
+El punto medio en un segmento desde $P_1=(x_1, y_1)$ a $P_2=(x_2, y_2)$ se calcula como:
+
+$$ M = (x, y) = (\frac{x_1+x_2}{2}, \frac{y_1+y_2}{2})$$
+Usar esta fórmula para aproximar las ventas en 2005 de Wal Mart en base al siguiente gráfico:
+
+```{r echo=FALSE}
+library(ggplot2)
+
+# Data
+years <- c(2002, 2008)
+sales <- c(204, 375)
+data <- data.frame(years, sales)
+
+# Plot
+p <- ggplot(data, aes(x = years, y = sales)) +
+  geom_line(color = '#5e81ac', size = 1) +
+  geom_point(color = '#5e81ac', size = 3) +
+  scale_x_continuous(breaks = years) +
+  scale_y_continuous(labels = scales::comma, expand = c(1, 1)) +
+  theme_minimal() +
+  labs(title = 'Wal-Mart Stores, Inc.\nVentas Netas (en $ billiones)',
+       x = 'Año',
+       y = 'Ventas Netas ($ billiones)') +
+  geom_text(aes(label = sales), vjust = -0.5)
+
+# Print the plot
+p
+```
+
+ 
+## Ejercicio 3
+
 - Graficar los siguientes puntos: $(2, 5), (1, 3), (0, 1), (-2, -3), (-3, -5)$
 - Graficar la recta $4x + 3y= 11$. Pista: encontrar los puntos de la recta cuando $x=5$ y $x=-1$.
 - ¿Cuál de los siguientes puntos se encuentra en la recta $5x - 2y=6$
