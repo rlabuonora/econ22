@@ -1,0 +1,186 @@
+---
+title: Macroeconomía
+author: ''
+date: '2024-06-01'
+slug: macroeconomia
+categories: []
+tags: []
+---
+
+<script src="{{< blogdown/postref >}}index_files/fitvids/fitvids.min.js"></script>
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+<link href="{{< blogdown/postref >}}index_files/htmltools-fill/fill.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
+<script src="{{< blogdown/postref >}}index_files/plotly-binding/plotly.js"></script>
+<script src="{{< blogdown/postref >}}index_files/typedarray/typedarray.min.js"></script>
+<script src="{{< blogdown/postref >}}index_files/jquery/jquery.min.js"></script>
+<link href="{{< blogdown/postref >}}index_files/crosstalk/css/crosstalk.min.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/crosstalk/js/crosstalk.min.js"></script>
+<link href="{{< blogdown/postref >}}index_files/plotly-htmlwidgets-css/plotly-htmlwidgets.css" rel="stylesheet" />
+<script src="{{< blogdown/postref >}}index_files/plotly-main/plotly-latest.min.js"></script>
+<div class="shareagain" style="min-width:300px;margin:1em auto;" data-exeternal="1">
+<iframe src="https://slides-macroeconomia.netlify.app/" width="1600" height="900" style="border:2px solid currentColor;" loading="lazy" allowfullscreen></iframe>
+<script>fitvids('.shareagain', {players: 'iframe'});</script>
+</div>
+
+# Ejercicios 1
+
+En una economía que solo produce lana tejida hay tres sectores de producción: la producción de lana sucia, el hilado y el tejido de lana. Don Gutiérrez esquila las ovejas y no gasta en insumos. Produce \$3000 de lana sucia. La fábrica compra la lana de Don Gutiérrez y vende la lana hilada a \$8000. Otra empresa compra la lana hilada para tejer buzos, agregando \$18000 de valor.
+
+- Calcular el Valor Bruto de Producción de cada empresa de la cadena y de toda la economía. Calcular el VAB de cada empresa de la cadena y de toda la economía.
+
+- Explicar por qué el VBP contabiliza el valor de los bienes que no son finales dos veces.
+
+# Ejercicio 2
+
+Contamos con los siguientes datos de una economía que produce solo manzanas y naranjas:
+
+| Año  | Precio Manzanas | Cantidad | Precio Naranjas | Cantidad |
+|------|-----------------|----------|-----------------|----------|
+| 2012 | 10              | 100      | 16              | 50       |
+| 2013 | 15              | 120      | 17              | 45       |
+| 2014 | 16              | 125      | 18              | 52       |
+
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Año
+</th>
+<th style="text-align:right;">
+Precio Manzanas
+</th>
+<th style="text-align:right;">
+Cantidad Manzanas
+</th>
+<th style="text-align:right;">
+Precio Naranjas
+</th>
+<th style="text-align:right;">
+Cantidad Naranjas
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+2012
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+50
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2013
+</td>
+<td style="text-align:right;">
+15
+</td>
+<td style="text-align:right;">
+120
+</td>
+<td style="text-align:right;">
+17
+</td>
+<td style="text-align:right;">
+45
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2014
+</td>
+<td style="text-align:right;">
+16
+</td>
+<td style="text-align:right;">
+125
+</td>
+<td style="text-align:right;">
+18
+</td>
+<td style="text-align:right;">
+52
+</td>
+</tr>
+</tbody>
+</table>
+
+- Calcular el PIB a precios corrientes y a precios constantes con base 2012.
+- Calcular la variación nominal del PIB para cada año.
+- Calcular la variación real del PIB para cada año y explicar la diferencia con el cálculo anterior.
+
+# Ejercicio 3
+
+Analizar [esta nota](https://www.180.com.uy/articulo/83859_pib-de-argentina-se-contrajo-19-1-en-segundo-trimestre) de prensa.
+
+- ¿Cuál es el impacto del confinamiento derivado de las medidas sanitarias tomados por el gobierno?
+- ¿Cómo fue la performance de la economía argentina el año anterior a la llegada del coronavirus?
+- ¿Cuáles son los sectores más afectados por la pandemia?
+
+# Ejercicio 4
+
+Explique las diferencias entre los 3 gráficos siguientes:
+
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+
+4.  El siguiente gráfico muestra la evolución del PIB per cápita de Uruguay entre 1955 y 2003.
+
+<div class="plotly html-widget html-fill-item" id="htmlwidget-1" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-1">{"x":{"visdat":{"866b18498bd5":["function () ","plotlyVisDat"]},"cur_data":"866b18498bd5","attrs":{"866b18498bd5":{"x":{},"y":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","mode":"lines","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"rangeslider":{"visible":true},"title":"year"},"yaxis":{"domain":[0,1],"automargin":true,"title":"valor"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1956,1957,1958,1959,1960,1961,1962,1963,1964,1965,1966,1967,1968,1969,1970,1971,1972,1973,1974,1975,1976,1977,1978,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002],"y":[79689.989358145627,79278.151829172712,75596.107552736285,72692.36781658062,74529.943061556725,75560.489058466716,72793.648569337995,72507.759094062756,73140.492188060685,73235.647274492061,74934.653506691437,71170.083576379184,71670.965471945412,75451.461076868814,78545.542841142291,77531.490373541237,74759.886743366893,77236.308421647118,79819.357897310852,83425.267125539511,86421.399997083252,87477.547849428505,92368.754286600612,97486.679799499922,102723.51351969314,104007.623552993,93639.701681972903,87597.451948861766,86088.576822835443,86802.063716634817,93967.151851383082,100854.82181366293,100252.83377473291,100799.52848285178,100543.76382868559,103499.68376271047,111030.96440051304,113330.13285030806,120891.06271446506,118430.53649697047,123121.73983643664,128517.0341689451,133526.82538941945,130287.97520570904,127280.32143384253,122252.43328366162,112764.52252698431],"type":"scatter","mode":"lines","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+
+Enfocar el período 1955-1968 y explicar la evolución del indicador. Repetir para el período 1970-2003 y comparar.
+
+<!-- ### Extra -->
+<!-- -  [Florencia Carriquiry](https://www.youtube.com/watch?v=disaExSUU7k)  de Ex Ante -->
+<!-- - [Gabriel Oddone](https://www.m24.com.uy/oddone-pandemia-dejara-deficit-en-torno-al-8-del-pib-en-un-pais-con-una-deuda-alta-y-que-no-tiene-financiamiento/)  de CPA Ferrere. -->
+<!-- ## Ejercicios -->
+<!-- 1. Analizar [este artículo](https://www.180.com.uy/articulo/79865_el-cambio-de-ciclo-en-la-economia-uruguaya&ref=delsol). Explicar cuáles son las variables de la demanda agregada que analiza. -->
+<!-- 2. Analizar [este artículo](https://www.180.com.uy/articulo/79865_el-cambio-de-ciclo-en-la-economia-uruguaya&ref=delsol) publicado en Junio de 2018 luego de la devaluación en Argentina. Explicar cuáles son las variables de la demanda agregada que analiza. -->
+<!-- 2. Considere la siguiente tabla:  -->
+<!-- ```{r} -->
+<!-- df <- tibble( -->
+<!--   PIB = seq(4200, 2700, by=-300), -->
+<!--   Consumo = seq(3800, 2800, by = -200), -->
+<!--   S = PIB-Consumo, -->
+<!--   I = 200 -->
+<!-- ) -->
+<!-- knitr::kable(df) %>%  -->
+<!--   kableExtra::kable_styling() -->
+<!-- ``` -->
+<!-- - ¿Cuánto vale el PIB, el Consumo, el ahorro y la inversión en equilibrio? -->
+<!-- - ¿Qué pasaría si el PIB fuera 4200? ¿Y si fuera 2700? -->
+<!-- 3. Explicar los efectos de los siguientes _shocks_ macroeconómicos: -->
+<!--   a. Una rebaja del IRPF. -->
+<!--   b. Una reducción en el gasto en defensa. -->
+<!--   c. Una avance tecnológico que afecta todos los sectores de producción. -->
+<!--   d. Una rebaja en las tasas de interés. -->
+<!-- Graficar los impactos usando el esquema de Oferta y Demanda Agregadas. -->
+<!-- 4. Se cuenta con los siguientes datos para la economía de EUA: -->
+<!-- | Año           | PIB Real      | Nivel de Precios  | -->
+<!-- | ------------- |:-------------:| -----:| -->
+<!-- | 1981          | 5.291,7       | 59,1 | -->
+<!-- | 1982          | 5.189,3       | 62,7 | -->
+<!-- | 1983          | 5.423.8       | 65,2 | -->
+<!-- | 1984          | 5.8913,6      | 67,6 | -->
+<!--  - Calcular las tasas de inflación y de crecimiento del PIB para cada año. -->
+<!--  - Graficar los 4 años en el eje `\((P, Y)\)` con las curvas de Oferta y Demanda Agregadas. -->
+<!-- 5. Para calcular la tasa de crecimiento de una variable entre `\(t-n\)` y `\(t\)`, usar la fórmula: -->
+<!-- $$ g_t = 100 * [(\frac{X_t}{X_{t-n}})^{1/n}-1]$$ -->
+
+<!-- - Calcular la tasa de crecimiento del PIB en términos reales entre 1955 y 1968. -->
+
+<!-- - Usando los datos del INE, calcular la tasa de inflación entre 1972 y 1992 y entre 1994 y 2014. Comparar los dos períodos y sus efectos sobre el bienestar de la población. -->
+
+- Parkin, M., Muñoz, M y Esquivel G. (2010). Macroeconomía. Editorial: Pearson. Capítulos 4 y 5.

@@ -1,0 +1,257 @@
+---
+title: Oferta y Demanda
+author: ''
+date: '2024-03-10'
+slug: oferta-y-demanda
+categories: []
+tags: []
+---
+
+
+```{r setup, include = FALSE, warning = FALSE}
+  knitr::opts_chunk$set(
+    echo = FALSE, 
+    fig.height=3, 
+    fig.width=4, 
+    warning=FALSE, 
+    message = FALSE,
+    dev = "png")
+
+library(kableExtra)
+library(tibble)
+library(ggplot2)
+library(showtext)
+font_add_google("Lato", "Lato")
+font_add_google("Merriweather", "Merriweather")
+
+theme_set(theme_minimal(base_family = 'Lato', base_size=16) + 
+            theme(plot.title = element_text(hjust = 0.5)))
+
+options(kableExtra.html.bsTable = TRUE)
+
+celeste <- "#5e81ac"
+
+```
+
+```{css, echo=FALSE}
+.twitter-tweet {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  margin-top: 3em;
+  background: hsl(0deg 0% 90%);
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+blockquote p::before {
+    content: '“';
+  }
+
+blockquote p::after {
+    content: '”';
+  }
+```
+
+La oferta y la demanda son las herramientas básicas que los economistas usan para analizar los mercados. En esta unidad los usamos para explicar cómo reaccionan los precios y las cantidades compradas y vendidas a cambios que afectan las decisiones de los participantes en el mercado.
+
+
+```{r}
+xaringanExtra::embed_xaringan(
+  url = "https://slides-oferta-demanda.netlify.app/", 
+  ratio = "16:9"
+)
+```
+
+
+
+## Ejercicio 1
+
+Explicar porqué estas afirmaciones son falsas y reescribirlas para que sean verdaderas. Identificar las variables mencionadas y las relaciones causales entre ellas.
+
+> Una helada en uno de los estados productores de café de Brasil va a producir una caída en el precio del café.
+
+> El aumento en los precios de la papa hace que baje la demanda de papa.
+
+> El proteccionismo de la industria textil en Uruguay hace que los precios internos de los textiles bajen.
+
+> La apertura de mercados externos para la carne Uruguaya hace que su precio interno caiga.
+
+  
+  
+## Ejercicio 2
+
+Usar el diagrama de oferta y demanda para los gráficos en el siguiente tweet sobre el impacto de la invasión de Rusia a Ucrania:
+
+```{r echo=FALSE}
+blogdown::shortcode('tweet', '1504213589346832385')
+```
+
+
+## Ejercicio 3
+
+Analizar las siguientes notas de prensa que analizan los mercados de productos de consumo básico. Graficar en el plano $(Q, P)$ la curva de demanda y oferta antes y después de la caída del precio. 
+
+- [Tomates](images/tomate_180.png)
+
+- [Chorizos](images/chorizos.png)
+
+- [Yerba](images/ejercicio-yerba.png)
+
+- [Morrón](images/ejercicio-morron.png)
+
+- [Alcohol en Gel](images/ejercicio-alcohol.png)
+
+
+## Ejercicio 4
+
+En el mercado de un bien, la demanda es $Q_d = 100 - 6P$ y la oferta $Q_s = 28 + 3P$. Encontrar el equilibrio del mercado y graficarlo. Explicar que pasaría si el precio vigente en el mercado fuera 9 o si fuera 7.
+  
+## Ejercicio 5
+
+Tenemos la siguiente información sobre el mercado de pizzas
+
+```{r}
+tibble(
+  Precios=c(10, 8, 6, 4, 2, 0),
+  `Cantidad Demandada`=c(0, 10, 20, 30, 40, 125),
+  `Cantidad Ofrecida`=c(40, 30, 20, 10, 0, 0)
+) %>% 
+  kable() %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+
+Graficar la oferta y la demanda. Encontrar el punto de equilibrio del mercado. 
+
+## Ejercicio 5
+
+Analizar los siguiente párrafos tomados de Apogeo y Crisis del Uruguay Pastoril y Caudillesco, de José Pedro Barrán:
+
+> En los años del Uruguay fusionista (1852-1860) una guerra se añadió (...) para beneficiarnos: la de Crimea. Francia, Gran Bretaña y el aliado menor, Italia, atacaron Rusia para impedir que esta se apoderara de partes vitales del Imperio Turco.</br></br>
+El conflicto duró tres años y tuvo dos efectos: a) eliminó el cuero ruso del mercado mundial, b) incrementó la demanda de este artículo ante las crecidas necesidades de los ejércitos aliados en materia de calzado y correas para su caballería e infantería. El cuero, cotizado en 1854 a 8.25 peniques la libra, alcanzó en 1856 los 10.5 peniques y en 1857 los 14.
+
+Hacer tres gráficos: unos con los cambios en la oferta, otro con los cambios en la demanda y el tercero combinando ambos efectos. Identificar las variables y las cadenas causales mencionadas.
+
+
+
+## Ejercicio 6
+
+Graficar la curva de demanda $$P=-3Q+75$$
+
+- ¿Cuánto es el precio si la cantidad demandada es 23?
+- ¿Cuánto es la cantidad demandada a un precio de $18?
+- ¿Cuánto es la pendiente de la curva de demanda?
+- Si quiero vender una unidad más, cuánto debo bajar el precio?
+
+## Ejercicio 7
+
+Las curvas de oferta y demanda en un mercado son:
+
+$$P=-2Q_d+50$$
+$$P=\frac{1}{2}Q_s+25$$
+
+- Encontrar el precio y la cantidad de equilibrio.
+- Graficar el equilibrio.
+
+
+
+
+## Ejercicio 8
+
+La siguiente tabla muestra las curvas de oferta y demanda de alquileres en Montevideo.
+
+```{r}
+library(tibble)
+
+tibble(
+  alquiler=seq(1000, 200, by=-200),
+  qd=seq(150, 350, by=50),
+  qs=seq(350, 150, by=-50)
+) %>% 
+  kable(col.names=c("Alquiler", "Cantidad Demandada", "Cantidad Ofrecida")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+Si hay un techo en los alquileres de $200, ¿cuánto es la cantidad demandada, ofrecida y la escasez de viviendas?
+
+## Ejercicio 9
+
+La siguiente gráfica muestra el equilibrio en el mercado de trabajadores de la construcción.
+
+
+```{r}
+library(polynom)
+
+of <- tibble(
+  q=c(4, 8),
+  p=c(2, 4)
+)
+
+dem <- tibble(
+  q=c(4, 12),
+  p=c(6, 2)
+)
+
+
+of_p <- poly.calc(of$q, of$p) %>% 
+  as.function()
+
+dem_p <- poly.calc(dem$q, dem$p) %>% 
+  as.function
+
+
+puntos <- tibble(
+  q=c(8),
+  p=c(4)
+)
+
+ggplot() + 
+  geom_function(fun=of_p, xlim=c(2, 14)) + 
+  geom_function(fun=dem_p, xlim=c(2, 14)) +
+  geom_point(data=puntos, aes(q, p)) +
+  scale_x_continuous(limits = c(0, 14),
+                     expand = expansion(add=0),
+                     breaks=seq(2,14, by=2)) +
+  scale_y_continuous(breaks=1:7, expand=expansion(add=0)) +
+  # Eje Y
+  geom_segment(aes(x=0, y=0, xend=0, yend=Inf), alpha=.6) + 
+  # Eje X
+  geom_segment(aes(x=-Inf, y=0, xend=Inf, yend=0), alpha=.6) +
+  labs(x="Q", y="P")
+```
+
+- ¿Cuál es el equilibrio si el gobierno no interviene?
+
+- Si el gobierno impone un salario mínimo de $3, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
+
+- Si el gobierno impone un salario mínimo de $6, ¿cuál será el nivel de empleo? ¿Esta política genera desempleo?
+
+
+## Ejercicio 10
+
+a) Graficar en una planilla electrónica las siguientes funciones lineales:
+
+$$4x+3y=11$$
+$$2x+y=5$$
+
+Identificar el punto de corte de las dos funciones con los ejes $x$ e $y$ y el corte entre las dos funciones. Sustituir las coordenadas de ese punto y verificar que ambas ecuaciones.
+
+b) Graficar en una planilla electrónica las siguientes funciones lineales:
+
+$$y=3x+2$$
+$$y=-2x+2$$
+$$y=\frac{1}{2}x+2$$
+
+Encontrar el punto en el que se cortan.
+
+  <!-- - [La verdadera dimensión de la escasez en Venezuela](https://www.bbc.com/mundo/noticias/2015/05/150512_venezuela_escasez_reportaje_dp) -->
+  <!-- - [¿Por qué hay que hacer tanta fila en Venezuela?](https://www.bbc.com/mundo/noticias/2014/02/140203_venezuela_colas_escasez_dp) -->
+  
+  
+## Bibliografía
+
+- Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulo 3.
