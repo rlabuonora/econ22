@@ -1,0 +1,112 @@
+---
+title: Los consumidores
+author: ''
+date: '2025-04-05'
+slug: los-consumidores
+categories: []
+tags: []
+---
+
+
+
+```{r setup, include = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  fig.height=4, 
+  fig.width=6, 
+  warning=FALSE, 
+  message = FALSE,
+  dev = "png")
+
+library(tidyverse)
+library(kableExtra)
+library(tibble)
+
+options(kableExtra.html.bsTable = TRUE)
+
+theme_set(theme_minimal() + 
+            theme(plot.title = element_text(hjust = 0.5)))
+
+celeste <- "#5e81ac"
+
+```
+
+El princial propósito de la actividad económica es el consumo. En esta unidad analizamos cómo los consumidores asignan el dinero del que disponen entre dos bienes, según la utilidad marginal que cada bien le reporta.
+
+
+
+```{r}
+xaringanExtra::embed_xaringan(
+  url = "https://slides-consumidores.netlify.app/",
+  ratio = "16:9"
+)
+```
+
+
+## Ejercicio 1
+
+Considere los siguientes datos para un bien:
+
+```{r}
+tibble(
+  q=0:5,
+  utilidad=c(0, 4, 7, 9, 10, 10),
+  utilidad_mg=rep("", 6)
+) %>% 
+  knitr::kable(col.names = c("Cantidad", "Utilidad Total", "Utilidad Marginal")) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+
+a) Grafique la Utilidad Total.
+b) ¿Cuál es la diferencia entre la Utilidad Total y la Utilidad Marginal?
+c) Complete la columna de Utilidad Marginal. 
+d) ¿Tiene utilidad marginal creciente o decreciente?
+
+
+
+## Ejercicio 2 
+
+```{r}
+tibble(
+  q_b=1:6,
+  utilidad_marginal_b=c(30, 24, 18, 12, 6, 0),
+  q_m=1:6,
+  utilidad_marginal_m=c(40, 34, 24, 16, 8, 0)) %>% 
+  knitr::kable(col.names = c("Bananas", "Umg B", "Manzanas","Umg M")) %>% 
+  kable_styling(bootstrap_options = c("striped", "hover"))
+```
+
+
+Un consumidor tiene un presupuesto de \$10. La tabla anterior muestra la utilidad marginal para cada cantidad de bananas y manzanas consumidas. 
+
+- Si el precio de las bananas es \$1 y el de las manzanas \$2 ¿cuál será la utilidad marginal por peso gastado para las cantidades de la tabla? ¿cómo asigna su presupuesto entre ambos bienes?
+- Si el precio de las bananas sube a $2, ¿cómo cambia la utilidad marginal por dólar? ¿cuál será la nueva combinación de manzanas y bananas que comprará este consumidor?
+
+
+## Ejercicio 3
+
+Ricardo consume dos bienes, entradas al cine y videojuegos. El precio de las entradas al cine es \$4 y el de los videojuegos \$40. La utilidad marginal de las entradas al cine es 20. ¿Cuál es la utilidad marginal de los videojuegos?
+
+# Ejercicio 4
+
+La tabla siguiente muestra la utilidad total que tiene un consumidor del consumo de papas y boniatos.
+```{r}
+tibble(
+  q_papas=c(0:5),
+  utilidad_papas=c(0, 126, 243, 342, 414, 441),
+  q_boniatos=c(0:5),
+  utilidad_boniatos=c(0, 54, 103.5, 145.5, 177, 196.5)
+) %>% 
+  kable(col.names=c("Papas (kilos)", "Utilidad Papas", "Boniatos (kilos)", "Utilidad Boniatos")) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+```
+
+- Si el consumidor tiene un presupuesto de \$12, el precio de los boniatos $3 y el de las papas \$1.5, ¿cuántos kilos de papas y de boniatos compra?
+
+- Si el precio de las papas sube a \$6, ¿qué cantidades de los dos bienes compra? Dibuje dos puntos en la curva de demanda de papas de este consumidor.
+
+## Materiales
+
+- Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulos 8 y 9.
+  

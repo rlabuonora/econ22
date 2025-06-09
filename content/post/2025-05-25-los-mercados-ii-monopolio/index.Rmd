@@ -1,0 +1,223 @@
+---
+title: 'Los Mercados II: Monopolio'
+author: ''
+date: '2025-05-25'
+slug: los-mercados-ii-monopolio
+categories: []
+tags: []
+---
+
+
+```{r setup, include = FALSE, warning = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE, 
+  fig.height=4, 
+  fig.width=6, 
+  warning=FALSE, 
+  message = FALSE,
+  out.width = "70%",
+  dev = "png")
+
+library(tidyverse)
+library(kableExtra)
+
+options(kableExtra.html.bsTable = TRUE)
+
+
+
+celeste <- "#5e81ac"
+
+```
+
+```{css}
+
+.twitter-tweet {
+  margin: 0 auto;
+}
+
+.img-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+```
+
+
+
+En la clases anteriores analizamos cómo los mercados resuelven los problemas económicos mediante la interacción de la oferta con la demanda. En esta unidad analizamos las distintas formas en qué se puede dar esta interacción según el __poder de mercado__ que tienen consumidores y productores.
+
+
+
+```{r}
+xaringanExtra::embed_xaringan(
+  url = "https://slides-monopolio.netlify.app/",
+  ratio = "16:9"
+)
+```
+
+
+
+# Ejercicio 1
+
+Explique porqué son falsas las siguientes afirmaciones y corríjalas.
+- Un monopolio maximiza sus beneficios cuando $CM = P$.
+- Los monopolistas maximizan las ventas. Por lo tanto, producen más que los competidores perfectos y a un precio más bajo.
+- Las empresas siempre cobran el precio máximo que soporta el mercado.
+
+# Ejercicio 2
+
+Una empresa productora de micro chips tiene costos fijos de producción de $100.000, y cada unidad cuesta $600 de trabajo y $400 de materias primas. La curva de demanda que enfrenta es $P=3000-\frac{1}{100}Q$ y el ingreso marginal $Img=3000-\frac{1}{50}Q$. 
+
+Calcule el Costo Marginal, el Ingreso Marginal, el precio y la cantidad de equilibrio si esta empresa opera como un monopolio. 
+
+# Ejercicio 3
+
+Un mercado opera como un monopolio con la siguiente estructura de demanda y costos:
+
+```{r include=FALSE, message=FALSE}
+library(tidyverse)
+library(extrafont)
+loadfonts()
+theme_set(theme_minimal(base_family = 'Montserrat') +
+            theme(panel.grid = element_line(color="gray80")))
+knitr::opts_chunk$set(
+  message=FALSE, 
+  echo=FALSE,
+  warning=FALSE,
+  comment = '', fig.width = 4.5, fig.height = 4.5
+)
+
+
+```
+
+
+<div class="img-wrap">
+
+```{r warning=FALSE, echo=FALSE}
+
+d_df <- tibble(x=c(0, 40), 
+               y=c(10, 2))
+
+img_df <- tibble(x=c(0, 20),
+               y=c(10, 2))
+
+cmg_df <- tibble(x=c(2, 20, 30, 40),
+                 y=c(1.1, 2, 4, 7))
+
+cme_df <- tibble(x=c(0, 10, 20, 30, 50),
+                 y=c(8, 5, 4, 4, 6))
+
+cme_fun <- splinefun(cme_df$x, cme_df$y)
+d_fun <- splinefun(d_df$x, d_df$y)
+img_fun <- splinefun(img_df$x, img_df$y)
+cmg_fun <- splinefun(cmg_df$x, cmg_df$y)
+
+ggplot(data.frame(x=0, y=0)) + 
+  geom_function(fun=d_fun, xlim=c(0,45)) +
+  annotate("text", y=1, x=46, label="D") +
+  geom_function(fun=img_fun, xlim=c(0, 22.5)) +
+  annotate("text", y=1, x=25, label="Img") +
+  geom_function(fun=cme_fun, xlim=c(1, 55)) +
+  annotate("text", y=6.4, x=50, label="CMe") +
+  geom_function(fun=cmg_fun, xlim=c(1, 40)) +
+  annotate("text", y=7.5, x=40, label="CMg") +
+  scale_y_continuous(limits = c(0, 10), breaks=1:10) +
+  scale_x_continuous(limits = c(0, 50)) +
+  geom_vline(xintercept = 0) +
+  geom_hline(yintercept = 0) +
+  labs(x="Q", y="Precio y Costos")
+```
+
+</div>
+- Calcular la cantidad producida y el nivel de precios.
+- Calcular el ingreso total de la empresa.
+- Calcular el costo total de la empresa.
+- Calcular el beneficio de la empresa.
+
+# Ejercicio 4 
+
+Considere un mercado con esta estructura de costos y demanda:
+
+<div class="img-wrap>
+
+```{r}
+
+
+
+# Figure 13.3
+cme_df <- tibble(x=c(5,   18, 30,  35, 40, 42), 
+                 y=c(145, 80, 60,  57, 53, 50))
+
+d_df <- tibble(x=c(0,   20),
+               y=c(150, 90))
+
+img_df <- tibble(x=c(0,  20),
+                 y=c(150, 30))
+
+cmg_df <- tibble(x=c(0, 5),
+                 y=c(30, 30))
+
+cme_fun <- splinefun(cme_df$x, cme_df$y)
+d_fun <- splinefun(d_df$x, d_df$y)
+img_fun <- splinefun(img_df$x, img_df$y)
+cmg_fun <- splinefun(cmg_df$x, cmg_df$y)
+
+
+# x_highlight <- uniroot(function(x) lrac_fun(x)-d_fun(x), c(0, 5))$root
+# y_highlight <- lrac_fun(x_highlight)
+
+ggplot(data.frame(x=0, y=0)) + 
+  geom_function(fun=cme_fun, xlim=c(3, 40)) +
+  geom_function(fun=d_fun, xlim=c(0, 48)) +
+  geom_function(fun=img_fun, xlim=c(0, 24)) +
+  geom_function(fun=cmg_fun, xlim=c(0, 55)) +
+  scale_y_continuous(limits = c(0, 150),
+                     breaks=c(0, 30, 60, 90, 120, 150)) +
+  scale_x_continuous(limits = c(0, 50),
+                     breaks=c(0, 10, 20, 30, 40, 50)) +
+  geom_vline(xintercept = 0) +
+  geom_hline(yintercept = 0) +
+  annotate("text", label="CMe", x=42, y=64) +
+  annotate("text", label="CMg", x=42, y=38) +
+  annotate("text", label="D", x=50, y=8) +
+  annotate("text", label="Img", x=28, y=8) +
+  labs(title="", x="Q", y="Precio y Costos")
+
+```
+
+
+</div>
+
+- ¿Cuál es la cantidad y el precio si el mercado funciona como un monopolio sin regulación?
+- ¿Cuáles son el precio y la cantidad de equilibrio si un regulador aplica la regla del costo marginal?
+- ¿Cuáles son el precio y la cantidad de equilibrio si un regulador aplica la regla del costo medio?
+- ¿Cuál es la ventaja de la regla del costo medio sobre la del costo marginal?
+
+<!-- # Ejercicio 5 -->
+
+<!-- Analizar [esta noticia](katoen_el_pais.pdf). -->
+
+<!-- - ¿En qué consiste el acuerdo entre el gobierno uruguayo y Katoen Natie? -->
+<!-- - ¿Cuál es la opinión de los autores sobre el impacto del acuerdo en el nivel de competencia en los servicios del puerto? -->
+
+
+# Ejercicio 5
+
+Escuchar [esta entrevista](https://delsol.uy/notoquennada/sebastianfleitas/defensa-de-la-competencia-perdio-prestigio-en-caso-con-philip-morris-1) y contestar las siguientes preguntas:
+
+-  ¿Por qué práctica anticompetitiva fue denunciada la filial uruguaya de Philip Morris? ¿En qué consiste esta práctica? ¿Cuál fue el resultado de la denuncia?
+- ¿Qué argumentos hay a favor de que las acciones de Philip Morris son anticompetitivas? ¿Y en contra?
+- ¿Cuál es el diagnóstico del entrevistado sobre el funcionamiento actual de la Comisión de Defensa de la Competencia?
+
+
+# Ejercicio 6
+
+Leer [este artículo](https://www.vox.com/recode/2020/10/6/21505027/congress-big-tech-antitrust-report-facebook-google-amazon-apple-mark-zuckerberg-jeff-bezos-tim-cook) sobre el mercado de tecnología en EUA.
+
+- Explique cuáles son las principales prácticas anticompetitivas de las empresas analizadas. 
+- Explique por qué el gobierno de EUA aplica políticas con el objetivo de eliminar estas prácticas.
+
+## Bibliografía
+
+
+- Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulo 13.
