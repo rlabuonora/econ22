@@ -112,7 +112,7 @@ ggplot(df_mc, aes(p, mc)) +
 
 El siguiente gráfico muestra las curvas de costos de un productor de soja. 
 
-<div class="img-wrap>
+<div class="img-wrap">
 
 ```{r}
 
