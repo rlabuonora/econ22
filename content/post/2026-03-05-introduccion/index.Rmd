@@ -1,7 +1,7 @@
 ---
 title: "Introducción"
 author: ''
-date: '2025-03-06'
+date: '2026-03-05'
 slug: introduccion
 categories: []
 tags: []
@@ -177,5 +177,4 @@ Usar una planilla electrónica para graficar las siguientes funciones: $y=3x+2$,
 
 ## Bibilografía
 - Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulos 1 y 2.
-
 
