@@ -1,0 +1,136 @@
+---
+title: "Introducción a la Economía"
+subtitle: "Las Empresas"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: none
+    controls: true
+    progress: true
+    width: 1600
+    height: 900
+    css: styles.css
+---
+
+## Las capacidades productivas de la sociedad
+
+- La economía combina trabajo, capital, tierra y organización.
+- Las empresas coordinan esos factores para producir bienes y servicios.
+- El problema central es cómo transformar insumos en productos de manera rentable.
+
+## Las empresas
+
+- Una empresa es una organización que produce para vender.
+- Decide qué producir, cómo producir y cuánto producir.
+- Su objetivo económico básico es maximizar beneficios.
+
+## Maximización de beneficios
+
+$$Beneficios = Ingresos - Costos$$
+
+- Los ingresos dependen del precio y la cantidad vendida.
+- Los costos dependen de la tecnología y del uso de factores.
+
+## Algunos conceptos
+
+- Producto total
+- Producto marginal
+- Rendimientos marginales decrecientes
+- Retornos a escala
+- Cambio tecnológico
+
+## La función de producción
+
+- Resume la relación entre insumos y producto.
+- Permite estudiar qué ocurre cuando agregamos más trabajo o más capital.
+- Ayuda a separar efectos de corto plazo y de largo plazo.
+
+## Función de producción
+
+![](imgs/produccion.png){.plain width="82%"}
+
+## Rendimientos marginales decrecientes
+
+- A medida que agregamos más de un factor variable, el producto marginal tiende a caer.
+- Esto no implica que el producto total deje de aumentar de inmediato.
+- Sí implica que cada unidad adicional aporta menos que la anterior.
+
+## Retornos a escala
+
+- Miden qué pasa cuando todos los factores aumentan simultáneamente.
+- Pueden ser crecientes, constantes o decrecientes.
+- Son un concepto distinto del rendimiento marginal.
+
+## Cambio tecnológico
+
+- Mejora la capacidad productiva con los mismos insumos.
+- Desplaza la función de producción hacia arriba.
+- Permite producir más o producir lo mismo con menos factores.
+
+## Medición de la productividad
+
+- Productividad media
+- Productividad marginal
+- Productividad total de los factores
+
+## Costos
+
+- Costo fijo
+- Costo variable
+- Costo total
+- Costo medio
+- Costo marginal
+
+## Plazos cortos y largos
+
+- En el corto plazo, algunos factores son fijos.
+- En el largo plazo, todos los factores pueden variar.
+- Esta distinción es clave para entender la forma de las curvas de costo.
+
+## Costo fijo y variable
+
+- El costo fijo no cambia con la producción en el corto plazo.
+- El costo variable sí cambia cuando cambia la cantidad producida.
+- La suma de ambos da el costo total.
+
+## Ejemplo
+
+![](imgs/costos_1.png){.plain width="82%"}
+
+## Costo marginal
+
+- El costo marginal es el costo de producir una unidad adicional.
+- Se relaciona con la productividad marginal del factor variable.
+- Cuando la productividad marginal cae, el costo marginal sube.
+
+## Ejemplo numérico
+
+![](imgs/costos_2.png){.plain width="82%"}
+
+## Costo medio
+
+- El costo medio es el costo total dividido por la cantidad producida.
+- Puede descomponerse en costo fijo medio y costo variable medio.
+
+## Costo fijo medio, costo variable medio
+
+![](imgs/costos_3.png){.plain width="82%"}
+
+## Costos medios, fijos y marginales
+
+![](imgs/costos_4.png){.plain width="82%"}
+
+## Costos medios, fijos y marginales (2)
+
+![](imgs/costos_5.png){.plain width="82%"}
+
+## Productividad marginal y costos
+
+- La curva de costo marginal refleja la evolución de la productividad marginal.
+- Más productividad implica menor costo por unidad adicional.
+
+## Costos y maximización de beneficio
+
+- La empresa compara ingresos marginales y costos marginales.
+- Esa comparación define la cantidad óptima a producir.

@@ -1,0 +1,94 @@
+---
+title: "Introducción a la Economía"
+subtitle: "Los Mercados II: Monopolio"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: none
+    controls: true
+    progress: true
+    width: 1600
+    height: 900
+    css: styles.css
+---
+
+## Competencia imperfecta
+
+- En muchos mercados, las empresas tienen poder para influir en el precio.
+- Eso cambia la lógica de producción, precios y bienestar.
+
+## Elasticidad de la demanda
+
+- La capacidad de fijar precios depende de la respuesta de la cantidad demandada.
+- Cuanto menos elástica la demanda, mayor poder de mercado.
+
+## Tipos de competencia imperfecta
+
+- Monopolio
+- Oligopolio
+- Competencia monopolística
+
+## Monopolio
+
+- Una sola empresa abastece todo el mercado.
+- No hay sustitutos cercanos.
+- Existen barreras a la entrada.
+
+## Fuentes de imperfecciones de mercado
+
+- Economías de escala
+- Control de recursos clave
+- Regulación
+- Innovación y patentes
+
+## Barreras a la entrada
+
+- Impiden la competencia efectiva.
+- Sostienen beneficios extraordinarios.
+
+## Monopolio: ingreso marginal
+
+- Para vender más, el monopolista suele bajar el precio.
+- Por eso el ingreso marginal es menor que el precio.
+
+## Ingreso marginal y precio
+
+![](imgs/ingreso_marginal.png){.plain width="84%"}
+
+## Ejemplo numérico
+
+![](imgs/monopolio_1.png){.plain width="84%"}
+
+## Ejemplo numérico (2)
+
+![](imgs/monopolio_2.png){.plain width="84%"}
+
+## Elasticidad e ingreso marginal
+
+- El ingreso marginal depende de la elasticidad de la demanda.
+- Un monopolista no produce en el tramo inelástico de la demanda.
+
+## Gráficamente
+
+![](imgs/grafico_monopolio.png){.plain width="84%"}
+
+## Ingresos, beneficios y costos
+
+- El monopolista elige la cantidad donde ingreso marginal iguala costo marginal.
+- Luego fija el precio sobre la curva de demanda.
+
+## Regulación de precios
+
+- Los monopolios naturales suelen regularse.
+- La regulación busca acercar el resultado a uno más eficiente.
+
+## Grandes monopolios de la historia
+
+- Casos clásicos de energía, ferrocarriles, telecomunicaciones y plataformas.
+
+## Ejercicios
+
+- Calcular cantidad, precio y beneficios.
+- Comparar con competencia perfecta.
+- Identificar pérdida de eficiencia.

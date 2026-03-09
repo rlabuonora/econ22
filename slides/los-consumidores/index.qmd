@@ -1,0 +1,76 @@
+---
+title: "Introducción a la Economía"
+subtitle: "Los Consumidores"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: none
+    controls: true
+    progress: true
+    width: 1600
+    height: 900
+    css: styles.css
+---
+
+## La teoría del consumidor
+
+- Es la base conceptual de la curva de demanda que analizamos en la unidad anterior.
+- Permite analizar cómo un consumidor toma decisiones económicas.
+
+## La utilidad
+
+- Es un concepto fundamental para analizar las decisiones del consumidor.
+- El consumidor toma decisiones económicas para obtener la máxima utilidad o satisfacción derivada de los bienes que consume.
+
+## Utilidad total
+
+- El consumidor elige entre combinaciones de bienes:
+  - 1 kilo de papas y 0.5 de zanahorias
+  - 2 kilos de cebollas y 0.5 kilos de papas
+- Elige la combinación que le reporta mayor utilidad total.
+
+## Utilidad marginal
+
+- Es la utilidad extra que obtiene el consumidor al agregar una unidad de un bien a la canasta.
+- Es una función de la cantidad consumida del bien.
+- Si 1 helado me da 10 unidades de utilidad y 2 helados me dan 18, la segunda unidad agregó 8 unidades.
+
+## Ejemplo
+
+| Cantidad | Utilidad Total | Utilidad Marginal |
+|---:|---:|---:|
+| 0 | 0 | - |
+| 1 | 4 | 4 |
+| 2 | 7 | 3 |
+| 3 | 9 | 2 |
+| 4 | 10 | 1 |
+| 5 | 10 | 0 |
+
+La utilidad total es la suma de las utilidades marginales de las unidades consumidas.
+
+## Utilidad marginal decreciente
+
+- Si bien la utilidad total aumenta a medida que consumimos mayores cantidades de un bien, la utilidad marginal decrece.
+- Si no tomamos Coca-Cola, el primer vaso nos da mucha satisfacción.
+- Si nos ofrecen otro vaso, probablemente prefiramos dos vasos a uno solo, pero el segundo aumenta menos la utilidad que el primero.
+
+## El principio de equimarginalidad
+
+- La utilidad marginal del dinero gastado en todos los bienes que compramos debe ser igual.
+- ¿Qué es $\frac{UM_{alfajores}}{P_{alfajores}}$?
+
+Es la utilidad que me da gastar un peso extra en alfajores. Si un alfajor vale $50 y me da 100 unidades de utilidad, un peso extra gastado en alfajores me da 2 unidades de utilidad.
+
+## El principio de equimarginalidad (2)
+
+En equilibrio debe cumplirse:
+
+$$ \frac{MU_1}{P_1} = \frac{MU_2}{P_2} = \ldots = \frac{MU_n}{P_n} $$
+
+## La pendiente de la curva de demanda
+
+- Esta ecuación permite derivar la pendiente negativa de la curva de demanda.
+- Recordemos que $MU$ es una función de la cantidad consumida ($Q$).
+- Si sube $P_1$, para mantener la igualdad, $MU_1$ tiene que subir.
+- La forma de hacer que $MU_1$ suba es consumir menos del bien 1.
