@@ -1,7 +1,7 @@
 ---
 title: Oferta y Demanda
 author: ''
-date: '2025-03-10'
+date: '2026-03-20'
 slug: oferta-y-demanda
 categories: []
 tags: []
@@ -61,7 +61,7 @@ La oferta y la demanda son las herramientas básicas que los economistas usan pa
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://slides-oferta-demanda.netlify.app/", 
+  url = "/slides/oferta-y-demanda/", 
   ratio = "16:9"
 )
 ```

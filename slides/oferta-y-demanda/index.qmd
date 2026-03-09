@@ -1,0 +1,460 @@
+---
+title: "Introducción a la Economía"
+subtitle: "Oferta y Demanda"
+format:
+  revealjs:
+    theme: default
+    slide-number: true
+    transition: none
+    controls: true
+    progress: true
+    width: 1600
+    height: 900
+    css: styles.css
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+knitr::opts_chunk$set(
+  fig.width = 6,
+  fig.height = 3.5,
+  fig.retina = 3,
+  out.width = "100%",
+  cache = FALSE,
+  dev = "png",
+  dev.args = list(type = "cairo-png")
+)
+
+library(ggplot2)
+library(tibble)
+library(dplyr)
+library(grid)
+
+colores <- c(
+  celeste = "#5e82ae",
+  verde = "#4E7B7B"
+)
+
+theme_set(theme_minimal(base_family = "Lato", base_size = 16))
+
+line_coeffs <- function(x, y) {
+  stats::coef(stats::lm(y ~ x))
+}
+```
+
+## La Demanda {background-image="imgs/demanda.jpg" background-position="bottom right" background-size="cover" .inverse}
+
+## Cantidad demandada
+
+- Es la cantidad que alguien está dispuesto a comprar de ese bien a determinado precio.
+
+## La curva de demanda
+
+- Es la relación entre la cantidad demandada y el precio del bien.
+- Podemos escribirla como una función: $Q_d = Q(p)$.
+- Cuanto menor es el precio del bien, mayor es la cantidad demandada.
+
+## Dos formas de visualizarla
+
+:::: {.columns}
+::: {.column width="38%"}
+```{r}
+tribble(
+  ~Precio, ~`Cantidad Demandada`,
+  10, 0,
+  8, 10,
+  6, 20,
+  4, 30,
+  2, 40,
+  0, 125
+) |>
+  knitr::kable()
+```
+:::
+::: {.column width="62%"}
+```{r}
+df <- tribble(
+  ~precio, ~cantidad, ~lab, ~momento,
+  5, 9, "A", "Después",
+  4, 10, "B", "Después",
+  3, 12, "C", "Después",
+  2, 15, "D", "Después",
+  1, 20, "E", "Después"
+)
+
+ggplot(df, aes(x = cantidad, y = precio)) +
+  geom_line(color = colores[["celeste"]]) +
+  geom_point(color = colores[["celeste"]]) +
+  xlim(5, 20) +
+  ylim(0, 5) +
+  labs(x = "Cantidad", y = "Precio", title = "Demanda de maiz") +
+  theme(legend.position = "none")
+```
+:::
+::::
+
+## Variables endógenas y variables exógenas
+
+- Las variables endógenas son los efectos.
+- Las variables exógenas son las causas.
+- En el modelo de demanda, las variables endógenas son:
+  - la cantidad
+  - el precio
+
+## Cambios en la demanda
+
+- Las variables exógenas son los factores que explican la demanda:
+  - ingreso de los consumidores
+  - tamaño del mercado
+  - disponibilidad y precio de bienes relacionados
+  - preferencias de los consumidores
+  - factores coyunturales
+- Cambian la relación entre $Q_d$ y $P$.
+
+## Bienes sustitutos
+
+- Si dos bienes son sustitutos, el aumento del precio de uno hace que aumente la demanda del otro.
+- Si sube el precio del pescado, la demanda de carne aumenta.
+
+## Bienes complementarios
+
+- Si dos bienes son complementarios, el aumento del precio de uno hace que disminuya la demanda del otro.
+- Si aumentan los precios de las consolas de videojuegos, la demanda por juegos disminuye.
+
+## Aumento en la demanda
+
+:::: {.columns}
+::: {.column width="35%"}
+- Al mismo precio, la cantidad demandada es mayor.
+:::
+::: {.column width="65%"}
+```{r}
+df_2 <- bind_rows(
+  df,
+  mutate(df, momento = "Antes", cantidad = cantidad - 5)
+)
+
+ggplot(df_2, aes(x = cantidad, y = precio, color = momento)) +
+  geom_line() +
+  geom_point() +
+  xlim(0, 20) +
+  ylim(0, 5) +
+  scale_color_manual(values = c(colores[["celeste"]], colores[["verde"]])) +
+  annotate("segment", x = 6, xend = 9, y = 4, yend = 4,
+           arrow = arrow(length = unit(0.2, "cm"))) +
+  annotate("segment", x = 11, xend = 14, y = 2, yend = 2,
+           arrow = arrow(length = unit(0.2, "cm"))) +
+  labs(x = "Cantidad de maiz", y = "Precio del maiz", title = "Demanda de maiz") +
+  guides(color = "none")
+```
+:::
+::::
+
+## La curva de oferta
+
+- Es la relación entre la cantidad ofrecida por los vendedores y el precio del bien.
+- Podemos escribirla como una función: $Q_s = Q(p)$.
+- Cuanto mayor es el precio del bien, más van a producir los vendedores.
+
+## Dos formas de visualizarla
+
+```{r}
+df_oferta <- tibble(
+  p = seq(0.5, 2.5, by = 0.5),
+  q = c(0, 6, 10, 13, 15),
+  curva = "Oferta"
+)
+```
+
+:::: {.columns}
+::: {.column width="38%"}
+```{r}
+df_oferta |>
+  select(-curva) |>
+  knitr::kable(col.names = c("Precio", "Oferta"))
+```
+:::
+::: {.column width="62%"}
+```{r}
+ggplot(df_oferta, aes(x = q, y = p)) +
+  geom_line(color = colores[["celeste"]]) +
+  geom_point(color = colores[["celeste"]]) +
+  labs(x = "Cantidad", y = "Precio", title = "Oferta de maiz") +
+  theme(legend.position = "none")
+```
+:::
+::::
+
+## Cambios en la oferta
+
+- Precios de los insumos
+- Tecnología
+- Precios de bienes relacionados
+- Políticas del gobierno
+- Factores coyunturales de cada mercado
+
+## Aumento en la oferta
+
+:::: {.columns}
+::: {.column width="35%"}
+- Al mismo precio, la cantidad ofrecida es mayor.
+:::
+::: {.column width="65%"}
+```{r}
+df_oferta_2 <- tibble(
+  p = seq(0.5, 2.5, by = 0.5),
+  q = c(7, 15, 20, 25, 27),
+  curva = "Oferta 2"
+)
+
+bind_rows(df_oferta, df_oferta_2) |>
+  ggplot(aes(x = q, y = p, color = curva)) +
+  geom_line() +
+  geom_point() +
+  scale_color_manual(values = c(colores[["celeste"]], colores[["verde"]])) +
+  labs(x = "Cantidad", y = "Precio", title = "Oferta de maiz") +
+  annotate("segment", x = 15, xend = 22.5, y = 2, yend = 2,
+           arrow = arrow(length = unit(0.2, "cm"))) +
+  annotate("segment", x = 7.5, xend = 12.5, y = 1, yend = 1,
+           arrow = arrow(length = unit(0.2, "cm"))) +
+  theme(legend.position = "none")
+```
+:::
+::::
+
+## Equilibrio de mercado
+
+- Se da cuando vendedores y compradores están en equilibrio.
+- Si nadie tiene incentivos a cambiar sus decisiones, la situación es estable.
+- Si al precio vigente demandantes y oferentes desean la misma cantidad, el mercado está en equilibrio.
+
+## Ejemplo
+
+```{r}
+df_demanda <- tibble(
+  p = seq(0.5, 2.5, by = 0.5),
+  q = c(22, 15, 10, 7, 5),
+  curva = "Demanda"
+)
+
+df_equilibrio <- bind_rows(df_oferta, df_demanda)
+```
+
+:::: {.columns}
+::: {.column width="38%"}
+```{r}
+tibble(
+  Precio = df_oferta$p,
+  Oferta = df_oferta$q,
+  Demanda = df_demanda$q
+) |>
+  knitr::kable()
+```
+:::
+::: {.column width="62%"}
+```{r}
+plot_equilibrio <- df_equilibrio |>
+  ggplot(aes(x = q, y = p, color = curva)) +
+  geom_point() +
+  geom_line() +
+  geom_segment(aes(x = 0, y = 0, xend = 0, yend = 2.8), color = "black", alpha = 0.6) +
+  geom_segment(aes(x = 0, y = 0, xend = 25, yend = 0), color = "black", alpha = 0.6) +
+  annotate("text", label = "Oferta", x = 17.5, y = 2.25) +
+  annotate("text", label = "Demanda", x = 18.5, y = 1) +
+  scale_x_continuous(expand = expansion(add = 0)) +
+  scale_y_continuous(expand = expansion(add = 0), breaks = c(1, 1.5, 2), limits = c(0, 2.8)) +
+  scale_color_manual(values = c(colores[["celeste"]], colores[["verde"]])) +
+  guides(color = "none") +
+  labs(x = "Cantidad", y = "Precio")
+
+plot_equilibrio
+```
+:::
+::::
+
+## Desequilibrio (P = $2)
+
+```{r}
+plot_equilibrio +
+  annotate("segment", x = 7.5, xend = 12.5, y = 2, yend = 2,
+           arrow = arrow(ends = "both", length = unit(0.25, "cm"))) +
+  annotate("text", y = 2.2, x = 10, label = "Exceso de oferta", family = "Lato")
+```
+
+## Desequilibrio (P = $1)
+
+```{r}
+plot_equilibrio +
+  annotate("segment", x = 6.5, xend = 14.5, y = 1, yend = 1,
+           arrow = arrow(ends = "both", length = unit(0.25, "cm"))) +
+  annotate("text", y = 0.85, x = 10.3, label = "Exceso de demanda", family = "Lato")
+```
+
+## Estática comparativa
+
+- Una vez desarrollado el modelo, podemos aplicarlo para establecer relaciones causales entre variables observadas en la realidad.
+- ¿Cómo responden las variables endógenas a cambios en las variables exógenas?
+
+## Estática comparativa: aumento en la oferta
+
+```{r}
+df_estatica <- bind_rows(df_demanda, df_oferta, df_oferta_2)
+
+df_estatica |>
+  ggplot(aes(x = q, y = p, color = curva)) +
+  geom_line(linewidth = 1) +
+  scale_y_continuous(breaks = c(1, 1.5, 2), expand = expansion(add = 0)) +
+  scale_x_continuous(breaks = seq(0, 25, by = 5), expand = expansion(add = 0)) +
+  scale_color_manual(values = c(colores[["celeste"]], colores[["verde"]], "orange")) +
+  geom_point(data = filter(df_estatica, p == 1.5, q == 10),
+             aes(x = q, y = p), inherit.aes = FALSE) +
+  geom_point(data = filter(df_estatica, p == 1, q == 15),
+             aes(x = q, y = p), inherit.aes = FALSE) +
+  geom_segment(aes(x = 0, y = 0, xend = 0, yend = 2.8), color = "black", alpha = 0.6) +
+  geom_segment(aes(x = 0, y = 0, xend = 25, yend = 0), color = "black", alpha = 0.6) +
+  annotate("segment", x = 15, xend = 20, y = 1.75, yend = 1.75,
+           arrow = arrow(length = unit(0.2, "cm"))) +
+  annotate("segment", x = 7.5, xend = 12.5, y = 1, yend = 1,
+           arrow = arrow(length = unit(0.2, "cm"))) +
+  labs(x = "Q", y = "P") +
+  guides(color = "none")
+```
+
+## Estática comparativa: aumento en la demanda
+
+```{r}
+df_demanda_2 <- tibble(
+  p = seq(0.5, 3, by = 0.5),
+  q = c(32, 25, 20, 17, 15, 14),
+  curva = "Demanda 2"
+)
+
+df_estatica_2 <- bind_rows(df_demanda, df_oferta, df_demanda_2) |>
+  add_row(p = 3, q = 16, curva = "Oferta") |>
+  add_row(p = 3, q = 2.5, curva = "Demanda")
+
+df_estatica_2 |>
+  ggplot(aes(x = q, y = p, color = curva)) +
+  geom_line(linewidth = 1) +
+  geom_segment(aes(x = 0, y = 0, xend = 0, yend = 3.2), color = "black", alpha = 0.6) +
+  geom_segment(aes(x = 0, y = 0, xend = 30, yend = 0), color = "black", alpha = 0.6) +
+  scale_y_continuous(breaks = c(1.5, 2.5), expand = expansion(add = 0)) +
+  scale_x_continuous(breaks = seq(0, 25, by = 5), expand = expansion(add = 0)) +
+  scale_color_manual(values = c(colores[["celeste"]], colores[["verde"]], "orange", colores[["verde"]])) +
+  geom_point(data = filter(df_estatica, p == 1.5, q == 10),
+             aes(x = q, y = p), inherit.aes = FALSE) +
+  geom_point(data = tibble(p = 2.5, q = 15),
+             aes(x = q, y = p), inherit.aes = FALSE) +
+  annotate("segment", x = 7.5, xend = 12.5, y = 2.5, yend = 2.5,
+           arrow = arrow(length = unit(0.2, "cm"))) +
+  annotate("segment", x = 17.5, xend = 22.5, y = 1, yend = 1,
+           arrow = arrow(length = unit(0.2, "cm"))) +
+  labs(x = "Q", y = "P") +
+  guides(color = "none")
+```
+
+## Shocks exógenos
+
+:::: {.columns}
+::: {.column width="40%"}
+- La invasión de Ucrania implica una caída en la oferta de trigo, petróleo y gas natural.
+:::
+::: {.column width="60%"}
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">War in Ukraine 🇺🇦 is upending supplies from two of the world’s largest agricultural producers, hurting the poor most and further fueling inflation. See <a href="https://twitter.com/hashtag/IMFBlog?src=hash&amp;ref_src=twsrc%5Etfw">#IMFBlog</a> for more on the regional impacts. <a href="https://t.co/LY1urh4vrj">https://t.co/LY1urh4vrj</a> <a href="https://t.co/z9x7x7X9v7">pic.twitter.com/z9x7x7X9v7</a></p>&mdash; IMF (@IMFNews) <a href="https://twitter.com/IMFNews/status/1504213589346832385?ref_src=twsrc%5Etfw">March 16, 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+:::
+::::
+
+## Precios máximos
+
+- Algunos gobiernos prohíben cobrar precios por encima de cierto valor.
+- Si el precio máximo es mayor que el equilibrio, la política no tiene efecto.
+- Si el precio máximo es menor que el equilibrio:
+  - hay exceso de demanda;
+  - aumentan los costos de búsqueda;
+  - aparece un mercado negro.
+
+## Precio máximos
+
+```{r}
+of <- tibble(q = c(60, 80, 100), p = c(800, 1000, 1200))
+dem <- tibble(q = c(60, 80, 100), p = c(1200, 1000, 800))
+
+of_fit <- line_coeffs(of$q, of$p)
+dem_fit <- line_coeffs(dem$q, dem$p)
+
+puntos <- tibble(q = c(60, 60, 100), p = c(800, 1200, 800))
+
+ggplot() +
+  geom_abline(intercept = of_fit[[1]], slope = of_fit[[2]], color = colores[["celeste"]]) +
+  geom_abline(intercept = dem_fit[[1]], slope = dem_fit[[2]], color = colores[["celeste"]]) +
+  annotate("rect", xmin = 40, ymin = 800, xmax = Inf, ymax = Inf, alpha = 0.4, fill = "grey") +
+  geom_point(data = puntos, aes(q, p)) +
+  scale_x_continuous(limits = c(40, 120), breaks = c(60, 80, 100)) +
+  scale_y_continuous(breaks = seq(200, 1200, by = 200), limits = c(0, 1500)) +
+  geom_segment(aes(x = 40, y = 0, xend = 40, yend = Inf), alpha = 0.6) +
+  geom_segment(aes(x = 40, y = 0, xend = Inf, yend = 0), alpha = 0.6) +
+  geom_segment(aes(x = 40, y = 800, xend = Inf, yend = 800), alpha = 0.8, linetype = "dashed") +
+  geom_segment(aes(x = 40, y = 1200, xend = 60, yend = 1200), alpha = 0.6, linetype = "dashed") +
+  geom_segment(aes(x = 60, y = 1200, xend = 60, yend = 0), alpha = 0.6, linetype = "dashed") +
+  geom_segment(aes(x = 65, y = 800, xend = 95, yend = 800),
+               arrow = arrow(length = unit(0.2, "cm"), ends = "both")) +
+  annotate("curve", y = 1225, x = 61, xend = 66, yend = 1280,
+           arrow = arrow(ends = "first", length = unit(0.2, "cm")),
+           curvature = -0.2) +
+  annotate("text", y = 900, x = 110, label = "Zona ilegal") +
+  annotate("text", y = 1300, x = 80, label = "Renta mercado\nnegro") +
+  annotate("text", x = 80, y = 700, label = "Escasez") +
+  labs(x = "Q", y = "P", caption = "Precio máximo $800") +
+  coord_cartesian(clip = "off")
+```
+
+## Precios máximos (ejemplo) {background-image="imgs/precios_maximos.png" background-position="top left" background-size="contain"}
+
+## Precios cuidados {background-image="imgs/precios_cuidados.jpeg" background-position="bottom right" background-size="contain"}
+
+## Venezuela (1) {background-image="imgs/super_venezuela_2.png" background-position="center" background-size="contain"}
+
+## Venezuela (2) {background-image="imgs/super_venezuela_3.png" background-position="center" background-size="contain"}
+
+## Precios mínimos
+
+- El gobierno también puede fijar un precio mínimo.
+- Si es menor que el precio de equilibrio, la política no tiene efecto.
+- Si es mayor que el precio de equilibrio, genera un exceso de oferta.
+
+## Salario mínimo
+
+- En el mercado de trabajo, el precio es el salario.
+- Si el gobierno fija un salario mínimo, está fijando un precio mínimo.
+
+## Salario mínimo
+
+```{r}
+of <- tibble(q = c(20, 22), p = c(5, 7))
+dem <- tibble(q = c(20, 22), p = c(7, 5))
+
+of_fit <- line_coeffs(of$q, of$p)
+dem_fit <- line_coeffs(dem$q, dem$p)
+
+puntos <- tibble(q = c(20, 20, 21, 22), p = c(5, 7, 6, 7))
+
+ggplot() +
+  geom_abline(intercept = of_fit[[1]], slope = of_fit[[2]], color = colores[["celeste"]]) +
+  geom_abline(intercept = dem_fit[[1]], slope = dem_fit[[2]], color = colores[["celeste"]]) +
+  annotate("rect", xmin = -Inf, ymin = -Inf, xmax = Inf, ymax = 7, alpha = 0.4, fill = "grey") +
+  geom_point(data = puntos, aes(q, p)) +
+  scale_x_continuous(limits = c(19, 23), breaks = 19:23, expand = expansion(add = 0)) +
+  scale_y_continuous(breaks = 5:7, limits = c(0, 8), expand = expansion(add = 0)) +
+  geom_segment(aes(x = -Inf, y = 0, xend = -Inf, yend = Inf), alpha = 0.6) +
+  geom_segment(aes(x = -Inf, y = 0, xend = Inf, yend = 0), alpha = 0.6) +
+  geom_segment(aes(x = 20.1, y = 7, xend = 21.9, yend = 7),
+               arrow = arrow(length = unit(0.2, "cm"), ends = "both")) +
+  annotate("text", y = 1, x = 22, label = "Zona ilegal") +
+  annotate("text", x = 21, y = 7.5, label = "Desempleo") +
+  labs(x = "Q", y = "P", caption = "Salario mínimo $7") +
+  coord_cartesian(clip = "off")
+```
