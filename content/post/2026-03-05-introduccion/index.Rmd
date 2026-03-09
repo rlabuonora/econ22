@@ -57,7 +57,7 @@ blockquote p::after {
 
 ```{r}
 xaringanExtra::embed_xaringan(
-  url = "https://slides-intro.netlify.app/",
+  url = "/slides/introduccion/",
   ratio = "16:9"
 )
 ```
@@ -177,4 +177,3 @@ Usar una planilla electrónica para graficar las siguientes funciones: $y=3x+2$,
 
 ## Bibilografía
 - Parkin, M. y Loría. E. (2010). Microeconomía. Editorial: Pearson. Capítulos 1 y 2.
-
