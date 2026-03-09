@@ -16,7 +16,7 @@ check:
 	@command -v pandoc >/dev/null || { echo 'pandoc not found. On macOS: brew install pandoc. On Debian/Ubuntu: sudo apt install pandoc.'; exit 1; }
 	@command -v hugo >/dev/null || { echo 'hugo not found. On macOS: brew install hugo. On this WSL setup, ensure ~/.bashrc exports the blogdown Hugo path.'; exit 1; }
 
-build: check
+build: check slides-render
 	Rscript -e "blogdown::build_site()"
 
 serve: check

@@ -10,7 +10,7 @@ This repository is a Hugo/blogdown course website that deploys to Netlify from t
   Verifies that `Rscript`, `pandoc`, and `hugo` are available on `PATH`.
 
 - `make build`
-  Re-renders `.Rmd` content via `blogdown::build_site()`.
+  Re-renders Quarto slide decks into `static/slides/` and then rebuilds `.Rmd` content via `blogdown::build_site()`.
 
 - `make serve`
   Serves the site locally with `hugo server -D -F`.
@@ -38,7 +38,7 @@ This repository is a Hugo/blogdown course website that deploys to Netlify from t
   2. `make serve`
 - Open the local site at `http://localhost:1313`.
 - If a site was started from R with `blogdown::serve_site()`, stop it with `blogdown::stop_server()`.
-- For Quarto slides, render with `make slides-render` before previewing the site.
+- Use `make slides-render` when you want to rebuild slide decks without running the full site build.
 
 ## Deploy
 
