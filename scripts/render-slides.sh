@@ -7,6 +7,7 @@ slides_dir="$root_dir/slides"
 output_root="$root_dir/static/slides"
 cache_root="${TMPDIR:-/tmp}/econ22-quarto-cache"
 theme_fonts_dir="$root_dir/themes/hugo-lithium/static/fonts"
+shared_slides_dir="$slides_dir/_shared"
 
 if ! command -v quarto >/dev/null 2>&1; then
   echo "quarto not found. Install Quarto so slide decks can be rendered." >&2
@@ -15,6 +16,11 @@ fi
 
 mkdir -p "$output_root"
 mkdir -p "$cache_root"
+
+if [ -d "$shared_slides_dir" ]; then
+  mkdir -p "$output_root/_shared"
+  cp "$shared_slides_dir"/* "$output_root/_shared/"
+fi
 
 # Keep Quarto/Deno caches in a writable location.
 export XDG_CACHE_HOME="$cache_root"

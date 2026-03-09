@@ -1,0 +1,190 @@
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/merriweather-v13-latin-regular.woff2") format("woff2"),
+       url("/fonts/merriweather-v13-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/lato-v11-latin-regular.woff2") format("woff2"),
+       url("/fonts/lato-v11-latin-regular.woff") format("woff");
+}
+
+:root {
+  --deck-font-size: 38px;
+  --deck-accent: #5e82ae;
+  --deck-accent-soft: #dbe6f1;
+  --deck-ink: #23313d;
+  --deck-paper: #f8f5ef;
+  --deck-paper-strong: #efe7da;
+  --r-heading-font: "Lato", sans-serif;
+  --r-main-font: "Merriweather", serif;
+  --r-heading-color: var(--deck-accent);
+  --r-link-color: var(--deck-accent);
+  --r-selection-background-color: var(--deck-accent);
+  --r-main-font-size: var(--deck-font-size);
+}
+
+.reveal {
+  font-size: var(--deck-font-size);
+  color: var(--deck-ink);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slide {
+  padding-top: 0.1em;
+}
+
+.reveal .slide:not(.center) h2 {
+  color: var(--deck-accent);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border-bottom: 0.08em solid var(--deck-accent-soft);
+  margin-bottom: 0.45em;
+  padding-bottom: 0.18em;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  color: var(--deck-accent);
+  font-weight: 700;
+}
+
+.reveal h3 {
+  font-size: 0.9em;
+  margin-bottom: 0.35em;
+}
+
+.reveal p,
+.reveal li {
+  line-height: 1.45;
+}
+
+.reveal ul,
+.reveal ol {
+  display: block;
+  margin-top: 0.35em;
+}
+
+.reveal li {
+  margin-bottom: 0.35em;
+}
+
+.reveal a {
+  text-decoration: none;
+  border-bottom: 0.08em solid color-mix(in srgb, var(--deck-accent) 35%, transparent);
+}
+
+.reveal strong {
+  color: var(--deck-accent);
+}
+
+.reveal img,
+.reveal video {
+  max-height: 72vh;
+  object-fit: contain;
+}
+
+.reveal .plain {
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.reveal .columns {
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.reveal .slide-number {
+  color: var(--deck-accent);
+  font-family: "Lato", sans-serif;
+}
+
+.reveal blockquote {
+  width: auto;
+  background: color-mix(in srgb, var(--deck-paper) 78%, white);
+  border-left: 0.18em solid var(--deck-accent);
+  padding: 0.65em 0.9em;
+  box-shadow: none;
+}
+
+.reveal table {
+  margin: 0.6em auto;
+  border-collapse: collapse;
+  font-size: 0.78em;
+}
+
+.reveal th {
+  background: var(--deck-accent);
+  color: white;
+}
+
+.reveal th,
+.reveal td {
+  border: 0.04em solid var(--deck-accent-soft);
+  padding: 0.35em 0.55em;
+}
+
+.reveal tr:nth-child(even) td {
+  background: color-mix(in srgb, var(--deck-paper-strong) 55%, white);
+}
+
+.reveal .quarto-title-block {
+  text-align: left !important;
+  color: var(--deck-ink);
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--deck-paper) 92%, white), white 46%, color-mix(in srgb, var(--deck-accent-soft) 88%, white)),
+    radial-gradient(circle at top right, color-mix(in srgb, var(--deck-accent-soft) 45%, transparent), transparent 42%);
+  border-top: 0.28em solid var(--deck-accent);
+  padding: 1.2em 1.2em 1em 1.2em !important;
+}
+
+.reveal .quarto-title-block .title {
+  font-size: 1.5em;
+  line-height: 1.05;
+  margin-bottom: 0.18em;
+}
+
+.reveal .quarto-title-block .subtitle {
+  color: color-mix(in srgb, var(--deck-accent) 88%, black 12%);
+  font-family: "Lato", sans-serif;
+  font-size: 0.72em;
+  margin-top: 0.15em;
+}
+
+.reveal .quarto-title-block::after {
+  content: "";
+  display: block;
+  width: 5.5em;
+  height: 0.18em;
+  margin-top: 0.55em;
+  background: var(--deck-accent);
+}
+
+.reveal .inverse,
+.reveal section.has-dark-background {
+  color: #fff;
+}
+
+.reveal .inverse h1,
+.reveal .inverse h2,
+.reveal .inverse h3,
+.reveal section.has-dark-background h1,
+.reveal section.has-dark-background h2,
+.reveal section.has-dark-background h3 {
+  color: #fff;
+  border-bottom-color: color-mix(in srgb, white 32%, transparent);
+}
+
+.twitter-tweet.twitter-tweet-rendered {
+  max-width: 420px !important;
+}

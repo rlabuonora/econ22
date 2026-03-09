@@ -1,55 +1,5 @@
-@font-face {
-  font-family: "Merriweather";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/merriweather-v13-latin-regular.woff2") format("woff2"),
-       url("fonts/merriweather-v13-latin-regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("fonts/lato-v11-latin-regular.woff2") format("woff2"),
-       url("fonts/lato-v11-latin-regular.woff") format("woff");
-}
+@import url("../_shared/base.css");
 
 :root {
-  --r-heading-font: "Lato", sans-serif;
-  --r-main-font: "Merriweather", serif;
-  --r-heading-color: #5e82ae;
-  --r-link-color: #5e82ae;
-  --r-selection-background-color: #5e82ae;
-  --r-main-font-size: 38px;
-}
-
-.reveal {
-  font-size: 38px;
-}
-
-.reveal .slides {
-  text-align: left;
-}
-
-.reveal h1,
-.reveal h2,
-.reveal h3 {
-  color: #5e82ae;
-  font-weight: 700;
-}
-
-.reveal ul,
-.reveal ol {
-  display: block;
-  margin-top: 0.4em;
-}
-
-.reveal li {
-  margin-bottom: 0.45em;
-}
-
-.reveal .plain {
-  border: 0;
-  box-shadow: none;
-  background: transparent;
+  --deck-font-size: 38px;
 }
