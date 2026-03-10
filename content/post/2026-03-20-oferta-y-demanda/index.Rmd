@@ -86,9 +86,7 @@ Explicar porqué estas afirmaciones son falsas y reescribirlas para que sean ver
 
 Usar el diagrama de oferta y demanda para los gráficos en el siguiente tweet sobre el impacto de la invasión de Rusia a Ucrania:
 
-```{r echo=FALSE}
-blogdown::shortcode('tweet', '1504213589346832385')
-```
+<https://x.com/i/status/1504213589346832385>
 
 
 ## Ejercicio 3
