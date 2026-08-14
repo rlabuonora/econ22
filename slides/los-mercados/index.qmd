@@ -52,7 +52,7 @@ format:
 
 ## Maximización de beneficios (2)
 
-![](imgs/maximizacion.png){.plain width="82%"}
+![](imgs/costo_marginal_ingreso_marginal.png){.plain width="82%"}
 
 ## La curva de oferta
 

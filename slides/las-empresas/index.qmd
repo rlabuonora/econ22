@@ -48,7 +48,7 @@ $$Beneficios = Ingresos - Costos$$
 
 ## Función de producción
 
-![](imgs/produccion.png){.plain width="82%"}
+![](imgs/funcion_prod.png){.plain width="82%"}
 
 ## Rendimientos marginales decrecientes
 
@@ -96,7 +96,15 @@ $$Beneficios = Ingresos - Costos$$
 
 ## Ejemplo
 
-![](imgs/costos_1.png){.plain width="82%"}
+| q | CF | CV | CT |
+|---:|---:|---:|---:|
+| 0 | 55 | 0 | 55 |
+| 1 | 55 | 30 | 85 |
+| 2 | 55 | 55 | 110 |
+| 3 | 55 | 75 | 130 |
+| 4 | 55 | 105 | 160 |
+| 5 | 55 | 155 | 210 |
+| 6 | 55 | 225 | 280 |
 
 ## Costo marginal
 
@@ -106,7 +114,14 @@ $$Beneficios = Ingresos - Costos$$
 
 ## Ejemplo numérico
 
-![](imgs/costos_2.png){.plain width="82%"}
+| q | CT | CMg |
+|---:|---:|---:|
+| 0 | 55 | |
+| 1 | 85 | 30 |
+| 2 | 110 | 25 |
+| 3 | 130 | 20 |
+| 4 | 160 | 30 |
+| 5 | 210 | 50 |
 
 ## Costo medio
 
@@ -115,15 +130,16 @@ $$Beneficios = Ingresos - Costos$$
 
 ## Costo fijo medio, costo variable medio
 
-![](imgs/costos_3.png){.plain width="82%"}
+- $CFMe = CF/q$ disminuye al repartir el costo fijo entre más unidades.
+- $CVMe = CV/q$ depende de la productividad de los factores variables.
 
 ## Costos medios, fijos y marginales
 
-![](imgs/costos_4.png){.plain width="82%"}
+![](imgs/costos.png){.plain width="82%"}
 
 ## Costos medios, fijos y marginales (2)
 
-![](imgs/costos_5.png){.plain width="82%"}
+![](imgs/curvas_costos.png){.plain width="82%"}
 
 ## Productividad marginal y costos
 

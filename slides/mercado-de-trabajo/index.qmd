@@ -41,7 +41,7 @@ format:
 
 ## Gráfico base
 
-![](figs/unnamed-chunk-1-1.png){.plain width="82%"}
+![](figs/unnamed-chunk-3-1.png){.plain width="82%"}
 
 ## Si el VPMg > W
 
@@ -49,20 +49,24 @@ format:
 
 ## Q = 2 no es de equilibrio
 
-![](figs/unnamed-chunk-2-1.png){.plain width="82%"}
+![](figs/unnamed-chunk-3-1.png){.plain width="82%"}
 
 ## Si el VPMg < W
 
 - Contratar un trabajador adicional reduce beneficios.
 
+![](figs/unnamed-chunk-4-1.png){.plain width="82%"}
+
 ## Maximización de beneficios
 
-![](figs/unnamed-chunk-3-1.png){.plain width="82%"}
+![](figs/unnamed-chunk-5-1.png){.plain width="82%"}
 
 ## ¿Qué pasa si sube el salario?
 
 - La cantidad demandada de trabajo cae.
 - La empresa se mueve a lo largo de su curva de demanda de trabajo.
+
+![](figs/unnamed-chunk-6-1.png){.plain width="82%"}
 
 ## Curva de demanda de trabajo
 
@@ -100,7 +104,7 @@ format:
 
 ## Indicadores
 
-![](figs/unnamed-chunk-4-1.png){.plain width="82%"}
+<iframe width="840" height="473" src="https://www.youtube.com/embed/B8VclnrVEPA" title="Indicadores del mercado de trabajo" frameborder="0" allowfullscreen></iframe>
 
 ## Desempleados desalentados
 

@@ -54,15 +54,30 @@ format:
 
 ## Ingreso marginal y precio
 
-![](imgs/ingreso_marginal.png){.plain width="84%"}
+- Para vender una unidad adicional, el monopolista reduce el precio.
+- La rebaja afecta también a las unidades que ya vendía.
+- Por eso el ingreso marginal es menor que el precio.
 
 ## Ejemplo numérico
 
-![](imgs/monopolio_1.png){.plain width="84%"}
+| q | P | Ingreso total | Ingreso marginal |
+|---:|---:|---:|---:|
+| 0 | 200 | 0 | |
+| 1 | 180 | 180 | 180 |
+| 2 | 160 | 320 | 140 |
+| 3 | 140 | 420 | 100 |
+| 4 | 120 | 480 | 60 |
+| 5 | 100 | 500 | 20 |
 
 ## Ejemplo numérico (2)
 
-![](imgs/monopolio_2.png){.plain width="84%"}
+| q | P | Ingreso total | Ingreso marginal |
+|---:|---:|---:|---:|
+| 6 | 80 | 480 | -20 |
+| 7 | 60 | 420 | -60 |
+| 8 | 40 | 320 | -100 |
+| 9 | 20 | 180 | -140 |
+| 10 | 0 | 0 | -180 |
 
 ## Elasticidad e ingreso marginal
 
@@ -71,7 +86,7 @@ format:
 
 ## Gráficamente
 
-![](imgs/grafico_monopolio.png){.plain width="84%"}
+![](imgs/max_beneficio.png){.plain width="84%"}
 
 ## Ingresos, beneficios y costos
 
