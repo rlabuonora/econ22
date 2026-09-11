@@ -59,7 +59,8 @@ xaringanExtra::embed_xaringan(
 
 # Ejercicio 1
 
-Explique porqué son falsas las siguientes afirmaciones y corríjalas.
+Explique porqué son falsas las siguientes afirmaciones y corríjalas:
+
 - Un monopolio maximiza sus beneficios cuando $CM = P$.
 - Los monopolistas maximizan las ventas. Por lo tanto, producen más que los competidores perfectos y a un precio más bajo.
 - Las empresas siempre cobran el precio máximo que soporta el mercado.

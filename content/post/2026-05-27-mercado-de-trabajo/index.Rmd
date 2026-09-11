@@ -66,11 +66,11 @@ marcar_punto <- function(x, y, linetype="dashed") {
 
 ```
 
-# Ejercicios
+# Ejercicio 1
 
 <!-- 1. Descargar y graficar las tasas de actividad, desempleo y empleo desde 1975 hasta el último dato disponible. Explicar qué significa cada indicador.  -->
 
-1. Suponga una empresa que produce tomates con la siguiente función de producción.
+Suponga una empresa que produce tomates con la siguiente función de producción.
 
 ```{r}
 
@@ -88,7 +88,9 @@ tibble(
 
     c) Graficar la curva de demanda de trabajo antes y después de la caída del precio de los tomates.
 
-2. Considere el mercado de hamburgueseros, que funciona en competencia perfecta con las siguientes curvas de oferta y demanda:
+# Ejercicio 2
+
+Considere el mercado de hamburgueseros, que funciona en competencia perfecta con las siguientes curvas de oferta y demanda:
 
 ```{r}
 
@@ -121,12 +123,14 @@ ggplot(data.frame(x=0, y=0)) +
 
 ```
 
-a) ¿Cuántos trabajadores ofrecen trabajo a $90 por hora?
-b) Describa el resultado del mercado con este precio.
-c) ¿Cuál es el salario de equilibrio?
-d) Suponga que hay un aumento en el precio de venta de las hamburguesas que hace que para el mismo salario, las empresas demanden 45 hamburgueseros más que antes. Encuentre el nuevo equilibrio del mercado.
+- ¿Cuántos trabajadores ofrecen trabajo a $90 por hora?
+- Describa el resultado del mercado con este precio.
+- ¿Cuál es el salario de equilibrio?
+- Suponga que hay un aumento en el precio de venta de las hamburguesas que hace que para el mismo salario, las empresas demanden 45 hamburgueseros más que antes. Encuentre el nuevo equilibrio del mercado.
 
-3. Analizar la siguiente nota sobre el mercado inmobiliario.
+# Ejercicio 3
+
+Analizar la siguiente nota sobre el mercado inmobiliario.
 
 ![](mercado_inmuebles.png)
 
@@ -134,7 +138,9 @@ d) Suponga que hay un aumento en el precio de venta de las hamburguesas que hace
 - Explique cómo influye una disminución de los precios de las casas en el mercado del trabajo de la construcción.
 - Trace una gráfica para ilustrar el efecto de una disminución de los precios de las casas en el mercado del trabajo de la construcción.
 
-3. Analizar este gráfico: (tomado de [Para entender la Economía del Uruguay ](https://www.entenderlaeconomiauy.org/capitulos)):
+# Ejercicio 4
+
+Analizar este gráfico: (tomado de [Para entender la Economía del Uruguay ](https://www.entenderlaeconomiauy.org/capitulos)):
 
 ![](indicadores_cinve.png)
 
@@ -154,7 +160,9 @@ d) Suponga que hay un aumento en el precio de venta de las hamburguesas que hace
 <!--   - ¿Quiénes son las personas más afectadas por este problema? -->
 <!--   - ¿A qué se debe esta evolución? -->
 
-4. Analizar [este artículo de Benjamín Nahúm](Enciclopedia_uruguaya_24-14-15.pdf) y contestar las siguientes preguntas:
+# Ejercicio 5
+
+Analizar [este artículo de Benjamín Nahúm](Enciclopedia_uruguaya_24-14-15.pdf) y contestar las siguientes preguntas:
 
   - ¿Qué tipo de desempleo generó el alambramiento del campo en Uruguay en la década de 1870?
   - ¿Cuáles eran las principales tareas que ya no necesitan de mano de obra luego de la implantación de esta tecnología?
