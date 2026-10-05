@@ -1,6 +1,9 @@
-.PHONY: help check build serve change-date slides-check slides-render
+.PHONY: help check build serve change-date slides-check slides-render env-setup r
 
 HUGO_FLAGS ?= -D -F
+ENV_RUN = bash scripts/with-project-env.sh
+# Render changed posts as well as new posts; blogdown defaults to no Rmd rendering.
+BUILD_RMD ?= timestamp
 
 help:
 	@printf '%s\n' \
@@ -10,17 +13,24 @@ help:
 		'make change-date OLD=YYYY-MM-DD NEW=YYYY-MM-DD SLUG=post-slug' \
 		'make slides-check  - Verify Quarto is available for slide rendering' \
 		'make slides-render - Render Quarto slide decks into static/slides/'
+	@printf '%s\n' 'make env-setup - Create the isolated R 4.5.3 environment' 'make r - Open R in the project environment'
+
+env-setup:
+	bash scripts/setup-r-env.sh
+
+r:
+	$(ENV_RUN) R
 
 check:
-	@command -v Rscript >/dev/null || { echo 'Rscript not found. Install R so the Rscript command is available.'; exit 1; }
-	@command -v pandoc >/dev/null || { echo 'pandoc not found. On macOS: brew install pandoc. On Debian/Ubuntu: sudo apt install pandoc.'; exit 1; }
-	@command -v hugo >/dev/null || { echo 'hugo not found. On macOS: brew install hugo. On this WSL setup, ensure ~/.bashrc exports the blogdown Hugo path.'; exit 1; }
+	@$(ENV_RUN) bash -c 'command -v Rscript >/dev/null || { echo "Rscript not found in project environment."; exit 1; }'
+	@$(ENV_RUN) bash -c 'command -v pandoc >/dev/null || { echo "pandoc not found in project environment."; exit 1; }'
+	@$(ENV_RUN) bash -c 'command -v hugo >/dev/null || { echo "hugo not found. Install Hugo 0.110.0 and add it to PATH."; exit 1; }'
 
 build: check slides-render
-	Rscript -e "blogdown::build_site()"
+	$(ENV_RUN) Rscript -e 'mode <- "$(BUILD_RMD)"; blogdown::build_site(build_rmd=switch(mode, "TRUE"=TRUE, "FALSE"=FALSE, mode))'
 
 serve: check
-	hugo server $(HUGO_FLAGS)
+	$(ENV_RUN) hugo server $(HUGO_FLAGS)
 
 change-date:
 	@test -n "$(OLD)" || { echo 'OLD is required, e.g. make change-date OLD=2025-06-01 NEW=2026-03-05 SLUG=introduccion'; exit 1; }
@@ -29,7 +39,7 @@ change-date:
 	bash scripts/change-post-date.sh "$(OLD)" "$(NEW)" "$(SLUG)"
 
 slides-check:
-	@command -v quarto >/dev/null || { echo 'quarto not found. On macOS: brew install --cask quarto. On Debian/Ubuntu, install Quarto from the official package.'; exit 1; }
+	@$(ENV_RUN) bash -c 'command -v quarto >/dev/null || { echo "quarto not found. Install Quarto and add it to PATH."; exit 1; }'
 
 slides-render: slides-check
-	bash scripts/render-slides.sh
+	$(ENV_RUN) bash scripts/render-slides.sh

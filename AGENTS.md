@@ -6,11 +6,20 @@ This repository is a Hugo/blogdown course website that deploys to Netlify from t
 
 ## Key Commands
 
+- `make env-setup`
+  Creates this project's isolated R 4.5.3 environment in `.conda/` and installs
+  the pinned CRAN-only package into `.r-library/`. Linux/WSL uses
+  `environment-linux-64.lock`; other platforms use `environment.yml`.
+
+- `make r`
+  Opens R in the project environment. For scripts, use
+  `bash scripts/with-project-env.sh Rscript script.R`.
+
 - `make check`
   Verifies that `Rscript`, `pandoc`, and `hugo` are available on `PATH`.
 
 - `make build`
-  Re-renders Quarto slide decks into `static/slides/` and then rebuilds `.Rmd` content via `blogdown::build_site()`.
+  Re-renders Quarto slide decks into `static/slides/` and rebuilds changed/new `.Rmd` content via `blogdown::build_site(build_rmd="timestamp")`. Use `make build BUILD_RMD=TRUE` to render all posts.
 
 - `make serve`
   Serves the site locally with `hugo server -D -F`.
@@ -33,6 +42,8 @@ This repository is a Hugo/blogdown course website that deploys to Netlify from t
 
 ## Local Workflow
 
+- Run `make env-setup` once before building. Make targets select the project
+  environment automatically; do not change the global R/Rscript wrappers.
 - Preferred local workflow in WSL/macOS:
   1. `make build`
   2. `make serve`

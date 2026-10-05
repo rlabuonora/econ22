@@ -1,0 +1,22 @@
+name: econ22
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - r-base=4.5.3
+  - r-blogdown
+  - r-tidyverse
+  - r-kableextra
+  # xaringanExtra is installed separately at a pinned CRAN version.
+  - r-htmltools
+  - r-jsonlite
+  - r-rstudioapi
+  - r-uuid
+  - r-here
+  - r-patchwork
+  - r-ragg
+  - r-plotly
+  - r-extrafont
+  - r-showtext
+  - r-polynom
+  - pandoc=3.10
