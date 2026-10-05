@@ -4,35 +4,53 @@
   --deck-font-size: 38px;
 }
 
-.reveal img.population-diagram {
-  max-height: 84vh;
-  display: block;
-  margin: 0 auto;
+/* Let diagrams use all the space left below a compact heading. */
+.reveal .slides section.diagram-slide {
+  height: 100%;
+  top: 0 !important;
+  box-sizing: border-box;
 }
 
-.reveal img.labor-demand-diagram,
-.reveal img.labor-equilibrium-diagram {
-  max-height: 74vh;
-  display: block;
-  margin: 0 auto;
+.reveal .slides section.diagram-slide.present {
+  display: flex !important;
+  flex-direction: column;
 }
 
-.reveal img.historical-chart {
+.reveal .slides section.diagram-slide h2 {
+  font-size: 1.15em;
+  line-height: 1.15;
+  border: 0;
+  padding: 0;
+  margin: 0 0 0.35em;
+  flex: 0 0 auto;
+}
+
+.reveal .diagram-slide ul {
+  font-size: 0.8em;
+  margin: 0 0 0.3em;
+  flex: 0 0 auto;
+}
+
+.reveal .diagram-slide li {
+  margin-bottom: 0.15em;
+}
+
+.reveal .diagram-slide p {
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reveal .diagram-slide img {
   width: 100%;
-  height: auto;
-  max-height: 80vh;
-  display: block;
-  margin: 0 auto;
-}
-
-.reveal img.chart-with-text {
-  max-height: 70vh;
-}
-
-.reveal img.participation-image {
-  max-height: 80vh;
-  display: block;
-  margin: 0 auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0;
+  object-fit: contain;
 }
 
 .reveal .slides section.section-cover {

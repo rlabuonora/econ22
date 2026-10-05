@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700" role="img" aria-labelledby="title desc">
+  <title id="title">Equilibrio en el mercado de trabajo</title>
+  <desc id="desc">La demanda decreciente y la oferta creciente se cruzan en E. El salario de equilibrio es W* y la cantidad de trabajadores es L*.</desc>
+  <rect width="1400" height="700" fill="white"/>
+  <path d="M145 25 V620 H1360" fill="none" stroke="#23313d" stroke-width="4"/>
+  <path d="M145 290 H740 V620" fill="none" stroke="#8b969f" stroke-width="3" stroke-dasharray="12 9"/>
+  <path d="M250 65 L1230 515" fill="none" stroke="#5e82ae" stroke-width="8"/>
+  <path d="M250 515 L1230 65" fill="none" stroke="#d97934" stroke-width="8"/>
+  <circle cx="740" cy="290" r="12" fill="#23313d"/>
+  <g font-family="sans-serif" font-size="36" fill="#23313d">
+    <text x="40" y="340" transform="rotate(-90 40 340)" text-anchor="middle">Salario (W)</text>
+    <text x="750" y="693" text-anchor="middle">Cantidad de trabajadores (L)</text>
+    <text x="125" y="302" text-anchor="end">W*</text>
+    <text x="740" y="658" text-anchor="middle">L*</text>
+    <text x="758" y="273">E</text>
+    <text x="1010" y="45" fill="#d97934">Oferta de trabajo</text>
+    <text x="985" y="365" fill="#5e82ae">Demanda de trabajo</text>
+  </g>
+</svg>

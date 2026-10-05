@@ -23,88 +23,92 @@ format:
 
 - Los hogares obtienen ingresos vendiendo factores productivos.
 - En el mercado de trabajo, el factor es el trabajo y su precio es el salario.
-
-## Los ingresos de los hogares
-
-- Salarios
-- Rentas
-- Intereses
-- Beneficios
+- Los ingresos de los hogares provienen de:
+  - Salarios
+  - Rentas
+  - Intereses
+  - Beneficios
 
 ## Demanda de trabajo
 
 - La empresa contrata trabajo según el valor del producto marginal.
 - Ese valor depende de la productividad y del precio del bien producido.
+- El valor del producto marginal (VPMG)
 
-## El valor del producto marginal
-
-- Resume cuánto aporta un trabajador adicional medido en dinero.
+Resume cuánto aporta un trabajador adicional medido en dinero.
 
 ## ¿Cuántos trabajadores contratan las empresas?
 
-- Mientras el valor del producto marginal sea mayor que el salario, conviene contratar.
-- Si es menor, conviene reducir empleo.
+- Si el valor del producto marginal es mayor que el salario, conviene contratar trabajadores.
+- Si el valor del producto marginal es menor que el salario, conviene despedir trabajadores.
 
-## Gráfico base
-
-![](figs/unnamed-chunk-3-1.png){.plain width="82%"}
+![](figs/unnamed-chunk-3-1.png){.plain .nostretch}
 
 ## Si el VPMg > W
 
 - Contratar un trabajador más aumenta beneficios.
 
-## Q = 2 no es de equilibrio
+## Q = 2 no es de equilibrio {.diagram-slide}
 
-![](figs/unnamed-chunk-3-1.png){.plain width="82%"}
+![](figs/unnamed-chunk-3-1.png){.plain .nostretch}
 
-## Si el VPMg < W
+## Si el VPMg < W {.diagram-slide}
 
 - Contratar un trabajador adicional reduce beneficios.
 
-![](figs/unnamed-chunk-4-1.png){.plain width="82%"}
+![](figs/unnamed-chunk-4-1.png){.plain .nostretch}
 
-## Maximización de beneficios
+## Maximización de beneficios {.diagram-slide}
 
-![](figs/unnamed-chunk-5-1.png){.plain width="82%"}
+![](figs/unnamed-chunk-5-1.png){.plain .nostretch}
 
-## ¿Qué pasa si sube el salario?
+## ¿Qué pasa si sube el salario? {.diagram-slide}
 
 - La cantidad demandada de trabajo cae.
 - La empresa se mueve a lo largo de su curva de demanda de trabajo.
 
-![](figs/unnamed-chunk-6-1.png){.plain width="82%"}
+![](figs/unnamed-chunk-6-1.png){.plain .nostretch}
 
-## Curva de demanda de trabajo
+## Curva de demanda de trabajo {.diagram-slide}
 
-- Si sube el salario, disminuye la cantidad demandada de trabajo.
+![](figs/demanda-trabajo.svg){.plain .nostretch .labor-demand-diagram fig-alt="Curva de demanda de trabajo con pendiente negativa. Cuando el salario aumenta de W1 a W2, la cantidad demandada disminuye de L1 a L2."}
 
-![](figs/demanda-trabajo.svg){.plain .labor-demand-diagram height="660" fig-alt="Curva de demanda de trabajo con pendiente negativa. Cuando el salario aumenta de W1 a W2, la cantidad demandada disminuye de L1 a L2."}
+::: {.notes}
+Si sube el salario, disminuye la cantidad demandada de trabajo.
+:::
 
 ## La oferta de trabajo
 
 - Depende de preferencias entre ocio e ingreso.
 - También depende de instituciones y normas sociales.
 
-## Equilibrio en el mercado de trabajo
+## Equilibrio en el mercado de trabajo {.diagram-slide}
 
-- La oferta y la demanda determinan el salario y el empleo de equilibrio.
+![](figs/equilibrio-trabajo.svg){.plain .nostretch .labor-equilibrium-diagram fig-alt="La oferta y la demanda de trabajo se cruzan en E, determinando el salario W* y la cantidad de trabajadores L* de equilibrio."}
 
-![](imgs/oferta_demanda.png){.plain .labor-equilibrium-diagram height="660" fig-alt="Oferta y demanda de trabajo: el punto de intersección determina el salario y la cantidad de trabajadores de equilibrio."}
+::: {.notes}
+La oferta y la demanda determinan el salario y el empleo de equilibrio.
+:::
 
-## Mercado de trabajo segmentado
+## Mercado de trabajo segmentado {.diagram-slide}
 
+![](imgs/cirujanos.png){.plain .nostretch fig-alt="Dos mercados laborales lado a lado: cirujanos y trabajadores de comida rápida, con distintas curvas de oferta y demanda y distintos salarios de equilibrio."}
+
+::: {.notes}
 - No todos los trabajadores compiten en el mismo mercado.
 - Hay diferencias por calificación, género, edad, región e informalidad.
+:::
 
 ## Cómo medimos el empleo {.section-cover .center background-image="imgs/separador-medicion.png" background-size="cover" background-color="#111111" background-opacity="0.65"}
 
-## Clasificación de la población
+## Clasificación de la población {.diagram-slide}
 
-![](imgs/poblacion.png){.plain .population-diagram height="760" fig-alt="Clasificación de la población: población total dividida en PNET y PET; PET dividida en inactivos (PEI) y activos (PEA); PEA dividida en desocupados (D) y ocupados (O)."}
+![](figs/clasificacion-poblacion.svg){.plain .nostretch .population-diagram fig-alt="Clasificación de la población: población total dividida en PNET y PET; PET dividida en inactivos (PEI) y activos (PEA); PEA dividida en desocupados (D) y ocupados (O)."}
 
 ## Indicadores del desempeño del mercado de trabajo
 
-Las tasas se expresan como porcentajes. O = ocupados; D = desocupados.
+- Las tasas se expresan como porcentajes.
+- O = ocupados; D = desocupados.
 
 ::: {.incremental}
 - **Tasa de empleo:** $TE = \frac{O}{PET} \times 100$
@@ -137,23 +141,21 @@ Las tasas se expresan como porcentajes. O = ocupados; D = desocupados.
 - Estructural
 - Friccional
 
-## Desempleo cíclico
+## Desempleo cíclico {.diagram-slide}
 
-![](imgs/unemployed.jpeg){.plain width="82%"}
+![](imgs/unemployed.jpeg){.plain .nostretch}
 
-## Desempleo estructural
+## Desempleo estructural {.diagram-slide}
 
 - Cambios tecnológicos o sectoriales dejan habilidades obsoletas.
+
+![](imgs/robot-albanil.gif){.plain .nostretch fig-alt="Robot construyendo una pared de ladrillos: automatización de tareas en la construcción."}
 
 ## Desempleo friccional
 
 - Surge por el tiempo de búsqueda y emparejamiento entre empresas y trabajadores.
 
 ## Transformaciones del trabajo en Uruguay {.section-cover .center background-image="imgs/separador-transformaciones.png" background-size="cover" background-color="#111111" background-opacity="0.65"}
-
-## Mercado de trabajo en Uruguay: evolución reciente
-
-![](imgs/mercado_de_trabajo.jpeg){.plain width="84%"}
 
 ## Mercado de trabajo en Uruguay: evolución de mediano plazo
 
@@ -162,20 +164,17 @@ Las tasas se expresan como porcentajes. O = ocupados; D = desocupados.
 - Retraso en las edades de ingreso y egreso al mercado de trabajo
 - Cambio tecnológico
 
-## Envejecimiento de la población
+## Envejecimiento de la población {.diagram-slide}
 
-![](imgs/piramide_1950_2000.png){.plain .historical-chart fig-alt="Pirámides de la población uruguaya en 1950 y 2000, por edad y sexo, que ilustran el envejecimiento de la población."}
+![](imgs/piramide_1950_2000.png){.plain .nostretch .historical-chart fig-alt="Pirámides de la población uruguaya en 1950 y 2000, por edad y sexo, que ilustran el envejecimiento de la población."}
 
-## Causas
+## Causas {.diagram-slide}
 
 - Menor natalidad y mayor esperanza de vida.
 
-![](imgs/esperanza.png){.plain .historical-chart .chart-with-text fig-alt="Esperanza de vida a los 65 años por sexo: datos históricos y proyecciones del BPS. Las proyecciones aparecen con líneas discontinuas."}
+![](imgs/esperanza.png){.plain .nostretch .historical-chart .chart-with-text fig-alt="Esperanza de vida a los 65 años por sexo: datos históricos y proyecciones del BPS. Las proyecciones aparecen con líneas discontinuas."}
 
-## Mayor participación femenina en el mercado de trabajo
 
-![](imgs/pareja_trabaja.png){.plain .participation-image height="720" fig-alt="Artículo histórico titulado La pareja: cuando los dos trabajan."}
+## Activos por sexo {.diagram-slide}
 
-## Activos por sexo
-
-![](imgs/pea_sexo_opp_sin_proy.png){.plain .historical-chart fig-alt="Evolución histórica de la población económicamente activa por sexo, con un aumento de la cantidad de mujeres activas. Fuente: OPP."}
+![](imgs/pea_sexo_opp_sin_proy.png){.plain .nostretch .historical-chart fig-alt="Evolución histórica de la población económicamente activa por sexo, con un aumento de la cantidad de mujeres activas. Fuente: OPP."}

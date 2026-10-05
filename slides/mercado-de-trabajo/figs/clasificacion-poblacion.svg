@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="720" viewBox="0 0 1600 720" role="img" aria-labelledby="title desc">
+  <title id="title">Clasificación de la población</title>
+  <desc id="desc">La población total se divide en población no en edad de trabajar y población en edad de trabajar, PET. La PET se divide en inactivos, PEI, y activos, PEA. La PEA se divide en desocupados, D, y ocupados, O.</desc>
+  <rect width="1600" height="720" fill="white"/>
+  <g fill="none" stroke="#88969f" stroke-width="5" stroke-linejoin="round">
+    <path d="M800 110 V150 H300 V190 M800 150 H1110 V190"/>
+    <path d="M1110 290 V335 H840 V380 M1110 335 H1330 V380"/>
+    <path d="M1330 480 V525 H1040 V570 M1330 525 H1395 V570"/>
+  </g>
+  <rect x="480" y="10" width="640" height="100" rx="18" fill="#43b7c2"/>
+  <rect x="20" y="190" width="560" height="100" rx="18" fill="#17677f"/>
+  <rect x="660" y="190" width="900" height="100" rx="18" fill="#53ae83"/>
+  <rect x="640" y="380" width="400" height="100" rx="18" fill="#17677f"/>
+  <rect x="1100" y="380" width="460" height="100" rx="18" fill="#53ae83"/>
+  <rect x="870" y="570" width="340" height="100" rx="18" fill="#17677f"/>
+  <rect x="1230" y="570" width="330" height="100" rx="18" fill="#53ae83"/>
+  <g fill="white" font-family="sans-serif" text-anchor="middle">
+    <text x="800" y="75" font-size="46" font-weight="700">POBLACIÓN TOTAL</text>
+    <g font-size="40" font-weight="700">
+      <text x="300" y="232">PNET</text>
+      <text x="1110" y="232">PET</text>
+      <text x="840" y="422">PEI</text>
+      <text x="1330" y="422">PEA</text>
+      <text x="1040" y="612">D</text>
+      <text x="1395" y="612">O</text>
+    </g>
+    <g font-size="32">
+      <text x="300" y="272">No en edad de trabajar</text>
+      <text x="1110" y="272">En edad de trabajar</text>
+      <text x="840" y="462">Inactivos</text>
+      <text x="1330" y="462">Activos</text>
+      <text x="1040" y="652">Desocupados</text>
+      <text x="1395" y="652">Ocupados</text>
+    </g>
+  </g>
+  <text x="20" y="710" font-family="sans-serif" font-size="22" fill="#63727c">Clasificación del Instituto Nacional de Estadística (Uruguay), según el diagrama original del curso.</text>
+</svg>
