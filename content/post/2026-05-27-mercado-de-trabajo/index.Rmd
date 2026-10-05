@@ -177,6 +177,8 @@ Observe el siguiente video sobre los indicadores del mercado de trabajo.
 blogdown::shortcode("youtube", "B8VclnrVEPA")
 ```
 
+<!-- Draft: Exercise 7 is not ready for release.
+
 # Ejercicio 7
 
 Considere una empresa competitiva que toma como dados el precio de su producto, $P$, y el salario, $W$. La cantidad de trabajo contratada es $L$. Mantenga constantes el capital, la tecnología y el precio del producto. Suponga que el producto marginal del trabajo, $PMg_L(L)$, es estrictamente decreciente en el tramo analizado y que la empresa elige una cantidad positiva de trabajo.
@@ -196,6 +198,8 @@ $$VPMg(L) = W.$$
 5. **Representar la demanda.** Grafique la relación del punto anterior con $L$ en el eje horizontal y $W$ en el vertical. Marque los dos pares de salario y cantidad. Explique por qué un aumento del salario produce un movimiento sobre la misma curva.
 
 6. **Reconocer los supuestos.** Si aumenta $P$ o mejora la tecnología, ¿sigue siendo la misma curva de demanda? Explique qué cambia y por qué fue necesario mantener estos factores constantes para demostrar su pendiente.
+
+-->
 
 # Bibliografía
 

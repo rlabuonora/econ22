@@ -4,6 +4,27 @@
 
 This repository is a Hugo/blogdown course website that deploys to Netlify from the `main` branch.
 
+## Dedicated R Environment
+
+- Use this project's R **4.5.3** in `.conda/`, managed by Miniforge/Conda.
+  The normal shell's R/Rscript wrappers select **4.3.3** for another project;
+  do not replace those wrappers or update that project's packages.
+- Run R commands through `bash scripts/with-project-env.sh Rscript ...` or
+  use `make r` for an interactive session. Build targets use the launcher
+  automatically, including Quarto's R engine.
+- Conda packages live in `.conda/lib/R/library`. The CRAN-only package
+  `xaringanExtra` **0.8.0** lives in `.r-library/` and is installed with a
+  pinned version and checksum by `scripts/install-r-extras.R`.
+- `.conda/` and `.r-library/` are local, Git-ignored directories. Commit the
+  environment definitions and setup scripts, not installed environments.
+- `environment.yml` lists direct dependencies; `environment-linux-64.lock`
+  pins exact Conda packages for Linux x86_64/WSL. If intentionally updating
+  dependencies, update the definitions and lock together; see `README.md`.
+- The launcher isolates package paths, ignores the global `.Renviron`, and
+  uses the project's `.Rprofile`, which does not source the global `.Rprofile`.
+  Do not use temporary libraries or another project's R environment to build.
+- Netlify builds committed HTML and slides with Hugo; it does not require R.
+
 ## Key Commands
 
 - `make env-setup`

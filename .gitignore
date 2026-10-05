@@ -6,3 +6,4 @@
 public/
 .conda/
 .r-library/
+*:Zone.Identifier
