@@ -88,15 +88,20 @@ format:
 
 ## Clasificación de la población
 
-- Ocupados
-- Desocupados
-- Inactivos
+- PET: Población en edad de trabajar (14+).
+- PEA: Personas que trabajan o buscan trabajo.
+
+![](imgs/poblacion.png){.plain height="580" fig-alt="Clasificación de la población: población total dividida en PNET y PET; PET dividida en inactivos (PEI) y activos (PEA); PEA dividida en desocupados (D) y ocupados (O)."}
 
 ## Indicadores del desempeño del mercado de trabajo
 
-- Tasa de empleo
-- Tasa de desocupación
-- Tasa de actividad
+Las tasas se expresan como porcentajes. O = ocupados; D = desocupados.
+
+::: {.incremental}
+- **Tasa de empleo:** $TE = \frac{O}{PET} \times 100$
+- **Tasa de desocupación:** $TD = \frac{D}{PEA} \times 100$
+- **Tasa de actividad:** $TA = \frac{PEA}{PET} \times 100$
+:::
 
 ## Mercado de trabajo en Uruguay: evolución reciente
 
