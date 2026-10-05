@@ -1,6 +1,6 @@
 ---
-title: "Introducción a la Economía"
-subtitle: "El Mercado de Trabajo"
+title: "El Mercado de Trabajo"
+subtitle: "Introducción a la Economía"
 format:
   revealjs:
     theme: default
@@ -11,6 +11,12 @@ format:
     width: 1600
     height: 900
     css: styles.css
+    title-slide-attributes:
+      class: title-cover
+      data-background-image: imgs/temps-modernes1.jpeg
+      data-background-size: cover
+      data-background-color: "#111111"
+      data-background-opacity: "0.85"
 ---
 
 ## Ingresos y factores de producción
@@ -70,7 +76,9 @@ format:
 
 ## Curva de demanda de trabajo
 
-- Tiene pendiente negativa.
+- Si sube el salario, disminuye la cantidad demandada de trabajo.
+
+![](figs/demanda-trabajo.svg){.plain .labor-demand-diagram height="660" fig-alt="Curva de demanda de trabajo con pendiente negativa. Cuando el salario aumenta de W1 a W2, la cantidad demandada disminuye de L1 a L2."}
 
 ## La oferta de trabajo
 
@@ -79,19 +87,20 @@ format:
 
 ## Equilibrio en el mercado de trabajo
 
-- El salario y el empleo de equilibrio se determinan por la interacción de oferta y demanda.
+- La oferta y la demanda determinan el salario y el empleo de equilibrio.
+
+![](imgs/oferta_demanda.png){.plain .labor-equilibrium-diagram height="660" fig-alt="Oferta y demanda de trabajo: el punto de intersección determina el salario y la cantidad de trabajadores de equilibrio."}
 
 ## Mercado de trabajo segmentado
 
 - No todos los trabajadores compiten en el mismo mercado.
 - Hay diferencias por calificación, género, edad, región e informalidad.
 
+## Cómo medimos el empleo {.section-cover .center background-image="imgs/separador-medicion.png" background-size="cover" background-color="#111111" background-opacity="0.65"}
+
 ## Clasificación de la población
 
-- PET: Población en edad de trabajar (14+).
-- PEA: Personas que trabajan o buscan trabajo.
-
-![](imgs/poblacion.png){.plain height="580" fig-alt="Clasificación de la población: población total dividida en PNET y PET; PET dividida en inactivos (PEI) y activos (PEA); PEA dividida en desocupados (D) y ocupados (O)."}
+![](imgs/poblacion.png){.plain .population-diagram height="760" fig-alt="Clasificación de la población: población total dividida en PNET y PET; PET dividida en inactivos (PEI) y activos (PEA); PEA dividida en desocupados (D) y ocupados (O)."}
 
 ## Indicadores del desempeño del mercado de trabajo
 
@@ -103,13 +112,7 @@ Las tasas se expresan como porcentajes. O = ocupados; D = desocupados.
 - **Tasa de actividad:** $TA = \frac{PEA}{PET} \times 100$
 :::
 
-## Mercado de trabajo en Uruguay: evolución reciente
-
-![](imgs/temps-modernes1.jpeg){.plain width="84%"}
-
-## Indicadores
-
-<iframe width="840" height="473" src="https://www.youtube.com/embed/B8VclnrVEPA" title="Indicadores del mercado de trabajo" frameborder="0" allowfullscreen></iframe>
+## Desempleo y problemas de empleo {.section-cover .center background-image="imgs/separador-desempleo.png" background-size="cover" background-color="#111111" background-opacity="0.65"}
 
 ## Desempleados desalentados
 
@@ -146,21 +149,33 @@ Las tasas se expresan como porcentajes. O = ocupados; D = desocupados.
 
 - Surge por el tiempo de búsqueda y emparejamiento entre empresas y trabajadores.
 
+## Transformaciones del trabajo en Uruguay {.section-cover .center background-image="imgs/separador-transformaciones.png" background-size="cover" background-color="#111111" background-opacity="0.65"}
+
+## Mercado de trabajo en Uruguay: evolución reciente
+
+![](imgs/mercado_de_trabajo.jpeg){.plain width="84%"}
+
 ## Mercado de trabajo en Uruguay: evolución de mediano plazo
 
-![](imgs/pareja_trabaja.png){.plain width="82%"}
+- Envejecimiento de la población
+- Aumento de la tasa de actividad
+- Retraso en las edades de ingreso y egreso al mercado de trabajo
+- Cambio tecnológico
 
 ## Envejecimiento de la población
 
-- Cambia la composición de la fuerza de trabajo.
-- Afecta participación, empleo y sostenibilidad fiscal.
+![](imgs/piramide_1950_2000.png){.plain .historical-chart fig-alt="Pirámides de la población uruguaya en 1950 y 2000, por edad y sexo, que ilustran el envejecimiento de la población."}
 
 ## Causas
 
-- Mayor esperanza de vida
-- Menor fecundidad
-- Cambios demográficos acumulados
+- Menor natalidad y mayor esperanza de vida.
+
+![](imgs/esperanza.png){.plain .historical-chart .chart-with-text fig-alt="Esperanza de vida a los 65 años por sexo: datos históricos y proyecciones del BPS. Las proyecciones aparecen con líneas discontinuas."}
+
+## Mayor participación femenina en el mercado de trabajo
+
+![](imgs/pareja_trabaja.png){.plain .participation-image height="720" fig-alt="Artículo histórico titulado La pareja: cuando los dos trabajan."}
 
 ## Activos por sexo
 
-- La participación laboral femenina cambió fuertemente en las últimas décadas.
+![](imgs/pea_sexo_opp_sin_proy.png){.plain .historical-chart fig-alt="Evolución histórica de la población económicamente activa por sexo, con un aumento de la cantidad de mujeres activas. Fuente: OPP."}

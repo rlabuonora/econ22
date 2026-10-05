@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Curva de demanda de trabajo</title>
+  <desc id="desc">Una curva de demanda decreciente relaciona salario y cantidad de trabajadores. Al subir el salario de W1 a W2, la cantidad demandada disminuye de L1 a L2.</desc>
+  <rect width="1100" height="620" fill="white"/>
+  <g fill="none" stroke="#23313d" stroke-width="3">
+    <path d="M170 65 V550 H950"/>
+  </g>
+  <g fill="none" stroke="#8b969f" stroke-width="2" stroke-dasharray="9 7">
+    <path d="M170 226 H430 V550"/>
+    <path d="M170 280 H560 V550"/>
+  </g>
+  <path d="M235 145 L885 415" fill="none" stroke="#5e82ae" stroke-width="6"/>
+  <g fill="#5e82ae">
+    <circle cx="430" cy="226" r="8"/>
+    <circle cx="560" cy="280" r="8"/>
+  </g>
+  <g font-family="sans-serif" font-size="28" fill="#23313d">
+    <text x="65" y="320" transform="rotate(-90 65 320)" text-anchor="middle">Salario (W)</text>
+    <text x="560" y="610" text-anchor="middle">Cantidad de trabajadores (L)</text>
+    <text x="150" y="236" text-anchor="end">W₂</text>
+    <text x="150" y="290" text-anchor="end">W₁</text>
+    <text x="430" y="585" text-anchor="middle">L₂</text>
+    <text x="560" y="585" text-anchor="middle">L₁</text>
+    <text x="770" y="350" fill="#5e82ae">Demanda de trabajo</text>
+  </g>
+</svg>

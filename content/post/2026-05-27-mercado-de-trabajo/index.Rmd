@@ -16,7 +16,7 @@ tags: []
     fig.width=6, 
     warning=FALSE, 
     message = FALSE,
-    dev = "png")<
+    dev = "png")
 
 library(tidyverse)
 library(kableExtra)
@@ -168,6 +168,34 @@ Analizar [este artículo de Benjamín Nahúm](Enciclopedia_uruguaya_24-14-15.pdf
   - ¿Cuáles eran las principales tareas que ya no necesitan de mano de obra luego de la implantación de esta tecnología?
   - ¿Cuántos desempleados generó aproximadamente la introducción de esta tecnología hacia 1880?
 
+
+# Ejercicio 6
+
+Observe el siguiente video sobre los indicadores del mercado de trabajo.
+
+```{r}
+blogdown::shortcode("youtube", "B8VclnrVEPA")
+```
+
+# Ejercicio 7
+
+Considere una empresa competitiva que toma como dados el precio de su producto, $P$, y el salario, $W$. La cantidad de trabajo contratada es $L$. Mantenga constantes el capital, la tecnología y el precio del producto. Suponga que el producto marginal del trabajo, $PMg_L(L)$, es estrictamente decreciente en el tramo analizado y que la empresa elige una cantidad positiva de trabajo.
+
+La condición de contratación óptima es:
+
+$$VPMg(L) = W.$$
+
+1. **Del producto marginal a su valor.** Escriba $VPMg(L)$ en función de $P$ y $PMg_L(L)$. ¿Qué representa cada término y en qué unidades se mide?
+
+2. **Rendimientos marginales decrecientes.** Si aumenta $L$, ¿qué sucede con $PMg_L(L)$? Si $P$ permanece constante y es positivo, ¿qué sucede con $VPMg(L)$?
+
+3. **Comparar dos salarios.** Considere $W_2 > W_1$ y las cantidades óptimas correspondientes, $L_2$ y $L_1$. Escriba la condición $VPMg = W$ para cada caso. ¿Cuál de los dos valores del producto marginal debe ser mayor? Usando su respuesta al punto anterior, deduzca si $L_2$ es mayor o menor que $L_1$. Explique por qué esto demuestra que la demanda de trabajo tiene pendiente negativa.
+
+4. **Un ejemplo numérico.** Suponga que $P = 2$ y $PMg_L(L) = 12 - L$, para $0 < L < 12$. Sustituya estas expresiones en $VPMg(L) = W$ y despeje $L$ en función de $W$. Calcule la cantidad demandada cuando $W_1 = 12$ y cuando $W_2 = 16$. ¿Coincide el resultado con su razonamiento anterior?
+
+5. **Representar la demanda.** Grafique la relación del punto anterior con $L$ en el eje horizontal y $W$ en el vertical. Marque los dos pares de salario y cantidad. Explique por qué un aumento del salario produce un movimiento sobre la misma curva.
+
+6. **Reconocer los supuestos.** Si aumenta $P$ o mejora la tecnología, ¿sigue siendo la misma curva de demanda? Explique qué cambia y por qué fue necesario mantener estos factores constantes para demostrar su pendiente.
 
 # Bibliografía
 
