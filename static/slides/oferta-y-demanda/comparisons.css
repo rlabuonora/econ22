@@ -1,0 +1,27 @@
+/* Equal-width table and curve panels fill the slide below its heading. */
+.reveal .comparison-slide .comparison-grid {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr); gap: 36px;
+  flex: 1; min-height: 0; width: 100%;
+}
+.reveal .comparison-slide .table-pane {
+  min-width: 0; min-height: 0; display: flex; align-items: center;
+}
+.reveal .comparison-slide .table-pane .cell { width: 100%; }
+.reveal .comparison-slide table { width: 100%; font-size: 32px; margin: 0; }
+.reveal .comparison-slide th,
+.reveal .comparison-slide td { padding: 18px 22px; }
+.reveal .comparison-slide .plot-pane,
+.reveal .comparison-slide .plot-pane div,
+.reveal .comparison-slide .plot-pane figure,
+.reveal .comparison-slide .plot-pane p {
+  min-height: 0; height: 100%; width: 100%; margin: 0;
+}
+.reveal .comparison-slide .plot-pane img {
+  display: block; width: 100%; height: 100%; max-width: 100%; max-height: 100%;
+  object-fit: contain; margin: 0;
+}
+
+.reveal .shift-slide > .plot-pane {
+  flex: 1; min-height: 0; height: auto;
+}

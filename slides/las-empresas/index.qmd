@@ -46,9 +46,11 @@ $$Beneficios = Ingresos - Costos$$
 - Permite estudiar qué ocurre cuando agregamos más trabajo o más capital.
 - Ayuda a separar efectos de corto plazo y de largo plazo.
 
-## Función de producción
+## Función de producción {.course-slide}
 
-![](imgs/funcion_prod.png){.plain width="82%"}
+::: {.visual}
+![](figs/funcion-produccion.svg){.plain .nostretch width="82%"}
+:::
 
 ## Rendimientos marginales decrecientes
 
@@ -133,13 +135,17 @@ $$Beneficios = Ingresos - Costos$$
 - $CFMe = CF/q$ disminuye al repartir el costo fijo entre más unidades.
 - $CVMe = CV/q$ depende de la productividad de los factores variables.
 
-## Costos medios, fijos y marginales
+## Costos medios, fijos y marginales {.course-slide}
 
-![](imgs/costos.png){.plain width="82%"}
+::: {.visual}
+![](figs/costos-medios-marginal.svg){.plain .nostretch width="82%"}
+:::
 
-## Costos medios, fijos y marginales (2)
+## Costos medios, fijos y marginales (2) {.course-slide}
 
-![](imgs/curvas_costos.png){.plain width="82%"}
+::: {.visual}
+![](figs/curvas-costo-total.svg){.plain .nostretch width="82%"}
+:::
 
 ## Productividad marginal y costos
 

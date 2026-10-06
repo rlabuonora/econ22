@@ -3,3 +3,20 @@
 :root {
   --deck-font-size: 38px;
 }
+
+/* A taller chart and adjacent explanation use the full public-good slide. */
+.reveal .public-good-slide .split {
+  grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr);
+  gap: 32px;
+}
+.reveal .public-good-slide .explanation {
+  font-size: 32px;
+  line-height: 1.4;
+}
+.reveal .public-good-slide .explanation > p:first-child {
+  font-size: 36px;
+}
+.reveal .public-good-slide .takeaway {
+  font-size: 30px;
+  margin-top: 28px;
+}

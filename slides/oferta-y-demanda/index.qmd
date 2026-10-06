@@ -10,7 +10,11 @@ format:
     progress: true
     width: 1600
     height: 900
-    css: styles.css
+    css:
+      - ../_shared/photos.css
+      - styles.css
+      - ../_shared/layouts.css
+      - comparisons.css
 execute:
   echo: false
   warning: false
@@ -45,7 +49,7 @@ line_coeffs <- function(x, y) {
 }
 ```
 
-## La Demanda {background-image="imgs/demanda.jpg" background-position="bottom right" background-size="cover" .inverse}
+## La Demanda {.photo-slide .photo-title-only background-image="imgs/demanda.jpg" background-size="cover" background-position="center" background-color="#e8e5df"}
 
 ## Cantidad demandada
 
@@ -57,10 +61,10 @@ line_coeffs <- function(x, y) {
 - Podemos escribirla como una función: $Q_d = Q(p)$.
 - Cuanto menor es el precio del bien, mayor es la cantidad demandada.
 
-## Dos formas de visualizarla
+## Dos formas de visualizarla {.course-slide .comparison-slide}
 
-:::: {.columns}
-::: {.column width="38%"}
+:::: {.comparison-grid}
+::: {.table-pane}
 ```{r}
 tribble(
   ~Precio, ~`Cantidad Demandada`,
@@ -74,8 +78,8 @@ tribble(
   knitr::kable()
 ```
 :::
-::: {.column width="62%"}
-```{r}
+::: {.plot-pane}
+```{r, fig.width=6.5, fig.height=6.2}
 df <- tribble(
   ~precio, ~cantidad, ~lab, ~momento,
   5, 9, "A", "Después",
@@ -91,7 +95,7 @@ ggplot(df, aes(x = cantidad, y = precio)) +
   xlim(5, 20) +
   ylim(0, 5) +
   labs(x = "Cantidad", y = "Precio", title = "Demanda de maiz") +
-  theme(legend.position = "none")
+  theme(legend.position = "none", text = element_text(size = 23))
 ```
 :::
 ::::
@@ -124,14 +128,10 @@ ggplot(df, aes(x = cantidad, y = precio)) +
 - Si dos bienes son complementarios, el aumento del precio de uno hace que disminuya la demanda del otro.
 - Si aumentan los precios de las consolas de videojuegos, la demanda por juegos disminuye.
 
-## Aumento en la demanda
+## Aumento en la demanda {.course-slide .comparison-slide .shift-slide}
 
-:::: {.columns}
-::: {.column width="35%"}
-- Al mismo precio, la cantidad demandada es mayor.
-:::
-::: {.column width="65%"}
-```{r}
+::: {.plot-pane}
+```{r, fig.width=12, fig.height=5.5}
 df_2 <- bind_rows(
   df,
   mutate(df, momento = "Antes", cantidad = cantidad - 5)
@@ -148,10 +148,14 @@ ggplot(df_2, aes(x = cantidad, y = precio, color = momento)) +
   annotate("segment", x = 11, xend = 14, y = 2, yend = 2,
            arrow = arrow(length = unit(0.2, "cm"))) +
   labs(x = "Cantidad de maiz", y = "Precio del maiz", title = "Demanda de maiz") +
-  guides(color = "none")
+  guides(color = "none") +
+  theme(text = element_text(size = 23))
 ```
 :::
-::::
+
+::: {.takeaway}
+Al mismo precio, la cantidad demandada es mayor.
+:::
 
 ## La curva de oferta
 
@@ -159,7 +163,7 @@ ggplot(df_2, aes(x = cantidad, y = precio, color = momento)) +
 - Podemos escribirla como una función: $Q_s = Q(p)$.
 - Cuanto mayor es el precio del bien, más van a producir los vendedores.
 
-## Dos formas de visualizarla
+## Dos formas de visualizarla {.course-slide .comparison-slide}
 
 ```{r}
 df_oferta <- tibble(
@@ -169,21 +173,21 @@ df_oferta <- tibble(
 )
 ```
 
-:::: {.columns}
-::: {.column width="38%"}
+:::: {.comparison-grid}
+::: {.table-pane}
 ```{r}
 df_oferta |>
   select(-curva) |>
   knitr::kable(col.names = c("Precio", "Oferta"))
 ```
 :::
-::: {.column width="62%"}
-```{r}
+::: {.plot-pane}
+```{r, fig.width=6.5, fig.height=6.2}
 ggplot(df_oferta, aes(x = q, y = p)) +
   geom_line(color = colores[["celeste"]]) +
   geom_point(color = colores[["celeste"]]) +
   labs(x = "Cantidad", y = "Precio", title = "Oferta de maiz") +
-  theme(legend.position = "none")
+  theme(legend.position = "none", text = element_text(size = 23))
 ```
 :::
 ::::
@@ -196,14 +200,10 @@ ggplot(df_oferta, aes(x = q, y = p)) +
 - Políticas del gobierno
 - Factores coyunturales de cada mercado
 
-## Aumento en la oferta
+## Aumento en la oferta {.course-slide .comparison-slide .shift-slide}
 
-:::: {.columns}
-::: {.column width="35%"}
-- Al mismo precio, la cantidad ofrecida es mayor.
-:::
-::: {.column width="65%"}
-```{r}
+::: {.plot-pane}
+```{r, fig.width=12, fig.height=5.5}
 df_oferta_2 <- tibble(
   p = seq(0.5, 2.5, by = 0.5),
   q = c(7, 15, 20, 25, 27),
@@ -220,10 +220,13 @@ bind_rows(df_oferta, df_oferta_2) |>
            arrow = arrow(length = unit(0.2, "cm"))) +
   annotate("segment", x = 7.5, xend = 12.5, y = 1, yend = 1,
            arrow = arrow(length = unit(0.2, "cm"))) +
-  theme(legend.position = "none")
+  theme(legend.position = "none", text = element_text(size = 23))
 ```
 :::
-::::
+
+::: {.takeaway}
+Al mismo precio, la cantidad ofrecida es mayor.
+:::
 
 ## Equilibrio de mercado
 
@@ -231,7 +234,7 @@ bind_rows(df_oferta, df_oferta_2) |>
 - Si nadie tiene incentivos a cambiar sus decisiones, la situación es estable.
 - Si al precio vigente demandantes y oferentes desean la misma cantidad, el mercado está en equilibrio.
 
-## Ejemplo
+## Ejemplo {.course-slide .comparison-slide}
 
 ```{r}
 df_demanda <- tibble(
@@ -243,8 +246,8 @@ df_demanda <- tibble(
 df_equilibrio <- bind_rows(df_oferta, df_demanda)
 ```
 
-:::: {.columns}
-::: {.column width="38%"}
+:::: {.comparison-grid}
+::: {.table-pane}
 ```{r}
 tibble(
   Precio = df_oferta$p,
@@ -254,8 +257,8 @@ tibble(
   knitr::kable()
 ```
 :::
-::: {.column width="62%"}
-```{r}
+::: {.plot-pane}
+```{r, fig.width=6.5, fig.height=6.2}
 plot_equilibrio <- df_equilibrio |>
   ggplot(aes(x = q, y = p, color = curva)) +
   geom_point() +
@@ -270,7 +273,7 @@ plot_equilibrio <- df_equilibrio |>
   guides(color = "none") +
   labs(x = "Cantidad", y = "Precio")
 
-plot_equilibrio
+plot_equilibrio + theme(text = element_text(size = 23))
 ```
 :::
 ::::

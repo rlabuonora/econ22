@@ -10,7 +10,9 @@ format:
     progress: true
     width: 1600
     height: 900
-    css: styles.css
+    css:
+      - ../_shared/photos.css
+      - styles.css
     title-slide-attributes:
       class: title-cover
       data-background-image: imgs/temps-modernes1.jpeg
@@ -19,7 +21,7 @@ format:
       data-background-opacity: "0.85"
 ---
 
-## Ingresos y factores de producción
+## Ingresos y factores de producción {.course-slide}
 
 - Los hogares obtienen ingresos vendiendo factores productivos.
 - En el mercado de trabajo, el factor es el trabajo y su precio es el salario.
@@ -48,9 +50,15 @@ Resume cuánto aporta un trabajador adicional medido en dinero.
 
 - Contratar un trabajador más aumenta beneficios.
 
-## Q = 2 no es de equilibrio {.diagram-slide}
+## Q = 2 no es de equilibrio {.course-slide}
 
-![](figs/unnamed-chunk-3-1.png){.plain .nostretch}
+::: {.visual}
+![](figs/vpmg-salario.svg){.plain .nostretch fig-alt="El producto marginal de los trabajadores 1 a 5 es 14, 12, 10, 8 y 6. El salario es 10. El segundo trabajador aporta más que su salario."}
+:::
+
+::: {.takeaway}
+Si el valor marginal del trabajo es mayor que el salario, contratar un trabajador más aumenta los beneficios.
+:::
 
 ## Si el VPMg < W {.diagram-slide}
 
@@ -92,7 +100,7 @@ La oferta y la demanda determinan el salario y el empleo de equilibrio.
 
 ## Mercado de trabajo segmentado {.diagram-slide}
 
-![](imgs/cirujanos.png){.plain .nostretch fig-alt="Dos mercados laborales lado a lado: cirujanos y trabajadores de comida rápida, con distintas curvas de oferta y demanda y distintos salarios de equilibrio."}
+![](figs/mercados-segmentados.svg){.plain .nostretch .nostretch fig-alt="Dos mercados laborales lado a lado: cirujanos y trabajadores de comida rápida, con distintas curvas de oferta y demanda y distintos salarios de equilibrio."}
 
 ::: {.notes}
 - No todos los trabajadores compiten en el mismo mercado.
@@ -141,19 +149,21 @@ La oferta y la demanda determinan el salario y el empleo de equilibrio.
 - Estructural
 - Friccional
 
-## Desempleo cíclico {.diagram-slide}
+## Desempleo cíclico {.photo-slide .photo-title-only background-image="imgs/unemployed.jpeg" background-size="cover" background-position="center" background-color="#e8e5df"}
 
-![](imgs/unemployed.jpeg){.plain .nostretch}
+## Desempleo estructural {.photo-slide background-image="imgs/robot-albanil.gif" background-size="cover" background-position="right center" background-color="#e8e5df"}
 
-## Desempleo estructural {.diagram-slide}
-
+::: {.photo-copy}
 - Cambios tecnológicos o sectoriales dejan habilidades obsoletas.
+:::
 
-![](imgs/robot-albanil.gif){.plain .nostretch fig-alt="Robot construyendo una pared de ladrillos: automatización de tareas en la construcción."}
+## Desempleo friccional {.photo-slide .photo-text-right background-image="imgs/primer-empleo.png" background-size="cover" background-position="center" background-color="#e8e5df"}
 
-## Desempleo friccional
+::: {.photo-copy}
+Surge por el tiempo de búsqueda y emparejamiento entre empresas y trabajadores.
 
-- Surge por el tiempo de búsqueda y emparejamiento entre empresas y trabajadores.
+**Ejemplo:** un joven busca su primer empleo.
+:::
 
 ## Transformaciones del trabajo en Uruguay {.section-cover .center background-image="imgs/separador-transformaciones.png" background-size="cover" background-color="#111111" background-opacity="0.65"}
 

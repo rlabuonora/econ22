@@ -11,7 +11,16 @@ format:
     width: 1600
     height: 900
     smaller: false
-    css: styles.css
+    title-slide-attributes:
+      class: course-logo-cover
+      data-background-image: imgs/logo-econ.png
+      data-background-size: auto 100%
+      data-background-position: right center
+      data-background-color: "#5e82ae"
+    css:
+      - ../_shared/photos.css
+      - styles.css
+      - resources.css
 ---
 
 ## Horarios
@@ -35,17 +44,17 @@ format:
 - Presentar las principales herramientas de la economía.
 - Dar un panorama de qué hacen los economistas.
 
-## Recursos
+## Recursos {.resources-slide}
 
-:::: {.columns}
-::: {.column width="58%"}
+:::: {.resources-grid}
+::: {.resource-links}
 - [Sitio web](https://econ.rlabuonora.com)
   - Ejercicios
   - Notas de clase
   - Libro
 :::
-::: {.column width="42%"}
-![](imgs/parkin_micro.jpg){.plain width="85%"}
+::: {.resource-cover}
+![](imgs/parkin_micro.jpg){.plain .nostretch fig-alt="Portada de Microeconomía, versión para Latinoamérica, de Michael Parkin y Eduardo Loría."}
 :::
 ::::
 
@@ -104,29 +113,21 @@ format:
   - El mercado
   - El Estado
 
-## El mercado {background-image="imgs/mercado.jpg" background-position="95% 70%" background-size="36%"}
+## El mercado {.photo-slide background-image="imgs/mercado.jpg" background-size="cover" background-position="right center" background-color="#e8e5df"}
 
-:::: {.columns}
-::: {.column width="58%"}
+::: {.photo-copy}
 - Reúne compradores y vendedores.
 - Coordina millones de agentes de forma descentralizada.
 - Determina el precio de un bien y la cantidad vendida.
 :::
-::: {.column width="42%"}
-:::
-::::
 
-## Mercado y precios {background-image="imgs/smith.jpg" background-position="94% 65%" background-size="30%"}
+## Mercado y precios {.photo-slide .photo-text-right background-image="imgs/smith.jpg" background-size="auto 100%" background-position="left center" background-color="#e8e5df"}
 
-:::: {.columns}
-::: {.column width="60%"}
+::: {.photo-copy}
 - Adam Smith fue el primero en entender su importancia.
 - Los precios son señales para que los agentes tomen decisiones.
 - Determinan qué, cómo y para quién se produce.
 :::
-::: {.column width="40%"}
-:::
-::::
 
 ## El mercado
 
@@ -149,77 +150,63 @@ format:
 - Las preferencias determinan qué combinaciones de bienes desean los consumidores.
 - La tecnología determina los límites de producción posibles.
 
-## El Estado {background-image="imgs/tabare.jpg" background-position="94% 65%" background-size="36%"}
+## El Estado {.photo-slide .photo-dark .state-photo background-image="imgs/tabare.jpg" background-size="70% auto" background-position="right center" background-color="#111820"}
 
-:::: {.columns}
-::: {.column width="58%"}
+::: {.photo-copy}
 En una economía mixta, el Estado es necesario cuando:
 
 - hay resultados ineficientes;
 - hay resultados eficientes pero injustos;
 - se busca estabilidad macroeconómica.
 :::
-::: {.column width="42%"}
+
+## Competencia imperfecta {.photo-slide background-image="imgs/food.jpg" background-position="right center" background-size="70% auto" background-color="#ffffff"}
+
+::: {.photo-copy}
+Los oferentes o los demandantes pueden tener **poder de mercado**.
 :::
-::::
 
-## Competencia imperfecta {background-image="imgs/food.jpg" background-position="center 92%" background-size="58%"}
+## Externalidades positivas {.photo-slide .innovation-photo background-image="imgs/innovation.jpg" background-size="70% auto" background-position="right center" background-color="#808080"}
 
-Los oferentes o los demandantes pueden tener poder de mercado.
-
-## Externalidades positivas {background-image="imgs/innovation.jpg" background-position="94% 65%" background-size="34%"}
-
-:::: {.columns}
-::: {.column width="60%"}
+::: {.photo-copy}
 - La actividad económica genera efectos que no se reflejan en los precios.
 - Esos efectos pueden impactar positivamente en agentes que no participan en la transacción.
 :::
-::: {.column width="40%"}
-:::
-::::
 
-## Externalidades negativas {background-image="imgs/pollution.jpg" background-position="94% 65%" background-size="34%"}
+## Externalidades negativas {.photo-slide background-image="imgs/pollution.jpg" background-size="cover" background-position="center" background-color="#e8e5df"}
 
-:::: {.columns}
-::: {.column width="60%"}
+::: {.photo-copy}
 - La actividad económica genera efectos que no se reflejan en los precios.
 - Esos efectos pueden impactar negativamente en agentes que no participan en la transacción.
 :::
-::: {.column width="40%"}
-:::
-::::
 
-## Bienes públicos {background-image="imgs/ejercito.jpeg" background-position="94% 65%" background-size="35%"}
+## Bienes públicos {.photo-slide background-image="imgs/ejercito.jpeg" background-size="cover" background-position="right center" background-color="#e8e5df"}
 
-:::: {.columns}
-::: {.column width="58%"}
+::: {.photo-copy}
 - No es posible excluir personas de su consumo.
 :::
-::: {.column width="42%"}
-:::
-::::
 
-## Desigualdad {background-image="imgs/distribucion.jpg" background-position="94% 65%" background-size="35%"}
+## Desigualdad {.photo-slide background-image="imgs/distribucion.jpg" background-size="cover" background-position="center" background-color="#e8e5df"}
 
-:::: {.columns}
-::: {.column width="58%"}
+::: {.photo-copy}
 - Algunos resultados pueden ser eficientes pero injustos.
 :::
-::: {.column width="42%"}
-:::
-::::
 
-## Estabilidad macroeconómica {background-image="imgs/mef.png" background-position="94% 65%" background-size="34%"}
+## Estabilidad macroeconómica {.photo-slide background-image="imgs/mef.png" background-size="cover" background-position="right center" background-color="#e8e5df"}
 
+::: {.photo-copy}
 El nivel de actividad, el empleo y el nivel general de precios.
 
 - Política fiscal: Ministerio de Economía.
+:::
 
-## Estabilidad macroeconómica {background-image="imgs/bcu.jpg" background-position="94% 65%" background-size="34%"}
+## Estabilidad macroeconómica {.photo-slide background-image="imgs/bcu.jpg" background-size="cover" background-position="right center" background-color="#e8e5df"}
 
+::: {.photo-copy}
 El nivel de actividad, el empleo y el nivel general de precios.
 
 - Política monetaria: Banco Central.
+:::
 
 ## Método
 
@@ -265,6 +252,6 @@ $$Demanda = Q_d(Precio, Ingresos, \ldots)$$
 - Se vinculan a través de dos mercados.
 :::
 ::: {.column width="56%"}
-![](imgs/flujo_circular.png){.plain width="100%"}
+![](figs/flujo-circular.svg){.plain .nostretch width="100%"}
 :::
 ::::

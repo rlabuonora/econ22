@@ -84,9 +84,11 @@ format:
 - El ingreso marginal depende de la elasticidad de la demanda.
 - Un monopolista no produce en el tramo inelástico de la demanda.
 
-## Gráficamente
+## Gráficamente {.course-slide}
 
-![](imgs/max_beneficio.png){.plain width="84%"}
+::: {.visual}
+![](figs/monopolio-beneficio.svg){.plain .nostretch width="84%"}
+:::
 
 ## Ingresos, beneficios y costos
 

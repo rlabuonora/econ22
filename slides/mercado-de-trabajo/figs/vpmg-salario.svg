@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="620" viewBox="0 0 1400 620" role="img" aria-labelledby="title desc">
+<title id="title">Valor del producto marginal y salario</title>
+<desc id="desc">Para Q de 1 a 5, VPMG es 14, 12, 10, 8 y 6. Salario W igual a 10. Se destaca Q igual a 2.</desc>
+<rect width="1400" height="620" fill="white"/>
+<path d="M150 520 H1290" stroke="#e8edf2" stroke-width="2"/><text x="125" y="531" text-anchor="end" font-family="sans-serif" font-size="30" fill="#657583">0</text>
+<path d="M150 460 H1290" stroke="#e8edf2" stroke-width="2"/><text x="125" y="471" text-anchor="end" font-family="sans-serif" font-size="30" fill="#657583">2</text>
+<path d="M150 400 H1290" stroke="#e8edf2" stroke-width="2"/><text x="125" y="411" text-anchor="end" font-family="sans-serif" font-size="30" fill="#657583">4</text>
+<path d="M150 340 H1290" stroke="#e8edf2" stroke-width="2"/><text x="125" y="351" text-anchor="end" font-family="sans-serif" font-size="30" fill="#657583">6</text>
+<path d="M150 280 H1290" stroke="#e8edf2" stroke-width="2"/><text x="125" y="291" text-anchor="end" font-family="sans-serif" font-size="30" fill="#657583">8</text>
+<path d="M150 220 H1290" stroke="#e8edf2" stroke-width="2"/><text x="125" y="231" text-anchor="end" font-family="sans-serif" font-size="30" fill="#657583">10</text>
+<path d="M150 160 H1290" stroke="#e8edf2" stroke-width="2"/><text x="125" y="171" text-anchor="end" font-family="sans-serif" font-size="30" fill="#657583">12</text>
+<path d="M150 100 H1290" stroke="#e8edf2" stroke-width="2"/><text x="125" y="111" text-anchor="end" font-family="sans-serif" font-size="30" fill="#657583">14</text>
+<rect x="230" y="100" width="150" height="420" rx="4" fill="#c5cdd5"/><text x="305" y="565" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#23313d">1</text>
+<rect x="440" y="160" width="150" height="360" rx="4" fill="#5e82ae"/><text x="515" y="565" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#23313d">2</text>
+<rect x="650" y="220" width="150" height="300" rx="4" fill="#c5cdd5"/><text x="725" y="565" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#23313d">3</text>
+<rect x="860" y="280" width="150" height="240" rx="4" fill="#c5cdd5"/><text x="935" y="565" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#23313d">4</text>
+<rect x="1070" y="340" width="150" height="180" rx="4" fill="#c5cdd5"/><text x="1145" y="565" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#23313d">5</text>
+<path d="M150 80 V520 H1290" fill="none" stroke="#23313d" stroke-width="3"/>
+<path d="M150 220 H1290" stroke="#b36b35" stroke-width="4" stroke-dasharray="12 9"/>
+<g font-family="sans-serif" font-size="32" fill="#23313d"><text x="65" y="315" transform="rotate(-90 65 315)" text-anchor="middle">VPMG</text><text x="720" y="610" text-anchor="middle">Cantidad de trabajadores (Q)</text><text x="1275" y="202" text-anchor="end" fill="#b36b35">W = 10</text></g></svg>

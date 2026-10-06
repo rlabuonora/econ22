@@ -10,119 +10,191 @@ format:
     progress: true
     width: 1600
     height: 900
-    css: styles.css
+    margin: 0.03
+    css:
+      - ../_shared/photos.css
+      - ../_shared/layouts.css
+      - styles.css
 ---
 
-## ¿Por qué existen los gobiernos?
+## ¿Por qué existen los gobiernos? {.course-slide}
 
-- Para responder cuando los mercados no generan resultados eficientes o equitativos.
-- Para proveer bienes públicos y corregir externalidades.
+Cuando los mercados no generan resultados __eficientes__ o __equitativos__.
 
-## Bienes públicos
+## Bienes públicos {.course-slide}
 
 - Son bienes no rivales y no excluibles.
 - El consumo de una persona no reduce necesariamente el de otra.
 - Es difícil impedir el acceso una vez provistos.
 
-## Externalidades y bienes mixtos
+## Externalidades y bienes mixtos {.course-slide}
 
 - Las externalidades aparecen cuando una acción afecta a terceros sin pasar por precios.
 - Los bienes mixtos combinan rasgos privados y públicos.
 
-## Ineficiencias
+## Ineficiencias {.course-slide}
 
 - Los mercados pueden producir de más o de menos respecto del nivel socialmente deseable.
 
-## Free riders y bienes públicos
+## Free riders y bienes públicos {.course-slide}
 
 - Si no se puede excluir, algunas personas consumen sin pagar.
 - Eso debilita los incentivos privados a proveer el bien.
 
-## Provisión de bienes públicos
+## Provisión de bienes públicos {.course-slide .public-good-slide}
 
-![](figs/unnamed-chunk-1-1.png){.plain width="82%"}
+::: {.split}
+::: {.visual}
+![](figs/bien-publico.svg){.plain .nostretch fig-alt="El beneficio marginal social iguala el costo marginal social en Q = 3 y valor marginal = 2,5. La provisión privada nula es un supuesto de este ejemplo."}
+:::
 
-## Estudio de caso
+::: {.explanation}
+**Cantidad eficiente**
 
-![](imgs/yalta.png){.plain width="84%"}
+**BMS = CMS** en **Q = 3**.
 
-## Bienes mixtos
+BMS: beneficio marginal social.
+
+CMS: costo marginal social.
+
+::: {.takeaway}
+En este ejemplo se supone **provisión privada nula** por el problema del polizón (*free rider*).
+:::
+:::
+:::
+
+## Estudio de caso {.photo-slide .photo-title-only background-image="imgs/yalta.png" background-size="cover" background-position="center 65%" background-color="#e8e5df"}
+
+## Bienes mixtos {.course-slide}
 
 - Educación
 - Salud
 - Infraestructura
 - Investigación
 
-## Beneficio privado y social
+## Beneficio privado y social {.course-slide}
 
 - El beneficio social puede ser mayor que el privado cuando hay externalidades positivas.
 
-## Mercado de educación terciaria
+## Educación: beneficio privado y social {.course-slide}
 
-![](figs/unnamed-chunk-2-1.png){.plain width="82%"}
+::: {.visual}
+![](figs/educacion-beneficios.svg){.plain .nostretch fig-alt="BMP y BMS difieren; en Q = 15 el beneficio privado es 10 y el social es 25."}
+:::
 
-## Mercado de educación terciaria (2)
+::: {.takeaway}
+BMS = BMP + beneficio marginal externo.
+:::
 
-![](figs/unnamed-chunk-3-1.png){.plain width="82%"}
+## Educación: equilibrio de mercado {.course-slide}
 
-## Equilibrio ineficiente
+::: {.visual}
+![](figs/educacion-mercado.svg){.plain .nostretch fig-alt="El equilibrio privado ocurre en Q = 7,5, con BMP = CMS = 15."}
+:::
+
+::: {.takeaway}
+El mercado considera el beneficio privado: BMP = CMS.
+:::
+
+## Equilibrio ineficiente {.course-slide}
 
 - Cuando el beneficio social excede el privado, el mercado subproduce.
 
-## Pérdida de eficiencia
+## Educación: pérdida de eficiencia {.course-slide}
 
-![](imgs/cianobacterias-01.jpeg){.plain width="82%"}
+::: {.visual}
+![](figs/educacion-perdida.svg){.plain .nostretch fig-alt="El mercado produce 7,5 frente al óptimo social de 15. Se sombrea la diferencia entre BMS y CMS en las unidades no producidas."}
+:::
 
-## Solución eficiente
+::: {.takeaway}
+Entre Q = 7,5 y Q = 15, el beneficio social supera el costo de producir.
+:::
+
+## Solución eficiente {.course-slide}
 
 - Subsidios
 - Regulación
 - Provisión pública
 
-## Externalidades negativas
+## Contaminación: costos para terceros {.photo-slide background-image="imgs/cianobacterias-01.jpeg" background-size="cover" background-position="center" background-color="#e8e5df"}
+
+::: {.photo-copy}
+¿Quién obtiene los beneficios de una actividad y quién soporta sus costos externos?
+:::
+
+## Externalidades negativas {.course-slide}
 
 - La actividad privada impone costos a terceros.
 - El equilibrio de mercado no incorpora ese costo externo.
 
-## Valorando costos externos
+## Costos privados y sociales {.course-slide}
 
-![](figs/unnamed-chunk-4-1.png){.plain width="82%"}
+::: {.visual}
+![](figs/externalidad-costos.svg){.plain .nostretch fig-alt="Demanda, costo marginal privado y costo marginal social. El costo externo es la distancia entre CMS y CMP."}
+:::
 
-## Análisis
+::: {.takeaway}
+CMS = CMP + costo marginal externo.
+:::
+
+## Análisis {.course-slide}
 
 - Comparar equilibrio privado y equilibrio social.
 - Identificar pérdida de eficiencia.
 
-## Equilibrio de mercado
+## Externalidad negativa: equilibrio de mercado {.course-slide}
 
-![](figs/unnamed-chunk-5-1.png){.plain width="82%"}
+::: {.visual}
+![](figs/externalidad-mercado.svg){.plain .nostretch fig-alt="La demanda cruza CMP en Q = 6 y precio = 1000."}
+:::
 
-## Equilibrio eficiente
+::: {.takeaway}
+El mercado produce Q = 6 porque considera el costo privado.
+:::
 
-![](figs/unnamed-chunk-6-1.png){.plain width="82%"}
+## Externalidad negativa: equilibrio eficiente {.course-slide}
 
-## Pérdida de eficiencia
+::: {.visual}
+![](figs/externalidad-eficiente.svg){.plain .nostretch fig-alt="La demanda cruza CMS en Q = 4 y beneficio marginal = 1200."}
+:::
 
-![](figs/unnamed-chunk-7-1.png){.plain width="82%"}
+::: {.takeaway}
+La cantidad eficiente es Q = 4: BMS = CMS.
+:::
 
-## Equilibrio eficiente con un impuesto
+## Externalidad negativa: pérdida de eficiencia {.course-slide}
 
-![](figs/unnamed-chunk-8-1.png){.plain width="82%"}
+::: {.visual}
+![](figs/externalidad-perdida.svg){.plain .nostretch fig-alt="Se sombrea el exceso de costo social sobre beneficio social entre Q = 4 y Q = 6."}
+:::
 
-## Impuesto
+::: {.takeaway}
+Las unidades entre Q = 4 y Q = 6 cuestan más a la sociedad de lo que aportan.
+:::
 
-- Un impuesto pigouviano busca igualar el costo privado al costo social.
+## Un impuesto lleva a la cantidad eficiente {.course-slide}
 
-## Recursos de propiedad común
+::: {.visual}
+![](figs/externalidad-impuesto.svg){.plain .nostretch fig-alt="Un impuesto de 400 desplaza CMP hacia arriba. En Q = 4 los consumidores pagan 1200 y los productores reciben 800."}
+:::
+
+::: {.takeaway}
+Con t = 400, Q = 4; consumidores pagan 1200 y productores reciben 800.
+:::
+
+## Impuesto {.course-slide}
+
+- El impuesto pigouviano iguala el costo marginal externo en la cantidad eficiente.
+- En este ejemplo: $t = CMS(4) - CMP(4) = 1200 - 800 = 400$.
+
+## Recursos de propiedad común {.course-slide}
 
 - Son rivales pero difíciles de excluir.
 - Pueden sufrir sobreexplotación.
 
-## Agro Uruguay siglo XIX
+## Agro Uruguay siglo XIX {.photo-slide .photo-title-only background-image="imgs/alambrado.png" background-size="cover" background-position="center" background-color="#e8e5df"}
 
-![](imgs/alambrado.png){.plain width="82%"}
-
-## Análisis
+## Análisis {.course-slide}
 
 - Identificar el problema de incentivos.
 - Evaluar soluciones institucionales posibles.

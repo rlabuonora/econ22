@@ -1,4 +1,4 @@
-.PHONY: help check build serve change-date slides-check slides-render env-setup r
+.PHONY: help check build serve change-date slides-check slides-render slides-charts env-setup r
 
 HUGO_FLAGS ?= -D -F
 ENV_RUN = bash scripts/with-project-env.sh
@@ -12,6 +12,7 @@ help:
 		'make check  - Verify required tools are available' \
 		'make change-date OLD=YYYY-MM-DD NEW=YYYY-MM-DD SLUG=post-slug' \
 		'make slides-check  - Verify Quarto is available for slide rendering' \
+		'make slides-charts - Regenerate course charts with project R' \
 		'make slides-render - Render Quarto slide decks into static/slides/'
 	@printf '%s\n' 'make env-setup - Create the isolated R 4.5.3 environment' 'make r - Open R in the project environment'
 
@@ -41,5 +42,9 @@ change-date:
 slides-check:
 	@$(ENV_RUN) bash -c 'command -v quarto >/dev/null || { echo "quarto not found. Install Quarto and add it to PATH."; exit 1; }'
 
-slides-render: slides-check
+slides-charts:
+	$(ENV_RUN) Rscript scripts/render-externalities-charts.R
+	$(ENV_RUN) Rscript scripts/render-textbook-diagrams.R
+
+slides-render: slides-check slides-charts
 	$(ENV_RUN) bash scripts/render-slides.sh

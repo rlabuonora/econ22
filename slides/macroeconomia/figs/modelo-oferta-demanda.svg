@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1080.00pt' height='576.00pt' viewBox='0 0 1080.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHwxMDgwLjAwfDAuMDB8NTc2LjAw'>
+    <rect x='0.00' y='0.00' width='1080.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHwxMDgwLjAwfDAuMDB8NTc2LjAw)'>
+<rect x='0.00' y='0.00' width='1080.00' height='576.00' style='stroke-width: 0.00; stroke: none;' />
+<rect x='71.93' y='88.16' width='236.40' height='146.22' style='stroke-width: 1.71; stroke: #8B969F; stroke-linecap: butt; stroke-linejoin: miter; fill: #8B969F; fill-opacity: 0.12;' />
+<text x='190.13' y='144.12' text-anchor='middle' style='font-size: 15.65px;fill: #8B969F; font-family: "Liberation Sans";' textLength='125.20px' lengthAdjust='spacingAndGlyphs'>Política monetaria</text>
+<text x='190.13' y='166.66' text-anchor='middle' style='font-size: 15.65px;fill: #8B969F; font-family: "Liberation Sans";' textLength='91.28px' lengthAdjust='spacingAndGlyphs'>Política fiscal</text>
+<text x='190.13' y='189.19' text-anchor='middle' style='font-size: 15.65px;fill: #8B969F; font-family: "Liberation Sans";' textLength='93.91px' lengthAdjust='spacingAndGlyphs'>Otras fuerzas</text>
+<rect x='71.93' y='331.87' width='236.40' height='155.97' style='stroke-width: 1.71; stroke: #8B969F; stroke-linecap: butt; stroke-linejoin: miter; fill: #8B969F; fill-opacity: 0.12;' />
+<text x='190.13' y='381.43' text-anchor='middle' style='font-size: 15.65px;fill: #8B969F; font-family: "Liberation Sans";' textLength='113.92px' lengthAdjust='spacingAndGlyphs'>Precios y costos</text>
+<text x='190.13' y='403.97' text-anchor='middle' style='font-size: 15.65px;fill: #8B969F; font-family: "Liberation Sans";' textLength='145.25px' lengthAdjust='spacingAndGlyphs'>Producción potencial</text>
+<text x='190.13' y='426.50' text-anchor='middle' style='font-size: 15.65px;fill: #8B969F; font-family: "Liberation Sans";' textLength='105.20px' lengthAdjust='spacingAndGlyphs'>Capital, trabajo</text>
+<text x='190.13' y='449.04' text-anchor='middle' style='font-size: 15.65px;fill: #8B969F; font-family: "Liberation Sans";' textLength='84.38px' lengthAdjust='spacingAndGlyphs'>y tecnología</text>
+<rect x='350.88' y='117.41' width='189.12' height='87.73' style='stroke-width: 1.71; stroke: #5E82AE; stroke-linecap: butt; stroke-linejoin: miter; fill: #5E82AE; fill-opacity: 0.12;' />
+<text x='445.44' y='154.85' text-anchor='middle' style='font-size: 17.07px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='73.97px' lengthAdjust='spacingAndGlyphs'>Demanda</text>
+<text x='445.44' y='179.44' text-anchor='middle' style='font-size: 17.07px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='72.08px' lengthAdjust='spacingAndGlyphs'>agregada</text>
+<rect x='350.88' y='365.99' width='189.12' height='87.73' style='stroke-width: 1.71; stroke: #B36B35; stroke-linecap: butt; stroke-linejoin: miter; fill: #B36B35; fill-opacity: 0.12;' />
+<text x='445.44' y='403.43' text-anchor='middle' style='font-size: 17.07px;fill: #B36B35; font-family: "Liberation Sans";' textLength='47.39px' lengthAdjust='spacingAndGlyphs'>Oferta</text>
+<text x='445.44' y='428.02' text-anchor='middle' style='font-size: 17.07px;fill: #B36B35; font-family: "Liberation Sans";' textLength='72.08px' lengthAdjust='spacingAndGlyphs'>agregada</text>
+<rect x='587.28' y='229.51' width='189.12' height='116.98' style='stroke-width: 1.71; stroke: #23313D; stroke-linecap: butt; stroke-linejoin: miter; fill: #23313D; fill-opacity: 0.12;' />
+<text x='681.84' y='282.11' text-anchor='middle' style='font-size: 15.65px;fill: #23313D; font-family: "Liberation Sans";' textLength='76.53px' lengthAdjust='spacingAndGlyphs'>Interacción</text>
+<text x='681.84' y='304.65' text-anchor='middle' style='font-size: 15.65px;fill: #23313D; font-family: "Liberation Sans";' textLength='81.75px' lengthAdjust='spacingAndGlyphs'>de OA y DA</text>
+<line x1='313.06' y1='161.27' x2='341.43' y2='161.27' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<polyline points='333.94,165.59 341.43,161.27 333.94,156.95 ' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<line x1='313.06' y1='409.85' x2='341.43' y2='409.85' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<polyline points='333.94,414.17 341.43,409.85 333.94,405.53 ' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<line x1='540.00' y1='180.77' x2='587.28' y2='239.26' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<polyline points='579.22,236.16 587.28,239.26 585.94,230.72 ' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<line x1='540.00' y1='385.48' x2='587.28' y2='336.74' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<polyline points='585.17,345.12 587.28,336.74 578.97,339.10 ' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<rect x='847.32' y='51.61' width='160.75' height='92.61' style='stroke-width: 1.71; stroke: #8B969F; stroke-linecap: butt; stroke-linejoin: miter; fill: #8B969F; fill-opacity: 0.12;' />
+<text x='927.69' y='92.56' text-anchor='middle' style='font-size: 14.23px;fill: #8B969F; font-family: "Liberation Sans";' textLength='71.12px' lengthAdjust='spacingAndGlyphs'>Producción</text>
+<text x='927.69' y='113.05' text-anchor='middle' style='font-size: 14.23px;fill: #8B969F; font-family: "Liberation Sans";' textLength='60.05px' lengthAdjust='spacingAndGlyphs'>(PIB real)</text>
+<line x1='776.40' y1='288.00' x2='833.13' y2='97.91' style='stroke-width: 1.49; stroke: #23313D; stroke-linecap: butt;' />
+<polyline points='835.13,106.32 833.13,97.91 826.85,103.85 ' style='stroke-width: 1.49; stroke: #23313D; stroke-linecap: butt;' />
+<rect x='847.32' y='178.33' width='160.75' height='92.61' style='stroke-width: 1.71; stroke: #8B969F; stroke-linecap: butt; stroke-linejoin: miter; fill: #8B969F; fill-opacity: 0.12;' />
+<text x='927.69' y='219.29' text-anchor='middle' style='font-size: 14.23px;fill: #8B969F; font-family: "Liberation Sans";' textLength='59.27px' lengthAdjust='spacingAndGlyphs'>Empleo y</text>
+<text x='927.69' y='239.77' text-anchor='middle' style='font-size: 14.23px;fill: #8B969F; font-family: "Liberation Sans";' textLength='69.55px' lengthAdjust='spacingAndGlyphs'>desempleo</text>
+<line x1='776.40' y1='288.00' x2='833.13' y2='224.64' style='stroke-width: 1.49; stroke: #23313D; stroke-linecap: butt;' />
+<polyline points='831.36,233.09 833.13,224.64 824.92,227.33 ' style='stroke-width: 1.49; stroke: #23313D; stroke-linecap: butt;' />
+<rect x='847.32' y='305.06' width='160.75' height='92.61' style='stroke-width: 1.71; stroke: #8B969F; stroke-linecap: butt; stroke-linejoin: miter; fill: #8B969F; fill-opacity: 0.12;' />
+<text x='927.69' y='346.01' text-anchor='middle' style='font-size: 14.23px;fill: #8B969F; font-family: "Liberation Sans";' textLength='59.27px' lengthAdjust='spacingAndGlyphs'>Precios e</text>
+<text x='927.69' y='366.50' text-anchor='middle' style='font-size: 14.23px;fill: #8B969F; font-family: "Liberation Sans";' textLength='52.16px' lengthAdjust='spacingAndGlyphs'>inflación</text>
+<line x1='776.40' y1='288.00' x2='833.13' y2='351.36' style='stroke-width: 1.49; stroke: #23313D; stroke-linecap: butt;' />
+<polyline points='824.92,348.67 833.13,351.36 831.36,342.91 ' style='stroke-width: 1.49; stroke: #23313D; stroke-linecap: butt;' />
+<rect x='847.32' y='431.79' width='160.75' height='92.61' style='stroke-width: 1.71; stroke: #8B969F; stroke-linecap: butt; stroke-linejoin: miter; fill: #8B969F; fill-opacity: 0.12;' />
+<text x='927.69' y='472.74' text-anchor='middle' style='font-size: 14.23px;fill: #8B969F; font-family: "Liberation Sans";' textLength='60.83px' lengthAdjust='spacingAndGlyphs'>Comercio</text>
+<text x='927.69' y='493.22' text-anchor='middle' style='font-size: 14.23px;fill: #8B969F; font-family: "Liberation Sans";' textLength='47.41px' lengthAdjust='spacingAndGlyphs'>exterior</text>
+<line x1='776.40' y1='288.00' x2='833.13' y2='478.09' style='stroke-width: 1.49; stroke: #23313D; stroke-linecap: butt;' />
+<polyline points='826.85,472.15 833.13,478.09 835.13,469.68 ' style='stroke-width: 1.49; stroke: #23313D; stroke-linecap: butt;' />
+</g>
+</g>
+</svg>

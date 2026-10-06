@@ -13,9 +13,11 @@ format:
     css: styles.css
 ---
 
-## Elasticidad precio de la demanda
+## Elasticidad precio de la demanda {.course-slide}
 
-![](imgs/parkin_elasticidad.png){.plain width="88%"}
+::: {.visual}
+![](figs/elasticidad-cambio-oferta.svg){.plain .nostretch width="88%"}
+:::
 
 ## Elasticidad precio de la demanda
 
@@ -77,9 +79,11 @@ $$\Delta P\% = \frac{\Delta P}{(P_0 + P_1)/2}$$
 - ¿Qué pasa con el ingreso de las empresas ($P \times Q$)?
 - Depende de la elasticidad de la demanda.
 
-## Elasticidad e ingresos
+## Elasticidad e ingresos {.course-slide}
 
-![](imgs/casos.png){.plain width="88%"}
+::: {.visual}
+![](figs/elasticidad-ingresos.svg){.plain .nostretch width="88%"}
+:::
 
 ## Elasticidad e ingresos
 
@@ -120,37 +124,53 @@ $$\Delta P\% = \frac{\Delta P}{(P_0 + P_1)/2}$$
 
 - La curva de demanda indica cuántas unidades de un bien se comprarían a determinado precio.
 
-## Disposición a pagar (1)
+## Disposición a pagar (1) {.course-slide}
 
-![](imgs/demanda_individual_mercado.png){.plain width="86%"}
+::: {.visual}
+![](figs/demanda-individual-mercado.svg){.plain .nostretch width="86%"}
+:::
 
-## Disposición a pagar (2)
+## Disposición a pagar (2) {.course-slide}
 
-![](imgs/demanda_excedente.png){.plain width="86%"}
+::: {.visual}
+![](figs/excedente-consumidor.svg){.plain .nostretch width="86%"}
+:::
 
-## Excedente del productor (1)
+## Excedente del productor (1) {.course-slide}
 
-![](imgs/oferta_individual_mercado.png){.plain width="86%"}
+::: {.visual}
+![](figs/oferta-individual-mercado.svg){.plain .nostretch width="86%"}
+:::
 
-## Excedente del productor (2)
+## Excedente del productor (2) {.course-slide}
 
-![](imgs/oferta_excedente.png){.plain width="86%"}
+::: {.visual}
+![](figs/excedente-productor.svg){.plain .nostretch width="86%"}
+:::
 
-## Equilibrio y excedentes
+## Equilibrio y excedentes {.course-slide}
 
-![](imgs/equilibrio_excedentes.png){.plain width="86%"}
+::: {.visual}
+![](figs/equilibrio-excedentes.svg){.plain .nostretch width="86%"}
+:::
 
-## Equilibrio y eficiencia
+## Equilibrio y eficiencia {.course-slide}
 
-![](imgs/eficiencia.png){.plain width="86%"}
+::: {.visual}
+![](figs/eficiencia.svg){.plain .nostretch width="86%"}
+:::
 
-## Sobreproducción
+## Sobreproducción {.course-slide}
 
-![](imgs/sobreproduccion.png){.plain width="86%"}
+::: {.visual}
+![](figs/sobreproduccion.svg){.plain .nostretch width="86%"}
+:::
 
-## Subproducción
+## Subproducción {.course-slide}
 
-![](imgs/subproduccion.png){.plain width="86%"}
+::: {.visual}
+![](figs/subproduccion.svg){.plain .nostretch width="86%"}
+:::
 
 ## El excedente del consumidor
 
@@ -204,9 +224,11 @@ $$\Delta P\% = \frac{\Delta P}{(P_0 + P_1)/2}$$
 - A veces los productores pueden trasladar el peso del impuesto a los consumidores.
 - Depende de las elasticidades relativas de oferta y demanda.
 
-## Análisis económico
+## Análisis económico {.course-slide}
 
-![](imgs/impuesto.png){.plain width="88%"}
+::: {.visual}
+![](figs/impuesto-incidencia.svg){.plain .nostretch width="88%"}
+:::
 
 ## Análisis económico (2)
 

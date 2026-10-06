@@ -54,6 +54,17 @@ blockquote p::before {
 blockquote p::after {
     content: '”';
   }
+
+blockquote.twitter-tweet {
+  background: transparent;
+  padding: 0;
+  font-style: normal;
+}
+
+blockquote.twitter-tweet p::before,
+blockquote.twitter-tweet p::after {
+  content: none;
+}
 ```
 
 La oferta y la demanda son las herramientas básicas que los economistas usan para analizar los mercados. En esta unidad los usamos para explicar cómo reaccionan los precios y las cantidades compradas y vendidas a cambios que afectan las decisiones de los participantes en el mercado.
@@ -86,7 +97,8 @@ Explicar porqué estas afirmaciones son falsas y reescribirlas para que sean ver
 
 Usar el diagrama de oferta y demanda para los gráficos en el siguiente tweet sobre el impacto de la invasión de Rusia a Ucrania:
 
-<https://x.com/i/status/1504213589346832385>
+<blockquote class="twitter-tweet" data-lang="es" data-dnt="true"><p lang="en" dir="ltr">War in Ukraine 🇺🇦 is upending supplies from two of the world’s largest agricultural producers, hurting the poor most and further fueling inflation. See <a href="https://x.com/hashtag/IMFBlog?src=hash&amp;ref_src=twsrc%5Etfw">#IMFBlog</a> for more on the regional impacts. <a href="https://t.co/LY1urh4vrj">https://t.co/LY1urh4vrj</a> <a href="https://t.co/z9x7x7X9v7">pic.twitter.com/z9x7x7X9v7</a></p>&mdash; IMF (@IMFNews) <a href="https://x.com/IMFNews/status/1504213589346832385?ref_src=twsrc%5Etfw">16 de marzo de 2022</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ## Ejercicio 3

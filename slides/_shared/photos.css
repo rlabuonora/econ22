@@ -1,0 +1,44 @@
+/* Integrated photo slides: background image, overlaid type, no detached panel. */
+.reveal .slides section.photo-slide {
+  height: 100%; top: 0 !important; box-sizing: border-box;
+  padding: 44px 48px; text-align: left;
+  font-family: "Lato", sans-serif; color: #17232d;
+}
+.reveal .slides section.photo-slide.present {
+  display: flex !important; flex-direction: column; align-items: flex-start;
+}
+.reveal .slides section.photo-slide h2 {
+  color: #17232d; font-size: 64px; line-height: 1.08;
+  font-weight: 700; letter-spacing: -0.025em;
+  max-width: 660px; border: 0; padding: 0; margin: 0 0 30px;
+  text-shadow: none;
+}
+.reveal .photo-slide .photo-copy {
+  width: 640px; max-width: 46%; font-size: 34px; line-height: 1.4;
+}
+.reveal .photo-slide .photo-copy p { margin: 0 0 20px; }
+.reveal .photo-slide .photo-copy ul { margin: 0 0 0 1em; }
+.reveal .photo-slide .photo-copy li { margin-bottom: 18px; }
+.reveal .photo-slide strong { color: #17232d; }
+.reveal .slides section.photo-text-right { align-items: flex-end !important; }
+.reveal .photo-text-right h2 { width: 640px; max-width: 46%; }
+.reveal .slide-background.photo-slide .slide-background-content::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.88) 32%, rgba(255,255,255,.35) 52%, transparent 72%);
+}
+.reveal .slide-background.photo-text-right .slide-background-content::after {
+  background: linear-gradient(270deg, rgba(255,255,255,.96), rgba(255,255,255,.88) 32%, rgba(255,255,255,.35) 52%, transparent 72%);
+}
+.reveal .slide-background.photo-title-only .slide-background-content::after {
+  background: linear-gradient(180deg, rgba(255,255,255,.96), rgba(255,255,255,.7) 15%, transparent 42%);
+}
+.reveal .photo-title-only h2 { max-width: 1100px !important; }
+
+/* Dark treatment preserves both figures in the Estado photograph. */
+.reveal .slides section.photo-dark,
+.reveal .slides section.photo-dark h2,
+.reveal .photo-dark strong { color: #fff; }
+.reveal .slide-background.photo-dark .slide-background-content::after {
+  background: linear-gradient(90deg, rgba(17,24,32,.97), rgba(17,24,32,.9) 30%, rgba(17,24,32,.35) 46%, transparent 64%);
+}
+.reveal .state-photo .photo-copy { max-width: 40%; }

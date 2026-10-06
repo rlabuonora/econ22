@@ -9,7 +9,9 @@ format:
     progress: true
     width: 1600
     height: 900
-    css: styles.css
+    css:
+      - ../_shared/photos.css
+      - styles.css
 ---
 
 ## PIB
@@ -92,17 +94,12 @@ Busca responder preguntas como:
 - ¿Qué pasa con el nivel de precios y el poder adquisitivo de los ingresos?
 - ¿Cómo se comporta el tipo de cambio?
 
-## Contexto histórico
+## Contexto histórico {.photo-slide background-image="imgs/keynes.jpg" background-size="auto 100%" background-position="right center" background-color="#e8e5df"}
 
-:::: {.columns}
-::: {.column width="60%"}
+::: {.photo-copy}
 - John Maynard Keynes originó esta rama de la economía en los años 30.
 - Desarrolló los fundamentos teóricos de las políticas macroeconómicas.
 :::
-::: {.column width="40%"}
-![](imgs/keynes.jpg){.plain width="88%"}
-:::
-::::
 
 ## Objetivos de la política macroeconómica
 
@@ -131,9 +128,11 @@ Busca responder preguntas como:
 
 - Es una teoría que busca explicar los ciclos de la economía.
 
-## Oferta y demanda agregadas
+## Oferta y demanda agregadas {.course-slide}
 
-![](imgs/modelo_oa_da.png){.plain width="82%"}
+::: {.visual}
+![](figs/modelo-oferta-demanda.svg){.plain .nostretch width="82%"}
+:::
 
 ## La oferta agregada
 
@@ -168,9 +167,11 @@ $$ DA = C + I + G + NX $$
 - Son las exportaciones menos las importaciones.
 - Dependen del tipo de cambio, de los precios relativos y del ingreso externo.
 
-## Componentes de la demanda agregada
+## Componentes de la demanda agregada {.course-slide}
 
-![](imgs/componentes_da.png){.plain width="82%"}
+::: {.visual}
+![](figs/componentes-demanda-agregada.svg){.plain .nostretch width="82%"}
+:::
 
 ## Demanda agregada (pendiente)
 
@@ -178,9 +179,11 @@ $$ DA = C + I + G + NX $$
 - Si sube el nivel de precios, caen los ingresos reales.
 - También bajan exportaciones y suben importaciones.
 
-## Movimientos en la demanda agregada
+## Movimientos en la demanda agregada {.course-slide}
 
-![](imgs/movs_da.png){.plain width="82%"}
+::: {.visual}
+![](figs/movimientos-demanda-agregada.svg){.plain .nostretch width="82%"}
+:::
 
 ## Cambios en la DA
 
@@ -193,10 +196,14 @@ $$ DA = C + I + G + NX $$
   - Tecnología
   - Otros
 
-## Equilibrio macroeconómico
+## Equilibrio macroeconómico {.course-slide}
 
-![](imgs/equilibrio_macro.png){.plain width="82%"}
+::: {.visual}
+![](figs/equilibrio-agregado.svg){.plain .nostretch width="82%"}
+:::
 
-## Shock en la demanda
+## Shock en la demanda {.course-slide}
 
-![](imgs/shock_demanda.png){.plain width="82%"}
+::: {.visual}
+![](figs/shock-demanda-agregada.svg){.plain .nostretch width="82%"}
+:::

@@ -50,9 +50,11 @@ format:
 - La firma elige la cantidad donde ingreso marginal y costo marginal coinciden.
 - En competencia perfecta, el ingreso marginal es igual al precio.
 
-## Maximización de beneficios (2)
+## Maximización de beneficios (2) {.course-slide}
 
-![](imgs/costo_marginal_ingreso_marginal.png){.plain width="82%"}
+::: {.visual}
+![](figs/maximizacion-beneficio.svg){.plain .nostretch width="82%"}
+:::
 
 ## La curva de oferta
 

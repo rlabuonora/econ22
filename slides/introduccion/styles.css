@@ -3,3 +3,19 @@
 :root {
   --deck-font-size: 38px;
 }
+
+/* Full-screen course identity cover; logo retains its original proportions. */
+.reveal .slides #title-slide.course-logo-cover {
+  height: 100%; top: 0 !important; box-sizing: border-box;
+  padding: 0 48px !important; border: 0; background: transparent;
+  text-align: left !important;
+}
+.reveal #title-slide.course-logo-cover.present {
+  display: flex !important; align-items: flex-start; justify-content: center;
+  flex-direction: column;
+}
+.reveal #title-slide.course-logo-cover .title {
+  width: 600px; max-width: 40%; color: #fff;
+  font-size: 80px; line-height: 1.06; letter-spacing: -.025em; margin: 0;
+}
+.reveal #title-slide.course-logo-cover::after { display: none; }

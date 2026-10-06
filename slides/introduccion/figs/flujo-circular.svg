@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='936.00pt' height='576.00pt' viewBox='0 0 936.00 576.00'>
+<g class='svglite'>
+<defs>
+  <style type='text/css'><![CDATA[
+    .svglite line, .svglite polyline, .svglite polygon, .svglite path, .svglite rect, .svglite circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+    .svglite text {
+      white-space: pre;
+    }
+    .svglite g.glyphgroup path {
+      fill: inherit;
+      stroke: none;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<defs>
+  <clipPath id='cpMC4wMHw5MzYuMDB8MC4wMHw1NzYuMDA='>
+    <rect x='0.00' y='0.00' width='936.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw5MzYuMDB8MC4wMHw1NzYuMDA=)'>
+<rect x='0.00' y='0.00' width='936.00' height='576.00' style='stroke-width: 0.00; stroke: none;' />
+<rect x='68.81' y='234.39' width='179.23' height='107.23' style='stroke-width: 1.71; stroke: #5E82AE; stroke-linecap: butt; stroke-linejoin: miter; fill: #5E82AE; fill-opacity: 0.12;' />
+<text x='158.42' y='293.87' text-anchor='middle' style='font-size: 17.07px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='76.80px' lengthAdjust='spacingAndGlyphs'>Empresas</text>
+<rect x='687.96' y='234.39' width='179.23' height='107.23' style='stroke-width: 1.71; stroke: #5E82AE; stroke-linecap: butt; stroke-linejoin: miter; fill: #5E82AE; fill-opacity: 0.12;' />
+<text x='777.58' y='293.87' text-anchor='middle' style='font-size: 17.07px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='64.48px' lengthAdjust='spacingAndGlyphs'>Hogares</text>
+<rect x='345.80' y='68.67' width='244.40' height='87.73' style='stroke-width: 1.71; stroke: #5E82AE; stroke-linecap: butt; stroke-linejoin: miter; fill: #5E82AE; fill-opacity: 0.12;' />
+<text x='468.00' y='106.11' text-anchor='middle' style='font-size: 17.07px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='145.08px' lengthAdjust='spacingAndGlyphs'>Mercado de bienes</text>
+<text x='468.00' y='130.70' text-anchor='middle' style='font-size: 17.07px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='79.64px' lengthAdjust='spacingAndGlyphs'>y servicios</text>
+<rect x='345.80' y='419.60' width='244.40' height='87.73' style='stroke-width: 1.71; stroke: #5E82AE; stroke-linecap: butt; stroke-linejoin: miter; fill: #5E82AE; fill-opacity: 0.12;' />
+<text x='468.00' y='457.05' text-anchor='middle' style='font-size: 17.07px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='155.48px' lengthAdjust='spacingAndGlyphs'>Mercado de factores</text>
+<text x='468.00' y='481.63' text-anchor='middle' style='font-size: 17.07px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='107.16px' lengthAdjust='spacingAndGlyphs'>de producción</text>
+<line x1='223.60' y1='229.51' x2='345.80' y2='141.78' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<polyline points='342.24,149.65 345.80,141.78 337.20,142.63 ' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<line x1='590.20' y1='141.78' x2='712.40' y2='229.51' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<polyline points='703.81,228.66 712.40,229.51 708.85,221.64 ' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<line x1='712.40' y1='346.49' x2='590.20' y2='434.22' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<polyline points='593.76,426.35 590.20,434.22 598.80,433.37 ' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<line x1='345.80' y1='434.22' x2='223.60' y2='346.49' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<polyline points='232.19,347.34 223.60,346.49 227.15,354.36 ' style='stroke-width: 1.49; stroke: #5E82AE; stroke-linecap: butt;' />
+<line x1='712.40' y1='190.52' x2='590.20' y2='73.54' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<polyline points='598.59,75.59 590.20,73.54 592.62,81.84 ' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<line x1='345.80' y1='73.54' x2='223.60' y2='190.52' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<polyline points='226.01,182.22 223.60,190.52 231.99,188.46 ' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<line x1='223.60' y1='385.48' x2='345.80' y2='502.46' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<polyline points='337.41,500.41 345.80,502.46 343.38,494.16 ' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<line x1='590.20' y1='502.46' x2='712.40' y2='385.48' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<polyline points='709.99,393.78 712.40,385.48 704.01,387.54 ' style='stroke-width: 1.49; stroke: #B36B35; stroke-linecap: butt;' />
+<text x='280.62' y='224.16' text-anchor='middle' style='font-size: 14.23px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='43.47px' lengthAdjust='spacingAndGlyphs'>Bienes</text>
+<text x='280.62' y='244.65' text-anchor='middle' style='font-size: 14.23px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='56.91px' lengthAdjust='spacingAndGlyphs'>vendidos</text>
+<text x='655.38' y='224.16' text-anchor='middle' style='font-size: 14.23px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='43.47px' lengthAdjust='spacingAndGlyphs'>Bienes</text>
+<text x='655.38' y='244.65' text-anchor='middle' style='font-size: 14.23px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='70.33px' lengthAdjust='spacingAndGlyphs'>comprados</text>
+<text x='280.62' y='331.39' text-anchor='middle' style='font-size: 14.23px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='55.31px' lengthAdjust='spacingAndGlyphs'>Factores</text>
+<text x='280.62' y='351.88' text-anchor='middle' style='font-size: 14.23px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='82.20px' lengthAdjust='spacingAndGlyphs'>demandados</text>
+<text x='655.38' y='331.39' text-anchor='middle' style='font-size: 14.23px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='55.31px' lengthAdjust='spacingAndGlyphs'>Factores</text>
+<text x='655.38' y='351.88' text-anchor='middle' style='font-size: 14.23px;fill: #5E82AE; font-family: "Liberation Sans";' textLength='57.69px' lengthAdjust='spacingAndGlyphs'>ofrecidos</text>
+<text x='223.60' y='88.18' text-anchor='middle' style='font-size: 14.23px;fill: #B36B35; font-family: "Liberation Sans";' textLength='54.53px' lengthAdjust='spacingAndGlyphs'>Ingresos</text>
+<text x='712.40' y='88.18' text-anchor='middle' style='font-size: 14.23px;fill: #B36B35; font-family: "Liberation Sans";' textLength='37.94px' lengthAdjust='spacingAndGlyphs'>Gasto</text>
+<text x='223.60' y='502.48' text-anchor='middle' style='font-size: 14.23px;fill: #B36B35; font-family: "Liberation Sans";' textLength='106.70px' lengthAdjust='spacingAndGlyphs'>Pagos a factores</text>
+<text x='712.40' y='502.48' text-anchor='middle' style='font-size: 14.23px;fill: #B36B35; font-family: "Liberation Sans";' textLength='37.94px' lengthAdjust='spacingAndGlyphs'>Renta</text>
+</g>
+</g>
+</svg>
