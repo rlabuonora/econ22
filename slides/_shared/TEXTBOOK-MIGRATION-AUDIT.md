@@ -34,7 +34,7 @@ The main conversion is commit `c1c8848` (2026-03-09); Oferta y Demanda was conve
 - **Los Mercados I (2):** three short-run outcomes and the shutdown-point chart. Both slide titles and explanatory text remain, but their figures are absent.
 - **Los Mercados II (3):** firm demand under perfect/imperfect competition; costs and market structure; total revenue, costs and profit. The costs-and-market-structure slide itself is absent; the other two topics remain as text.
 
-These eight should be included in the R reconstruction queue before being treated as archived extras. Restoring the market-structure slide also requires its explanation of market demand relative to minimum efficient scale. The original imperfect-competition wording should be corrected: a downward-sloping firm demand curve is not necessarily inelastic, and an optimizing monopolist chooses an elastic region when marginal cost is positive.
+These eight have now been restored using their original screenshots and remain in the R reconstruction queue. Restoring the market-structure slide also requires its explanation of market demand relative to minimum efficient scale. The original imperfect-competition wording should be corrected: a downward-sloping firm demand curve is not necessarily inelastic, and an optimizing monopolist chooses an elastic region when marginal cost is positive.
 
 ## Already unreferenced in the original sources (7)
 
@@ -46,4 +46,4 @@ The two consumer-surplus scans and five additional competitive-market scans (inc
 
 ## Deck changes
 
-This audit updates documentation only. No diagrams or slides have been restored in this pass.
+The eight confirmed omissions have been restored with the original PNG screenshots. Seven existing slides regained their diagrams; the missing **Costos y competencia imperfecta** slide and its explanation were restored between sources of market imperfections and barriers to entry. The restored slides use the shared diagram layout, with large contained images and adjacent or supporting text. The firm-demand wording was corrected to distinguish downward slope from inelasticity. These eight diagrams remain pending conversion to R.

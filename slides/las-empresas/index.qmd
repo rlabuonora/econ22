@@ -64,11 +64,15 @@ $$Beneficios = Ingresos - Costos$$
 - Pueden ser crecientes, constantes o decrecientes.
 - Son un concepto distinto del rendimiento marginal.
 
-## Cambio tecnológico
+## Cambio tecnológico {.course-slide}
 
-- Mejora la capacidad productiva con los mismos insumos.
-- Desplaza la función de producción hacia arriba.
-- Permite producir más o producir lo mismo con menos factores.
+::: {.visual}
+![](imgs/mejora_tecnologica.png){.plain .nostretch fig-alt="Comparación de funciones de producción antes y después de una mejora tecnológica."}
+:::
+
+::: {.takeaway}
+Una mejora tecnológica permite producir más con los mismos insumos.
+:::
 
 ## Medición de la productividad
 
@@ -147,12 +151,25 @@ $$Beneficios = Ingresos - Costos$$
 ![](figs/curvas-costo-total.svg){.plain .nostretch width="82%"}
 :::
 
-## Productividad marginal y costos
+## Productividad marginal y costos {.course-slide}
 
-- La curva de costo marginal refleja la evolución de la productividad marginal.
-- Más productividad implica menor costo por unidad adicional.
+:::: {.split}
+::: {.explanation}
+- Al principio, la productividad marginal aumenta y el costo marginal baja.
+- Cuando el factor fijo se satura, la productividad marginal cae y el costo marginal sube.
+:::
+::: {.visual}
+![](imgs/productividad_costos.png){.plain .nostretch fig-alt="Producto total y marginal, y sus relaciones con las curvas de costo variable total y costo marginal."}
+:::
+::::
 
-## Costos y maximización de beneficio
+## Costos y maximización de beneficio {.course-slide}
 
-- La empresa compara ingresos marginales y costos marginales.
-- Esa comparación define la cantidad óptima a producir.
+:::: {.split}
+::: {.explanation}
+El beneficio se maximiza donde la distancia entre el ingreso total (IT) y el costo total (CT) es mayor.
+:::
+::: {.visual}
+![](imgs/costos_beneficios.png){.plain .nostretch fig-alt="Ingreso total, costo total y beneficio según la cantidad producida."}
+:::
+::::

@@ -18,10 +18,15 @@ format:
 - En muchos mercados, las empresas tienen poder para influir en el precio.
 - Eso cambia la lógica de producción, precios y bienestar.
 
-## Elasticidad de la demanda
+## Elasticidad de la demanda {.course-slide}
 
-- La capacidad de fijar precios depende de la respuesta de la cantidad demandada.
-- Cuanto menos elástica la demanda, mayor poder de mercado.
+::: {.visual}
+![](imgs/demanda_en_competencia_imperfecta.png){.plain .nostretch fig-alt="Demanda horizontal de una empresa competitiva frente a demanda con pendiente negativa en competencia imperfecta."}
+:::
+
+::: {.takeaway}
+En competencia perfecta, la demanda de la empresa es horizontal. En competencia imperfecta tiene pendiente negativa; eso no implica que sea siempre inelástica.
+:::
 
 ## Tipos de competencia imperfecta
 
@@ -41,6 +46,16 @@ format:
 - Control de recursos clave
 - Regulación
 - Innovación y patentes
+
+## Costos y competencia imperfecta {.course-slide}
+
+::: {.visual}
+![](imgs/costos_y_estructura_de_mercado.png){.plain .nostretch fig-alt="Comparación de costos y demanda en competencia perfecta, oligopolio y monopolio natural."}
+:::
+
+::: {.takeaway}
+Si la demanda del mercado es grande respecto a la escala de costo medio mínimo de una empresa, pueden operar muchas empresas. Si es pequeña, pueden operar pocas.
+:::
 
 ## Barreras a la entrada
 
@@ -90,10 +105,16 @@ format:
 ![](figs/monopolio-beneficio.svg){.plain .nostretch width="84%"}
 :::
 
-## Ingresos, beneficios y costos
+## Ingresos, beneficios y costos {.course-slide}
 
-- El monopolista elige la cantidad donde ingreso marginal iguala costo marginal.
-- Luego fija el precio sobre la curva de demanda.
+:::: {.split}
+::: {.explanation}
+El beneficio es máximo donde la distancia entre IT y CT es mayor. Allí sus pendientes coinciden: IMg = CMg.
+:::
+::: {.visual}
+![](imgs/costos.png){.plain .nostretch fig-alt="Ingreso total, costo total y beneficio del monopolista, con cantidad de máximo beneficio."}
+:::
+::::
 
 ## Regulación de precios
 

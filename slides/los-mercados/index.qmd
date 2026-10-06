@@ -60,11 +60,15 @@ format:
 
 - La parte creciente del costo marginal por encima del costo variable medio define la oferta de la firma.
 
-## Tres resultados posibles
+## Tres resultados posibles {.course-slide}
 
-- Beneficios extraordinarios
-- Beneficio normal
-- Pérdidas
+::: {.visual}
+![](imgs/tres_resultados.png){.plain .nostretch fig-alt="Tres resultados de corto plazo: beneficio normal, ganancia económica y pérdida económica."}
+:::
+
+::: {.takeaway}
+Al producir donde P = CMg, el resultado depende de si el precio supera, iguala o queda por debajo del costo total medio.
+:::
 
 ## Entrada y salida de empresas
 
@@ -72,9 +76,18 @@ format:
 - Si hay pérdidas sostenidas, salen empresas.
 - En el largo plazo, la entrada y salida presionan los beneficios hacia cero.
 
-## Punto de cierre
+## Punto de cierre {.course-slide}
 
-- Si el precio cae por debajo del costo variable medio, conviene dejar de producir en el corto plazo.
+:::: {.split}
+::: {.explanation}
+- Hay pérdidas si P < CTM.
+- Conviene cerrar en el corto plazo si P < CVM.
+- El punto de cierre está en el mínimo del costo variable medio.
+:::
+::: {.visual}
+![](imgs/punto_de_cierre.png){.plain .nostretch fig-alt="Curvas de costo marginal, costo total medio y costo variable medio con el punto de cierre."}
+:::
+::::
 
 ## Equilibrio de corto y largo plazo
 

@@ -52,7 +52,7 @@ Historical GDP, demographic, newspaper and research charts retain their original
 
 The 17 files initially labelled “unused” require three distinct classifications. See [the migration audit](TEXTBOOK-MIGRATION-AUDIT.md) for pinned original sources and slide-by-slide evidence.
 
-- **8 confirmed omitted diagrams:** original decks reference them, but the Quarto decks omit them. These belong in the reconstruction queue.
+- **8 restored diagrams:** confirmed migration omissions have been restored in Quarto using their original screenshots. Conversion to R remains pending.
 - **7 already unreferenced diagrams:** the original Rmd decks did not use them.
 - **2 unresolved diagrams:** the original Oferta y Demanda source could not be located; their old hosted deck returns 404.
 
@@ -67,13 +67,13 @@ The 17 files initially labelled “unused” require three distinct classificati
 | `slides/los-mercados/imgs/oferta_costo_marginal.png` | Already unused |
 | `slides/los-mercados/imgs/oferta_fija.png` | Already unused |
 | `slides/los-mercados/imgs/costos_constantes.png` | Already unused |
-| `slides/los-mercados/imgs/punto_de_cierre.png` | Confirmed omitted |
-| `slides/los-mercados/imgs/tres_resultados.png` | Confirmed omitted |
-| `slides/los-mercados-ii-monopolio/imgs/demanda_en_competencia_imperfecta.png` | Confirmed omitted |
-| `slides/los-mercados-ii-monopolio/imgs/costos_y_estructura_de_mercado.png` | Confirmed omitted |
-| `slides/las-empresas/imgs/mejora_tecnologica.png` | Confirmed omitted |
-| `slides/las-empresas/imgs/productividad_costos.png` | Confirmed omitted |
-| `slides/las-empresas/imgs/costos_beneficios.png` | Confirmed omitted |
-| `slides/los-mercados-ii-monopolio/imgs/costos.png` | Confirmed omitted |
+| `slides/los-mercados/imgs/punto_de_cierre.png` | Restored screenshot; R conversion pending |
+| `slides/los-mercados/imgs/tres_resultados.png` | Restored screenshot; R conversion pending |
+| `slides/los-mercados-ii-monopolio/imgs/demanda_en_competencia_imperfecta.png` | Restored screenshot; R conversion pending |
+| `slides/los-mercados-ii-monopolio/imgs/costos_y_estructura_de_mercado.png` | Restored screenshot; R conversion pending |
+| `slides/las-empresas/imgs/mejora_tecnologica.png` | Restored screenshot; R conversion pending |
+| `slides/las-empresas/imgs/productividad_costos.png` | Restored screenshot; R conversion pending |
+| `slides/las-empresas/imgs/costos_beneficios.png` | Restored screenshot; R conversion pending |
+| `slides/los-mercados-ii-monopolio/imgs/costos.png` | Restored screenshot; R conversion pending |
 
 Additional archived copies of `flujo_circular.png` exist in `las-empresas`, `los-consumidores` and `mercado-de-trabajo`.
